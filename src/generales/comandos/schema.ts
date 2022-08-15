@@ -1,5 +1,5 @@
+import { IDownlink } from "../../mensajesLora";
 import { IDispositivo } from "../dispositivo";
-import { IDownlink } from "../downlink";
 import { IUsuario } from "../usuario";
 
 export interface IComando extends IDownlink {

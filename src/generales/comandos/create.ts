@@ -1,4 +1,4 @@
-import { IDownlink } from "../downlink";
+import { IDownlink } from "../../mensajesLora";
 
 export interface ICreateComando extends IDownlink {
   fechaCreacion?: string;
