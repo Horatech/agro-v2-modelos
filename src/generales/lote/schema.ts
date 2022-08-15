@@ -1,4 +1,4 @@
-import { IUbicacion } from "../../compartidos/ubicacion";
+import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
 

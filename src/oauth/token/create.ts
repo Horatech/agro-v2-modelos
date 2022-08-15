@@ -1,5 +1,5 @@
-import { ICreateClient } from "./client.dto";
-import { IUsuario } from "../../entidades/usuario/schema";
+import { IUsuario } from "../../generales";
+import { ICreateClient } from "../client";
 
 export interface ICreateToken {
   accessToken: string;

@@ -6,7 +6,6 @@ export * from "./downlink";
 export * from "./establecimiento";
 export * from "./loraServer";
 export * from "./lote";
-export * from "./oauth";
 export * from "./loteDispositivo";
 export * from "./tipoDispositivo";
 export * from "./uplink";

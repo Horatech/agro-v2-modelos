@@ -1,4 +1,4 @@
-import { IUbicacion } from "../../compartidos/ubicacion";
+import { IUbicacion } from "../../auxiliares";
 
 export interface ICreateEstablecimiento {
   nombre: string;
