@@ -8,6 +8,7 @@ export * from "./establecimiento";
 export * from "./loraServer";
 export * from "./lote";
 export * from "./loteDispositivo";
+export * from "./reporte";
 export * from "./tipoDispositivo";
 export * from "./uplink";
 export * from "./usuario";

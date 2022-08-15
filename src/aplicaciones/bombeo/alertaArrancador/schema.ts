@@ -1,8 +1,6 @@
-export interface IErrorArrancador {
-  _id: string;
-  deveuiCentral: string;
+export interface IAlertaBombeoArrancador {
+  fecha: string;
   numero: number;
-  fecha?: string;
   tipo: "Encendido" | "Apagado";
   error:
     | "Arrancador en Error"

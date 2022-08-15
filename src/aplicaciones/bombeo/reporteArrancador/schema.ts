@@ -1,7 +1,5 @@
-export interface IReporteArrancador {
-  deveuiCentral: string;
+export interface IReporteBombeoArrancador {
   numero: number;
-  fecha?: string;
   estado: "Encendido" | "Apagado";
   corrienteAlimentacion?: number;
   corrienteMotor?: number;

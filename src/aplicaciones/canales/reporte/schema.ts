@@ -1,10 +1,6 @@
-export interface IReporte {
-  _id?: string;
-  deviceName: string;
-  deveui: string;
+export interface IReporteCanal {
   distancia: number;
   frecuenciaReporte: number;
   bateria: number;
   cargando: boolean;
-  fecha?: string;
 }

@@ -1,4 +1,4 @@
-import { IReporteCanal } from "../reporteCanal";
+import { IReporte } from "../../../generales";
 
 export interface IUpdateCanal {
   deveuiCentral?: string;
@@ -8,5 +8,5 @@ export interface IUpdateCanal {
   cotaMinMm?: number;
   cotaMaxMm?: number;
   frecReporte?: number;
-  ultimoReporte?: IReporteCanal;
+  ultimoReporte?: IReporte;
 }

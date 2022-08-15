@@ -1,4 +1,4 @@
-import { IReporteArrancador } from "../reporteArrancador";
+import { IReporte } from "../../../generales";
 
 export interface IArrancador {
   deveuiCentral: string;
@@ -7,5 +7,5 @@ export interface IArrancador {
   canalSalida?: number;
   estadoActual?: "Encendido" | "Apagado";
   fechaUltimaComunicacion?: string;
-  ultimoReporte?: IReporteArrancador;
+  ultimoReporte?: IReporte;
 }
