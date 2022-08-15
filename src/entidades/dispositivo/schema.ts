@@ -16,10 +16,9 @@ export interface IDispositivo {
   idLote: string;
   tipoDispositivo: TipoDispositivo;
   conectividad: TipoConectividad;
-  /**
-   * Solo con conectividad Lora
-   */
   idLoraServer?: string;
+  // Configuraciones especificas por tipo de dispositivo
+  config?: Record<string, any>;
   // Virtuals
   cliente?: ICliente;
   loraServer?: ILoraServer;
