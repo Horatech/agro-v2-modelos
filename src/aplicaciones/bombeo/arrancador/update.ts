@@ -1,6 +1,10 @@
 import { IReporte } from "../../../generales";
 
-export interface IUpdateArrancador {
+export interface IUpdateBombeoArrancador {
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
+  //
   deveuiCentral?: string;
   numero?: number;
   canalEntrada?: number;

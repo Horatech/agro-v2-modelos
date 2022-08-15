@@ -1,6 +1,10 @@
-import { IReporte } from "../../../generales";
+import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
 
-export interface IArrancador {
+export interface IBombeoArrancador {
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
+  //
   deveuiCentral: string;
   numero: number;
   canalEntrada?: number;
@@ -8,4 +12,7 @@ export interface IArrancador {
   estadoActual?: "Encendido" | "Apagado";
   fechaUltimaComunicacion?: string;
   ultimoReporte?: IReporte;
+  // Virtual
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
 }

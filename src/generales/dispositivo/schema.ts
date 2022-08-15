@@ -1,6 +1,7 @@
 import { ICoordenadas } from "../../auxiliares";
 import { IAlerta } from "../alerta";
 import { ICliente } from "../cliente";
+import { IEstablecimiento } from "../establecimiento";
 import { ILoraServer } from "../loraServer";
 import { IReporte } from "../reporte";
 import { TipoDispositivo } from "../tipoDispositivo/tipoDispositivo";
@@ -10,8 +11,10 @@ export interface IDispositivo {
   // Info autogenerada
   _id: string;
   fechaCreacion: string;
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
   // Info de carga
-  idCliente: string;
   deveui: string;
   deviceName: string;
   appkey: string;
@@ -34,4 +37,5 @@ export interface IDispositivo {
   // Virtuals
   cliente?: ICliente;
   loraServer?: ILoraServer;
+  establecimiento?: IEstablecimiento;
 }

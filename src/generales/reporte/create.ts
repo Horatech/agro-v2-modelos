@@ -1,6 +1,9 @@
 import { TipoDispositivo } from "../tipoDispositivo";
 
 export interface ICreateReporte {
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
   // Datos del dispositivo
   deviceName: string;
   deveui: string;

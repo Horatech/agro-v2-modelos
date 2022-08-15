@@ -5,8 +5,10 @@ import { TipoDispositivo } from "../tipoDispositivo/tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
 export interface ICreateDispositivo {
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
   // Info de carga
-  idCliente: string;
   deveui: string;
   deviceName: string;
   appkey: string;

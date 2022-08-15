@@ -1,6 +1,10 @@
-import { IReporte } from "../../../generales";
+import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
 
-export interface ICanal {
+export interface IBombeoCanal {
+  // Tentant
+  idCliente?: string;
+  idEstablecimiento?: string;
+  //
   deveuiCentral: string;
   numero: number;
   tipo?: "Entrada" | "Salida";
@@ -9,4 +13,7 @@ export interface ICanal {
   cotaMaxMm?: number;
   frecReporte?: number;
   ultimoReporte?: IReporte;
+  // Virtual
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
 }
