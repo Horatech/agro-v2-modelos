@@ -7,12 +7,12 @@ export interface IUpdateLoraServer {
   /**
    * URL donde el Lora Server reenviara los mensajes de los dispositivos
    */
-  integrationUrl: string;
+  integrationUrl?: string;
   // Configuraciones por tipo de Lora Server
   chirpstack?: {
-    token: string;
-    organizationID: string;
-    serviceProfileID: string;
+    token?: string;
+    organizationID?: string;
+    serviceProfileID?: string;
   };
   orbiwise?: {
     user?: string;

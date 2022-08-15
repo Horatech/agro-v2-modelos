@@ -7,7 +7,7 @@ export interface ICreateLoraServer {
   /**
    * URL donde el Lora Server reenviara los mensajes de los dispositivos
    */
-  integrationUrl: string;
+  integrationUrl?: string;
   // Configuraciones por tipo de Lora Server
   chirpstack?: {
     token: string;
@@ -15,8 +15,8 @@ export interface ICreateLoraServer {
     serviceProfileID: string;
   };
   orbiwise?: {
-    user?: string;
-    pass?: string;
-    serviceProfileUUID?: string;
+    user: string;
+    pass: string;
+    serviceProfileUUID: string;
   };
 }

@@ -16,8 +16,8 @@ export interface ILoraServer {
     serviceProfileID: string;
   };
   orbiwise?: {
-    user?: string;
-    pass?: string;
-    serviceProfileUUID?: string;
+    user: string;
+    pass: string;
+    serviceProfileUUID: string;
   };
 }
