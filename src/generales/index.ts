@@ -1,4 +1,5 @@
 export * from "./ack";
+export * from "./alerta";
 export * from "./cliente";
 export * from "./comandos";
 export * from "./dispositivo";

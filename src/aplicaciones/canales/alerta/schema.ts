@@ -1,10 +1,7 @@
-export interface IAlerta {
-  _id?: string;
-  deviceName: string;
-  deveui: string;
-  alerta?: string;
+export interface IAlertaCanal {
+  fecha: string;
+  alerta?: "Error de lectura de sensor";
   frecuenciaReporte?: number;
   bateria?: number;
   cargando?: boolean;
-  fecha?: string;
 }

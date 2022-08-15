@@ -1,8 +1,7 @@
-export interface IAlertaCanal {
-  deveuiCentral: string;
+export interface IAlertaBombeoCanal {
+  fecha: string;
   numero: number;
   tipo: "Entrada" | "Salida";
-  fecha?: string;
   alerta:
     | "Nivel muy alto"
     | "Nivel muy bajo"

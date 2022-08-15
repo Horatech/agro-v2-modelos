@@ -1,5 +1,5 @@
 import { ICoordenadas } from "../../../auxiliares";
-import { IAlerta } from "../alerta";
+import { IAlerta } from "../../../generales";
 import { IReporte } from "../reporte";
 
 export interface IDispositivoCanal {
