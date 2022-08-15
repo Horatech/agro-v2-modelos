@@ -1,7 +1,7 @@
 ## _1-_ En package.json agregar la dependencia
 
 ```
-"modelos": "git://github.com/GPE-Sistemas/sdc-modelos.git"
+"modelos": "https://github.com/GPE-Sistemas/agro-v2-modelos.git"
 ```
 
 ## _2-_ En package.json agregar el script para actualizar
