@@ -2,6 +2,7 @@ import { TipoDispositivo } from "../tipoDispositivo";
 import { EstadoAlerta, IEstadoAlerta } from "./estado";
 
 export interface ICreateAlerta {
+  fecha?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;

@@ -9,7 +9,7 @@ export interface IAlerta {
   idEstablecimiento?: string;
   // Datos Autogenerados
   _id?: string;
-  fecha: string;
+  fecha?: string;
   activa: boolean;
   // Datos del dispositivo
   deviceName: string;
