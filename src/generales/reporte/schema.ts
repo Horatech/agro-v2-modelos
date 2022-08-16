@@ -8,7 +8,7 @@ export interface IReporte {
   idEstablecimiento?: string;
   // Datos Autogenerados
   _id?: string;
-  fecha: string;
+  fecha?: string;
   // Datos del dispositivo
   deviceName: string;
   deveui: string;
