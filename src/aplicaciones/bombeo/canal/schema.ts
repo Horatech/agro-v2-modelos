@@ -1,6 +1,7 @@
 import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
 
 export interface IBombeoCanal {
+  _id?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
