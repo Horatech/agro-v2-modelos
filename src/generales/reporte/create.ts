@@ -1,6 +1,7 @@
 import { TipoDispositivo } from "../tipoDispositivo";
 
 export interface ICreateReporte {
+  fecha?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
