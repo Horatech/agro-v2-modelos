@@ -1,10 +1,13 @@
-import { IDownlink } from "../../mensajesLora";
 import { ICliente } from "../cliente";
 import { IDispositivo } from "../dispositivo";
 import { IEstablecimiento } from "../establecimiento";
 import { IUsuario } from "../usuario";
 
-export interface IComando extends IDownlink {
+export interface IComando {
+  // Downlink
+  deveui: string;
+  puerto: number;
+  payload: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;

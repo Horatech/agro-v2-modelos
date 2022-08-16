@@ -1,6 +1,8 @@
-import { IDownlink } from "../../mensajesLora";
-
-export interface ICreateComando extends IDownlink {
+export interface ICreateComando {
+  // Downlink
+  deveui: string;
+  puerto: number;
+  payload: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
