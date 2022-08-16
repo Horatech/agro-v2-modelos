@@ -1,7 +1,7 @@
+import { IDispositivo } from "../generales";
+
 export interface IAck {
-  // aplicacion: string;
-  // idCliente: string;
-  // red: string;
+  dispositivo: IDispositivo;
   deveui: string;
   deviceName: string;
   acknowledged: boolean;

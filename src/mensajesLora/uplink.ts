@@ -1,9 +1,8 @@
+import { IDispositivo } from "../generales";
 import { IMetadatos } from "./metadatos";
 
 export interface IUplink {
-  // aplicacion: string;
-  // idCliente: string;
-  // red: string;
+  dispositivo: IDispositivo;
   deveui: string;
   deviceName?: string;
   puerto: number;
