@@ -10,6 +10,6 @@ export interface ICreateComando extends IDownlink {
   ejecutado?: boolean;
   error?: boolean;
   fallos?: number;
-  fCnt: string;
+  fCnt?: string;
   idUsuario?: string;
 }
