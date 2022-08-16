@@ -1,4 +1,4 @@
-import { IDispositivo } from "../../../generales";
+import { ICliente, IDispositivo, IEstablecimiento } from "../../../generales";
 
 export interface IComedero {
   _id?: string;
@@ -8,6 +8,8 @@ export interface IComedero {
   //
   nombre: string;
   idDispositivos: string[];
-  //
-  dispositivos: IDispositivo[];
+  // Virtuals
+  dispositivos?: IDispositivo[];
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
 }
