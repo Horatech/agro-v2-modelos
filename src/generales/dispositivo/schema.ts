@@ -5,6 +5,7 @@ import { IEstablecimiento } from "../establecimiento";
 import { ILoraServer } from "../loraServer";
 import { ILoteDispositivo } from "../loteDispositivo";
 import { IReporte } from "../reporte";
+import { ITipoDispositivo } from "../tipoDispositivo";
 import { TipoDispositivo } from "../tipoDispositivo/tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
@@ -40,4 +41,5 @@ export interface IDispositivo {
   loraServer?: ILoraServer;
   establecimiento?: IEstablecimiento;
   lote?: ILoteDispositivo;
+  tipoDispositivo2?: ITipoDispositivo;
 }
