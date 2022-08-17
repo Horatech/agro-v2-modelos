@@ -5,8 +5,10 @@ import { TipoDispositivo } from "../tipoDispositivo/tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
 export interface IUpdateDispositivo {
-  // Info de carga
+  // Tentant
   idCliente?: string;
+  idEstablecimiento?: string;
+  // Info de carga
   deveui?: string;
   deviceName?: string;
   appkey?: string;
