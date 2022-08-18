@@ -38,7 +38,7 @@ export interface IDispositivo {
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
+  tipoDispositivo?: ITipoDispositivo;
   lote?: ILoteDispositivo;
-  tipoDispositivo2?: ITipoDispositivo;
   loraServer?: ILoraServer;
 }
