@@ -1,3 +1,5 @@
+import { TipoDispositivo } from "../generales";
+
 export interface ISocketMessage {
   /**
    * Las entidad modificadas (clientes, usuarios, etc)
@@ -23,6 +25,7 @@ export interface ISocketMessage {
    * El body del objeto creado/modificado/eliminado
    */
   body?: Record<string, any>;
+  tipoDispositivo?: TipoDispositivo;
   /**
    * Por que el usuario recibio el mensaje (para debug mas que nada)
    */
