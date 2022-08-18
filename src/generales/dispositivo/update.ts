@@ -13,7 +13,7 @@ export interface IUpdateDispositivo {
   appkey?: string;
   conectividad?: TipoConectividad;
   idTipoDispositivo?: string;
-  idLote?: string;
+  idLoteDispositivo?: string;
   idLoraServer?: string;
   // Info de comunicacion
   snr?: number;

@@ -21,7 +21,7 @@ export interface IDispositivo {
   appkey: string;
   conectividad: TipoConectividad;
   idTipoDispositivo: string;
-  idLote?: string;
+  idLoteDispositivo?: string;
   idLoraServer?: string;
   // Info de comunicacion
   snr?: number;
@@ -39,6 +39,6 @@ export interface IDispositivo {
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
   tipoDispositivo?: ITipoDispositivo;
-  lote?: ILoteDispositivo;
+  loteDispositivo?: ILoteDispositivo;
   loraServer?: ILoraServer;
 }
