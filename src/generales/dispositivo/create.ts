@@ -1,7 +1,6 @@
 import { ICoordenadas } from "../../auxiliares";
 import { IAlerta } from "../alerta";
 import { IReporte } from "../reporte";
-import { TipoDispositivo } from "../tipoDispositivo/tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
 export interface ICreateDispositivo {
@@ -12,9 +11,9 @@ export interface ICreateDispositivo {
   deveui: string;
   deviceName: string;
   appkey: string;
-  idLote: string;
-  tipoDispositivo: TipoDispositivo;
   conectividad: TipoConectividad;
+  idTipoDispositivo: string;
+  idLote: string;
   idLoraServer?: string;
   // Info de comunicacion
   snr?: number;
