@@ -15,6 +15,7 @@ export interface IUpdateDispositivo {
   idTipoDispositivo?: string;
   idLoteDispositivo?: string;
   idLoraServer?: string;
+  deviceProfileID?: string;
   // Info de comunicacion
   snr?: number;
   rssi?: number;
