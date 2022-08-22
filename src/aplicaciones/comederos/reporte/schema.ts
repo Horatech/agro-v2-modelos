@@ -4,6 +4,6 @@ export interface IReporteComedero {
   bateria: number;
   cargando: boolean;
   // Datos calculados
-  distancia: number;
-  porcentaje: number;
+  distancia?: number;
+  porcentaje?: number;
 }
