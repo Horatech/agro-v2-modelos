@@ -1,5 +1,6 @@
 export interface IReporteComedero {
   distanciaLeida: number;
+  porcentajeLeido: number;
   frecuenciaReporte: number;
   bateria: number;
   cargando: boolean;
