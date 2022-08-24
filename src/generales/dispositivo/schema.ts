@@ -30,6 +30,7 @@ export interface IDispositivo {
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
+  tipo?: string;
   // Otra info
   ubicacion?: ICoordenadas;
   // Info especifica de cada tipo de dispositivo
