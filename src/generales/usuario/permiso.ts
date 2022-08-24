@@ -8,8 +8,14 @@ export const NIVELES_PERMISO: NivelPermiso[] = [
   "Establecimiento",
 ];
 
-export type Rol = "Admin" | "Lectura" | "Escritura";
-export const ROLES: Rol[] = ["Admin", "Lectura", "Escritura"];
+export type Rol = "Admin" | "Lectura" | "Escritura" | "Dueño" | "Tecnico";
+export const ROLES: Rol[] = [
+  "Admin",
+  "Lectura",
+  "Escritura",
+  "Dueño",
+  "Tecnico",
+];
 
 export interface IPermiso {
   nivel: NivelPermiso;
