@@ -7,4 +7,5 @@ export interface IReporteComedero {
   // Datos calculados
   distancia?: number;
   porcentaje?: number;
+  tipo?: string;
 }
