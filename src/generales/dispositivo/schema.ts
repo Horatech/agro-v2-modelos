@@ -5,7 +5,7 @@ import { IEstablecimiento } from "../establecimiento";
 import { ILoraServer } from "../loraServer";
 import { ILoteDispositivo } from "../loteDispositivo";
 import { IReporte } from "../reporte";
-import { ITipoDispositivo } from "../tipoDispositivo";
+import { ITipoDispositivo, TipoDispositivo } from "../tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
 export interface IDispositivo {
@@ -30,7 +30,7 @@ export interface IDispositivo {
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
-  tipo?: string;
+  tipo?: TipoDispositivo;
   // Otra info
   ubicacion?: ICoordenadas;
   // Info especifica de cada tipo de dispositivo

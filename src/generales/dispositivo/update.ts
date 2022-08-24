@@ -1,6 +1,7 @@
 import { ICoordenadas } from "../../auxiliares";
 import { IAlerta } from "../alerta";
 import { IReporte } from "../reporte";
+import { TipoDispositivo } from "../tipoDispositivo";
 import { TipoConectividad } from "./conectividad";
 
 export interface IUpdateDispositivo {
@@ -22,7 +23,7 @@ export interface IUpdateDispositivo {
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
-  tipo?: string;
+  tipo?: TipoDispositivo;
   // Otra info
   ubicacion?: ICoordenadas;
   // Info especifica de cada tipo de dispositivo
