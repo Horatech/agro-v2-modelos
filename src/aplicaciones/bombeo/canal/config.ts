@@ -1,7 +1,7 @@
 export interface IConfigCanal {
-  deveui: string;
+  deveui?: string;
   //
-  numero: number;
+  numero?: number;
   tipo?: "Entrada" | "Salida";
   cota?: number;
   cotaMinMm?: number;

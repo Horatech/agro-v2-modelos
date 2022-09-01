@@ -1,4 +1,5 @@
 import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
+import { IConfigCanal } from "./config";
 
 export interface IBombeoCanal {
   _id?: string;
@@ -13,6 +14,7 @@ export interface IBombeoCanal {
   cotaMinMm?: number;
   cotaMaxMm?: number;
   frecReporte?: number;
+  configuracion?: IConfigCanal;
   ultimoReporte?: IReporte;
   // Virtual
   cliente?: ICliente;
