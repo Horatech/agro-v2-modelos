@@ -1,4 +1,5 @@
 import { IReporte } from "../../../generales";
+import { IConfigCanal } from "./config";
 
 export interface IUpdateBombeoCanal {
   // Tentant
@@ -12,5 +13,6 @@ export interface IUpdateBombeoCanal {
   cotaMinMm?: number;
   cotaMaxMm?: number;
   frecReporte?: number;
+  configuracion?: IConfigCanal;
   ultimoReporte?: IReporte;
 }
