@@ -1,4 +1,9 @@
-import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
+import {
+  ICliente,
+  IDispositivo,
+  IEstablecimiento,
+  IReporte,
+} from "../../../generales";
 import { IConfigCanal } from "./config";
 
 export interface IBombeoCanal {
@@ -19,4 +24,5 @@ export interface IBombeoCanal {
   // Virtual
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
+  dispositivo?: IDispositivo;
 }

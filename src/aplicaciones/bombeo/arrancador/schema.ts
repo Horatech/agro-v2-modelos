@@ -1,4 +1,9 @@
-import { ICliente, IEstablecimiento, IReporte } from "../../../generales";
+import {
+  ICliente,
+  IDispositivo,
+  IEstablecimiento,
+  IReporte,
+} from "../../../generales";
 
 export interface IBombeoArrancador {
   _id?: string;
@@ -16,4 +21,5 @@ export interface IBombeoArrancador {
   // Virtual
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
+  dispositivo?: IDispositivo;
 }
