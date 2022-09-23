@@ -6,6 +6,7 @@ import {
 } from "../../../generales";
 
 export interface IAnimal {
+  _id?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
