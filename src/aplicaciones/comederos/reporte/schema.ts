@@ -4,6 +4,7 @@ export interface IReporteComedero {
   frecuenciaReporte: number;
   bateria: number;
   cargando: boolean;
+  calidad: number;
   // Datos calculados
   distancia?: number;
   porcentaje?: number;
