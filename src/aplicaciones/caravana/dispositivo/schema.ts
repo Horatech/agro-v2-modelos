@@ -1,4 +1,5 @@
 export interface IDispositivoCaravana {
+  asignado?: boolean;
   acelerometro?: {
     escala?: string;
     frecuencia?: number;
