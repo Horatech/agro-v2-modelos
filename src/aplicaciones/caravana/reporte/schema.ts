@@ -3,6 +3,6 @@ import { ICoordenadas } from "../../../auxiliares";
 export interface IReporteCaravana {
   ubicacion: ICoordenadas;
   idAnimal?: string;
-  dentroDelCorral?: boolean;
+  dentroDelLote?: boolean;
   dentroDelEstablecimiento?: boolean;
 }
