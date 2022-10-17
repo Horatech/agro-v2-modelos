@@ -1,5 +1,5 @@
 interface INivel {
-  litros: number;
+  m3: number;
   porcentaje: number;
 }
 
