@@ -4,6 +4,7 @@ interface INivel {
 }
 
 export interface IDispositivoRepresa {
+  nombre?: string;
   igm?: number;
   niveles?: {
     [altura: number]: INivel;
