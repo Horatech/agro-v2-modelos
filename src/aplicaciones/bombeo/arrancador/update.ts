@@ -9,7 +9,10 @@ export interface IUpdateBombeoArrancador {
   numero?: number;
   canalEntrada?: number;
   canalSalida?: number;
-  estadoActual?: "Encendido" | "Apagado";
+  estadoActual?: "Encendido" | "Apagado" | "Manual";
   fechaUltimaComunicacion?: string;
   ultimoReporte?: IReporte;
+  tipo?: "Arrancador" | "Variador";
+  modelo?: string;
+  velocidad?: number;
 }

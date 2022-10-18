@@ -15,9 +15,12 @@ export interface IBombeoArrancador {
   numero: number;
   canalEntrada?: number;
   canalSalida?: number;
-  estadoActual?: "Encendido" | "Apagado";
+  estadoActual?: "Encendido" | "Apagado" | "Manual";
   fechaUltimaComunicacion?: string;
   ultimoReporte?: IReporte;
+  tipo?: "Arrancador" | "Variador";
+  modelo?: string;
+  velocidad?: number;
   // Virtual
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;

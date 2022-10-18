@@ -1,25 +1,29 @@
 export interface IReporteBombeoArrancador {
+  // Campos Comunes
   numero: number;
-  estado: "Encendido" | "Apagado";
-  corrienteAlimentacion?: number;
+  modelo?: string;
+  tipo?: "Arrancador" | "Variador";
+  estado: "Encendido" | "Apagado" | "Manual";
   corrienteMotor?: number;
-  tensionAlimentacion?: number;
-  estadoSSW?: number;
   factorPotencia?: number;
   potenciaSalida?: number;
-  estadoEntradasDigitales?: number;
-  estadoSalidasReles?: number;
   errorActualSSW?: number;
   alarmaActualSSW?: number;
   versionFirmware?: number;
+  horasEnergizado?: number;
+  horasHabilitado?: number;
+  horasKwh?: number;
+  // Solo Arrancador
+  corrienteAlimentacion?: number;
+  tensionAlimentacion?: number;
+  estadoSSW?: number;
   corrienteFaseR?: number;
   corrienteFaseS?: number;
   corrienteFaseT?: number;
   tensionFaseRS?: number;
   tensionFaseST?: number;
   tensionFaseTR?: number;
-  horasEnergizado?: number;
-  horasHabilitado?: number;
-  horasKwh?: number;
   horasMwh?: number;
+  // Solo Variador
+  velocidad?: number;
 }
