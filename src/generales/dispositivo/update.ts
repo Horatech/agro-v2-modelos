@@ -17,15 +17,16 @@ export interface IUpdateDispositivo {
   idLoteDispositivo?: string;
   idLoraServer?: string;
   deviceProfileID?: string;
+  tipo?: TipoDispositivo;
   // Info de comunicacion
   snr?: number;
   rssi?: number;
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
-  tipo?: TipoDispositivo;
   // Otra info
   ubicacion?: ICoordenadas;
+  firmware?: string;
   // Info especifica de cada tipo de dispositivo
   config?: Record<string, any>;
   ultimoReporte?: IReporte;

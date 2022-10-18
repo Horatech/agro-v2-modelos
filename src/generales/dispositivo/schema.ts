@@ -24,14 +24,15 @@ export interface IDispositivo {
   idLoteDispositivo?: string;
   idLoraServer?: string;
   deviceProfileID?: string;
+  tipo?: TipoDispositivo;
   // Info de comunicacion
   snr?: number;
   rssi?: number;
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
-  tipo?: TipoDispositivo;
   // Otra info
+  firmware?: string;
   ubicacion?: ICoordenadas;
   // Info especifica de cada tipo de dispositivo
   config?: Record<string, any>;
