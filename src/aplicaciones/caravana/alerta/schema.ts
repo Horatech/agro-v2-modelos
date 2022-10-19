@@ -9,5 +9,6 @@ export type TipoAlertaCaravana =
 
 export interface IAlertaCaravana {
   fecha: string;
+  idAnimal?: string;
   alerta?: TipoAlertaCaravana;
 }
