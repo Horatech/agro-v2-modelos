@@ -2,7 +2,6 @@ import { IReporte } from '../../../generales';
 import { IConfigCanal } from './config';
 
 export interface IUpdateBombeoCanal {
-  nombre?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;

@@ -8,7 +8,6 @@ import { IConfigCanal } from './config';
 
 export interface IBombeoCanal {
   _id?: string;
-  nombre?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;

@@ -3,10 +3,11 @@ import {
   IDispositivo,
   IEstablecimiento,
   IReporte,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface IBombeoArrancador {
   _id?: string;
+  nombre?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
@@ -15,10 +16,10 @@ export interface IBombeoArrancador {
   numero: number;
   canalEntrada?: number;
   canalSalida?: number;
-  estadoActual?: "Encendido" | "Apagado" | "Manual";
+  estadoActual?: 'Encendido' | 'Apagado' | 'Manual';
   fechaUltimaComunicacion?: string;
   ultimoReporte?: IReporte;
-  tipo?: "Arrancador" | "Variador";
+  tipo?: 'Arrancador' | 'Variador';
   modelo?: string;
   velocidad?: number;
   // Virtual
