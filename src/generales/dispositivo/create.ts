@@ -1,10 +1,12 @@
-import { ICoordenadas } from "../../auxiliares";
-import { IAlerta } from "../alerta";
-import { IReporte } from "../reporte";
-import { TipoDispositivo } from "../tipoDispositivo";
-import { TipoConectividad } from "./conectividad";
+import { ICoordenadas } from '../../auxiliares';
+import { IAlerta } from '../alerta';
+import { IReporte } from '../reporte';
+import { TipoDispositivo } from '../tipoDispositivo';
+import { TipoConectividad } from './conectividad';
 
 export interface ICreateDispositivo {
+  // Nombre útil para cada aplicación
+  nombre?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
