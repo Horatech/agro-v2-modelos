@@ -5,6 +5,7 @@ export interface IDispositivoCaravana {
   frecuenciaReporte?: number;
   adr?: boolean;
   dr?: number;
+  // Versión en aprtes
   vPrincipal?: number;
   vSecundaria?: number;
   vTerciaria?: number;
