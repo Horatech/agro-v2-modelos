@@ -5,7 +5,9 @@ export interface IDispositivoCaravana {
   frecuenciaReporte?: number;
   adr?: boolean;
   dr?: number;
-  ver?: number;
+  vPrincipal?: number;
+  vSecundaria?: number;
+  vTerciaria?: number;
   acelerometro?: {
     escala?: string;
     frecuencia?: number;
