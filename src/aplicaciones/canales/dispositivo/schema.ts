@@ -1,11 +1,7 @@
 export interface IDispositivoCanal {
+  // carga de usuario
   igm?: number;
-  ultimaComunicacion?: {
-    fecha: string;
-    bateria: number;
-    cargando: boolean;
-    frecuenciaReporte: number;
-  };
+  // Config reportada
   encendida?: boolean;
   intervaloDeLectura?: number;
   adr?: boolean;
@@ -16,4 +12,9 @@ export interface IDispositivoCanal {
   vMajor?: number;
   vMinor?: number;
   vPatch?: number;
+  // Ultima comunicación
+  ultimaComunicacion?: string;
+  bateria?: number;
+  cargando?: boolean;
+  frecuenciaReporte?: number;
 }
