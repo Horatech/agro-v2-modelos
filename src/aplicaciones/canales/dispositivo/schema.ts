@@ -3,6 +3,7 @@ export interface IDispositivoCanal {
   igm?: number;
   // Config reportada
   encendida?: boolean;
+  // CUANTAS VECES REPORTA POR LORA
   intervaloDeLectura?: number;
   adr?: boolean;
   dr?: number;
@@ -16,5 +17,4 @@ export interface IDispositivoCanal {
   ultimaComunicacion?: string;
   bateria?: number;
   cargando?: boolean;
-  frecuenciaReporte?: number;
 }
