@@ -1,3 +1,5 @@
+import { TipoDispositivo } from '../..';
+
 export interface ICreateComando {
   // Downlink
   deveui: string;
@@ -14,4 +16,5 @@ export interface ICreateComando {
   fallos?: number;
   fCnt?: string;
   idUsuario?: string;
+  tipoDispositivo?: TipoDispositivo;
 }
