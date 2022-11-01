@@ -10,6 +10,7 @@ export interface IDispositivoCanal {
   muestrasPorLectura?: number;
   lecturasPorReporte?: number;
   promediarLecturas?: boolean;
+  mensajesConfirmados?: boolean;
   vMajor?: number;
   vMinor?: number;
   vPatch?: number;
