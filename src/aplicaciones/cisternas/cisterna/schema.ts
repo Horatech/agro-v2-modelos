@@ -1,4 +1,9 @@
-import { IDispositivo } from "../../../generales";
+import {
+  ICliente,
+  IDispositivo,
+  IEstablecimiento,
+  ILote,
+} from "../../../generales";
 
 export interface ICisterna {
   _id?: string;
@@ -11,6 +16,9 @@ export interface ICisterna {
   idsBomba?: string[];
   idsNivel?: string[];
   // Virtuals
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
+  lote?: ILote;
   bombas?: IDispositivo[];
   niveles?: IDispositivo[];
 }
