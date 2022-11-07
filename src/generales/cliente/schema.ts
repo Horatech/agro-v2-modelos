@@ -1,4 +1,5 @@
 import { TipoDispositivo } from "../tipoDispositivo";
+import { IImagenesCliente } from "./imagenes";
 
 export interface ICliente {
   _id: string;
@@ -6,4 +7,5 @@ export interface ICliente {
   fechaCreacion: string;
   nombre: string;
   tiposDispositivo: TipoDispositivo[];
+  imagenes?: IImagenesCliente[];
 }

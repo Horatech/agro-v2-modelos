@@ -1,6 +1,8 @@
 import { TipoDispositivo } from "../tipoDispositivo";
+import { IImagenesCliente } from "./imagenes";
 
 export interface ICreateCliente {
   nombre: string;
-  tiposDispositivo: TipoDispositivo[];
+  tiposDispositivo?: TipoDispositivo[];
+  imagenes?: IImagenesCliente[];
 }
