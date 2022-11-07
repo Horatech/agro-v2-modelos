@@ -7,7 +7,9 @@ export type TipoDispositivo =
   | "Estacion de Bombeo"
   | "Nivel de Comederos"
   | "Nivel de Canal"
-  | "Nivel de Represas";
+  | "Nivel de Represas"
+  | "Nivel de Cisterna"
+  | "Bomba de Cisterna";
 
 export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Caravana",
@@ -19,4 +21,6 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Nivel de Comederos",
   "Nivel de Canal",
   "Nivel de Represas",
+  "Nivel de Cisterna",
+  "Bomba de Cisterna",
 ];
