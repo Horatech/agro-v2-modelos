@@ -7,5 +7,5 @@ export interface ICliente {
   fechaCreacion: string;
   nombre: string;
   tiposDispositivo: TipoDispositivo[];
-  imagenes?: IImagenesCliente[];
+  imagenes?: IImagenesCliente;
 }

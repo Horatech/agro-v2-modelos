@@ -5,5 +5,5 @@ export interface IUpdateCliente {
   activo?: boolean;
   nombre?: string;
   tiposDispositivo?: TipoDispositivo[];
-  imagenes?: IImagenesCliente[];
+  imagenes?: IImagenesCliente;
 }
