@@ -5,5 +5,8 @@ export interface IReporteNivelCisterna {
 }
 
 export interface IReporteBombaCisterna {
+  caudalAcumulado?: number;
   encendida?: boolean;
+  hayFalla?: boolean;
+  hay220?: boolean;
 }
