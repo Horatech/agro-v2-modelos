@@ -3,14 +3,14 @@ export interface IDispositivoNivelCisterna {
   asignado?: boolean;
   nivelDeInstalacion?: number;
   // Config del dispositivo
-  intervaloDeLectura?: number;
   adr?: boolean;
   dr?: number;
   encendida?: boolean;
-  intevaloDeLectura?: number;
+  intervaloDeLectura?: number;
+  mensajesConfirmados?: boolean;
+  muestrasPorLectura?: number;
   lecturasPorReporte?: number;
   promediarLecturas?: boolean;
-  mensajesConfirmados?: boolean;
   vMajor?: number;
   vMinor?: number;
   vPatch?: number;
