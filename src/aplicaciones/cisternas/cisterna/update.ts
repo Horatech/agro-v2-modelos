@@ -7,4 +7,6 @@ export interface IUpdateCisterna {
   nombre?: string;
   idsBomba?: string[];
   idsNivel?: string[];
+  alturaMm?: number;
+  volumenM3?: number;
 }

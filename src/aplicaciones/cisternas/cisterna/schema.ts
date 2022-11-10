@@ -15,6 +15,8 @@ export interface ICisterna {
   nombre?: string;
   idsBomba?: string[];
   idsNivel?: string[];
+  alturaMm?: number;
+  volumenM3?: number;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
