@@ -38,6 +38,7 @@ export interface IUplinkChirpstack {
   fPort: number;
   data: string;
   objectJSON: string;
+  confirmedUplink: boolean;
   tags: {
     [key: string]: string;
   };

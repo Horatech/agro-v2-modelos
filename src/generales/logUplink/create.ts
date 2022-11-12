@@ -11,6 +11,7 @@ export interface ICreateLogUplink {
   fCnt?: string;
   rssi?: number;
   snr?: number;
+  confirmedUplink?: boolean;
   timestamp?: string;
   tipoDispositivo?: TipoDispositivo;
   idCliente?: string;

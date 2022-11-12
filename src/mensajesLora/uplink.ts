@@ -11,5 +11,6 @@ export interface IUplink {
   adr?: boolean;
   dr?: number;
   fCnt: string;
+  confirmedUplink?: boolean;
   tags?: { [key: string]: string };
 }
