@@ -11,3 +11,4 @@ export * from "./tipoDispositivo";
 export * from "./usuario";
 export * from "./logUplink";
 export * from "./apiKey";
+export * from "./mensajeLora";
