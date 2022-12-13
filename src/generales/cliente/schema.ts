@@ -1,6 +1,5 @@
 import { TipoDispositivo } from "../tipoDispositivo";
 import { IImagenesCliente } from "./imagenes";
-import { IAPIkey } from "../apiKey/schema";
 
 export interface ICliente {
   _id: string;
@@ -9,5 +8,4 @@ export interface ICliente {
   nombre: string;
   tiposDispositivo: TipoDispositivo[];
   imagenes?: IImagenesCliente;
-  key: IAPIkey[];
 }
