@@ -1,9 +1,10 @@
+import { ICoordenadas } from '../../../auxiliares';
 import {
   ICliente,
   IDispositivo,
   IEstablecimiento,
   ILote,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface ICisterna {
   _id?: string;
@@ -17,6 +18,7 @@ export interface ICisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
+  ubicación?: ICoordenadas;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;

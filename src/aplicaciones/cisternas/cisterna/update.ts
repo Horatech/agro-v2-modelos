@@ -1,3 +1,5 @@
+import { ICoordenadas } from '../../../auxiliares';
+
 export interface IUpdateCisterna {
   // Tentant
   idCliente?: string;
@@ -9,4 +11,5 @@ export interface IUpdateCisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
+  ubicación?: ICoordenadas;
 }
