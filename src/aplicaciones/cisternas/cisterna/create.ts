@@ -11,5 +11,5 @@ export interface ICreateCisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
-  ubicación?: ICoordenadas;
+  ubicacion?: ICoordenadas;
 }

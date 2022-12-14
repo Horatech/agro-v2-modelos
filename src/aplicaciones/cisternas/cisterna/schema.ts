@@ -18,7 +18,7 @@ export interface ICisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
-  ubicación?: ICoordenadas;
+  ubicacion?: ICoordenadas;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
