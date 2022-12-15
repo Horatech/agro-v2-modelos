@@ -3,4 +3,5 @@ export interface IAPIkey {
   fechaCreacion?: string;
   fechaExpiracion?: string;
   key: string;
+  idCliente: string;
 }
