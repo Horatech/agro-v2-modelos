@@ -1,7 +1,6 @@
-export interface IAPIkey {
+export interface IGetApiKey {
   apiName: string;
   fechaCreacion?: string;
   fechaExpiracion?: string;
-  key: string;
   idCliente: string;
 }
