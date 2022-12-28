@@ -1,14 +1,15 @@
-import { IReporte } from "../../../generales";
-import { IConfigCanal } from "./config";
+import { Color, IReporte } from '../../../generales';
+import { IConfigCanal } from './config';
 
 export interface ICreateBombeoCanal {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
+  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
   //
   deveuiCentral: string;
   numero: number;
-  tipo?: "Entrada" | "Salida";
+  tipo?: 'Entrada' | 'Salida';
   cota?: number;
   cotaMinMm?: number;
   cotaMaxMm?: number;

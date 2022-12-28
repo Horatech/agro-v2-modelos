@@ -1,4 +1,5 @@
 import {
+  Color,
   ICliente,
   IDispositivo,
   IEstablecimiento,
@@ -11,6 +12,7 @@ export interface IBombeoCanal {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
+  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
   //
   deveuiCentral: string;
   numero: number;

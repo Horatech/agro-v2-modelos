@@ -1,10 +1,11 @@
-import { IReporte } from '../../../generales';
+import { Color, IReporte } from '../../../generales';
 import { IConfigCanal } from './config';
 
 export interface IUpdateBombeoCanal {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
+  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
   //
   deveuiCentral?: string;
   numero?: number;
