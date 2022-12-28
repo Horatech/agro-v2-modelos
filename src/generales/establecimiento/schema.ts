@@ -1,5 +1,5 @@
-import { IUbicacion } from "../../auxiliares";
-import { ICliente } from "../cliente";
+import { IUbicacion } from '../../auxiliares';
+import { ICliente } from '../cliente';
 
 export interface IEstablecimiento {
   _id: string;
@@ -7,6 +7,7 @@ export interface IEstablecimiento {
   ubicacion?: IUbicacion[];
   idCliente: string;
   fechaCreacion: string;
+  configuraciones?: { colorLinea: string; colorRelleno: string };
   // Populate
   cliente?: ICliente;
 }

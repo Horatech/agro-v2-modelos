@@ -2,6 +2,12 @@ export interface IUpdateAnimal {
   // Tentant
   idEstablecimiento?: string;
   idLote?: string;
+  configuraciones?: {
+    colorDentro: string;
+    colorFueraLote: string;
+    colorFueraEst: string;
+    colorError: string;
+  };
   //
   activo?: boolean;
   fechaBaja?: string;

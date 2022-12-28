@@ -3,6 +3,12 @@ export interface ICreateAnimal {
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
+  configuraciones?: {
+    colorDentro: string;
+    colorFueraLote: string;
+    colorFueraEst: string;
+    colorError: string;
+  };
   // Info del animal
   identificacionOficial?: string;
   fechaNacimiento?: string;

@@ -4,6 +4,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   ILote,
+  Semaforo,
 } from '../../../generales';
 
 export interface ICisterna {
@@ -12,6 +13,7 @@ export interface ICisterna {
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
+  configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
   // Info
   nombre?: string;
   idsBomba?: string[];
