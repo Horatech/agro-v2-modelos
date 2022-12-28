@@ -3,7 +3,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   ILote,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface IAnimal {
   _id?: string;
@@ -11,6 +11,12 @@ export interface IAnimal {
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
+  configuraciones?: {
+    colorDentro: string;
+    colorFueraLote: string;
+    colorFueraEst: string;
+    colorError: string;
+  };
   //
   activo?: boolean;
   fechaCreacion?: string;

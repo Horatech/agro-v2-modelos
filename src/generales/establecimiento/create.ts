@@ -1,7 +1,8 @@
-import { IUbicacion } from "../../auxiliares";
+import { IUbicacion } from '../../auxiliares';
 
 export interface ICreateEstablecimiento {
   nombre: string;
   ubicacion?: IUbicacion[];
   idCliente?: string;
+  configuraciones?: { colorLinea: string; colorRelleno: string };
 }
