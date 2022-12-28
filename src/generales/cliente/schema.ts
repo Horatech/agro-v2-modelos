@@ -20,8 +20,8 @@ export interface Configuraciones {
     colorFueraEst: string;
     colorError: string;
   };
-  canal?: { colorIcono: string; coloresNivel: string[] };
-  comederos?: { colorIcono: string; coloresNivel: string[] };
+  canal?: { colorIcono: string; coloresNivel: Color[] };
+  comederos?: { colorIcono: string; coloresNivel: Color[] };
   cisterna?: { colorIcono: string; coloresNivel: Semaforo[] };
   sla?: { colorIcono: string; coloresNivel: Semaforo[] };
   bombeo?: { colorIcono: string; colorIconoAlerta: string };
@@ -32,4 +32,9 @@ export interface Semaforo {
   valorHasta: number;
   color: string;
   etiqueta?: string;
+}
+
+export interface Color {
+  nombre: string;
+  color: string;
 }
