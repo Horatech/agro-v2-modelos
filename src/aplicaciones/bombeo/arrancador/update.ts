@@ -5,6 +5,7 @@ export interface IUpdateBombeoArrancador {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
+  configuraciones?: { colorIcono: string; colorIconoAlerta: string };
   //
   deveuiCentral?: string;
   numero?: number;
