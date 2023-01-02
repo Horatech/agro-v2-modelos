@@ -1,4 +1,4 @@
-export interface IReporteEstacionClima {
+export interface IReporteEstacionMeteorologica {
   numeroMensaje: number;
   // Datos Reportados
   temperatura?: number;
