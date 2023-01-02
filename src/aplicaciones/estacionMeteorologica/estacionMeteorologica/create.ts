@@ -5,7 +5,6 @@ export interface ICreateEstacionMeteorologica {
   idEstablecimiento?: string;
   idLote?: string;
   //
-  fechaCreacion?: string;
   idDispositivo?: string;
   nombre?: string;
   descripcion?: string;
@@ -13,6 +12,8 @@ export interface ICreateEstacionMeteorologica {
   ubicacion?: IUbicacionV2;
 
   //
+  ultimaComunicacion?: string;
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }
