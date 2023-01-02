@@ -10,6 +10,7 @@ export type TipoDispositivo =
   | "Nivel de Comederos"
   | "Nivel de Láminas de Agua"
   | "Nivel de Represas"
+  | "Pluviometro"
   | "Tracker de Silobolsa";
 
 export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
@@ -24,5 +25,6 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Nivel de Comederos",
   "Nivel de Láminas de Agua",
   "Nivel de Represas",
+  "Pluviometro",
   "Tracker de Silobolsa",
 ];
