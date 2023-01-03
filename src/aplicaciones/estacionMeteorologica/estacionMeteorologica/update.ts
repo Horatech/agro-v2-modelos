@@ -6,7 +6,7 @@ export interface IUpdateEstacionMeteorologica {
   idEstablecimiento?: string;
   idLote?: string;
   //
-  idDispositivo?: string;
+  deveui?: string;
   nombre?: string;
   descripcion?: string;
   modelo?: string;

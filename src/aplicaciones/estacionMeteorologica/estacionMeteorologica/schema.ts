@@ -16,7 +16,7 @@ export interface IEstacionMeteorologica {
   idLote?: string;
   //
   fechaCreacion?: string;
-  idDispositivo?: string;
+  deveui?: string;
   nombre?: string;
   descripcion?: string;
   modelo?: string;
