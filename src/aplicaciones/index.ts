@@ -6,4 +6,3 @@ export * from './comederos';
 export * from './estacionMeteorologica';
 export * from './represas';
 export * from './sla';
-export * from './laminas';
