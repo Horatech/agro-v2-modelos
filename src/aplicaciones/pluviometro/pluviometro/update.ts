@@ -7,6 +7,7 @@ export interface IUpdatePluviometro {
   //
   deveui?: string;
   nombre?: string;
+  modelo?: string;
   descripcion?: string;
   configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
   radioInfluencia?: number;
