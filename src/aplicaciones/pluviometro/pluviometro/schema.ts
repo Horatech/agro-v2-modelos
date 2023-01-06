@@ -1,3 +1,4 @@
+import { IUbicacionV2 } from "../../../auxiliares";
 import {
   IAlerta,
   ICliente,
@@ -19,6 +20,7 @@ export interface IPluviometro {
   descripcion?: string;
   configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
   radioInfluencia?: number;
+  ubicacion?: IUbicacionV2;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";

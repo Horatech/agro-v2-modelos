@@ -1,4 +1,4 @@
-import { IAlerta, IReporte, Semaforo } from "../../..";
+import { IAlerta, IReporte, IUbicacionV2, Semaforo } from "../../..";
 
 export interface ICreatePluviometro {
   idCliente?: string;
@@ -9,6 +9,7 @@ export interface ICreatePluviometro {
   descripcion?: string;
   configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
   radioInfluencia?: number;
+  ubicacion?: IUbicacionV2;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";

@@ -1,3 +1,4 @@
+import { IUbicacionV2 } from "../../../auxiliares";
 import { IAlerta, IReporte, Semaforo } from "../../../generales";
 
 export interface IUpdatePluviometro {
@@ -9,6 +10,7 @@ export interface IUpdatePluviometro {
   descripcion?: string;
   configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
   radioInfluencia?: number;
+  ubicacion?: IUbicacionV2;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";
