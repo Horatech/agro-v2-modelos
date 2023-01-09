@@ -4,6 +4,7 @@ export * from "./caravana";
 export * from "./cisternas";
 export * from "./comederos";
 export * from "./estacionMeteorologica";
+export * from "./freatimetro";
 export * from "./pluviometro";
 export * from "./represas";
 export * from "./sla";
