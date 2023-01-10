@@ -1,6 +1,9 @@
+import { Color } from '../../..';
+
 export interface IDispositivoComedero {
   // carga de usuario
   igm?: number;
+  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
   // Config reportada
   encendida?: boolean;
   // CUANTAS VECES REPORTA POR LORA
