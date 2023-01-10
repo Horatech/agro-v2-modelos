@@ -2,7 +2,7 @@ export interface IDispositivoNivelCisterna {
   // Config en la app
   asignado?: boolean;
   nivelDeInstalacion?: number;
-  unidadParaMostrar: 'mm' | 'cm' | 'm';
+  unidadParaMostrar?: 'mm' | 'cm' | 'm';
   // Config del dispositivo
   adr?: boolean;
   dr?: number;
