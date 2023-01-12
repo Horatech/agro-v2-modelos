@@ -8,3 +8,4 @@ export * from "./freatimetro";
 export * from "./pluviometro";
 export * from "./represas";
 export * from "./sla";
+export * from "./tracker";

@@ -4,15 +4,13 @@ export type TipoDispositivo =
   | "Estacion de Bombeo"
   | "Estacion Meteorologica"
   | "Freatimetro"
-  | "Humedad de Suelo"
-  | "Lanza de Silobolsa"
   | "Nivel de Canal"
   | "Nivel de Cisterna"
   | "Nivel de Comederos"
   | "Nivel de Láminas de Agua"
   | "Nivel de Represas"
   | "Pluviometro"
-  | "Tracker de Silobolsa";
+  | "Tracker";
 
 export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Bomba de Cisterna",
@@ -20,13 +18,11 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Estacion de Bombeo",
   "Estacion Meteorologica",
   "Freatimetro",
-  "Humedad de Suelo",
-  "Lanza de Silobolsa",
   "Nivel de Canal",
   "Nivel de Cisterna",
   "Nivel de Comederos",
   "Nivel de Láminas de Agua",
   "Nivel de Represas",
   "Pluviometro",
-  "Tracker de Silobolsa",
+  "Tracker",
 ];
