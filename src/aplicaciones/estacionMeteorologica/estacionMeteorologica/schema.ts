@@ -1,4 +1,4 @@
-import { IUbicacionV2 } from "../../../auxiliares";
+import { IUbicacionV2 } from '../../../auxiliares';
 import {
   IAlerta,
   ICliente,
@@ -6,7 +6,7 @@ import {
   IEstablecimiento,
   ILote,
   IReporte,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface IEstacionMeteorologica {
   _id?: string;
@@ -21,10 +21,11 @@ export interface IEstacionMeteorologica {
   descripcion?: string;
   modelo?: string;
   ubicacion?: IUbicacionV2;
+  configuraciones?: { colorIcono: string; colorAlerta: string };
 
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 

@@ -1,5 +1,5 @@
-import { IUbicacionV2 } from "../../../auxiliares";
-import { IAlerta, IReporte } from "../../../generales";
+import { IUbicacionV2 } from '../../../auxiliares';
+import { IAlerta, IReporte } from '../../../generales';
 
 export interface IUpdateEstacionMeteorologica {
   idCliente?: string;
@@ -11,10 +11,11 @@ export interface IUpdateEstacionMeteorologica {
   descripcion?: string;
   modelo?: string;
   ubicacion?: IUbicacionV2;
+  configuraciones?: { colorIcono: string; colorAlerta: string };
 
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

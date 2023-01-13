@@ -25,6 +25,9 @@ export interface Configuraciones {
   cisterna?: { colorIcono: string; coloresNivel: Semaforo[] };
   sla?: { colorIcono: string; coloresNivel: Semaforo[] };
   bombeo?: { colorIcono: string; colorIconoAlerta: string };
+  estacionMetereologica?: { colorIcono: string; colorAlerta: string };
+  featrimetro?: { colorIcono: string; coloresNivel: Semaforo[] };
+  pluviometro?: { colorIcono: string; coloresNivel: Semaforo[] };
 }
 
 export interface Semaforo {
