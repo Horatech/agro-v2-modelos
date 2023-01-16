@@ -4,7 +4,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   IReporte,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface ITracker {
   _id?: string;
@@ -16,10 +16,10 @@ export interface ITracker {
   deveui?: string;
   nombre?: string;
   modelo?: string;
-  configuraciones?: { colorIcono: string };
+  configuraciones?: { colorIcono: string | null };
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

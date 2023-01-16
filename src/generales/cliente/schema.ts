@@ -31,6 +31,7 @@ export interface Configuraciones {
   };
   featrimetro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
   pluviometro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  tracker?: { colorIcono: string | null };
 }
 
 export interface Semaforo {

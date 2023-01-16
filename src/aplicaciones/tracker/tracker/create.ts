@@ -1,4 +1,4 @@
-import { IAlerta, IReporte } from "../../..";
+import { IAlerta, IReporte } from '../../..';
 
 export interface ICreateTracker {
   idCliente?: string;
@@ -7,10 +7,10 @@ export interface ICreateTracker {
   deveui?: string;
   nombre?: string;
   modelo?: string;
-  configuraciones?: { colorIcono: string };
+  configuraciones?: { colorIcono: string | null };
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }
