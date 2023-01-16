@@ -6,7 +6,10 @@ export interface IUpdateCisterna {
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
-  configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
+  configuraciones?: {
+    colorIcono: string | null;
+    coloresNivel: Semaforo[] | null;
+  };
   // Info
   nombre?: string;
   idsBomba?: string[];

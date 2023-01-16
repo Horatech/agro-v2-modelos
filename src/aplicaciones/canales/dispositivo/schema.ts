@@ -3,7 +3,7 @@ import { Color } from '../../../generales';
 export interface IDispositivoCanal {
   // carga de usuario
   igm?: number;
-  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
+  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
   // Config reportada
   encendida?: boolean;
   // CUANTAS VECES REPORTA POR LORA

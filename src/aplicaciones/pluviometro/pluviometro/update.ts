@@ -1,5 +1,5 @@
-import { IUbicacionV2 } from "../../../auxiliares";
-import { IAlerta, IReporte, Semaforo } from "../../../generales";
+import { IUbicacionV2 } from '../../../auxiliares';
+import { IAlerta, IReporte, Semaforo } from '../../../generales';
 
 export interface IUpdatePluviometro {
   idCliente?: string;
@@ -9,12 +9,15 @@ export interface IUpdatePluviometro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
+  configuraciones?: {
+    colorIcono: string | null;
+    coloresNivel: Semaforo[] | null;
+  };
   radioInfluencia?: number;
   ubicacion?: IUbicacionV2;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

@@ -3,10 +3,10 @@ export interface IUpdateAnimal {
   idEstablecimiento?: string;
   idLote?: string;
   configuraciones?: {
-    colorDentro: string;
-    colorFueraLote: string;
-    colorFueraEst: string;
-    colorError: string;
+    colorDentro: string | null;
+    colorFueraLote: string | null;
+    colorFueraEst: string | null;
+    colorError: string | null;
   };
   //
   activo?: boolean;

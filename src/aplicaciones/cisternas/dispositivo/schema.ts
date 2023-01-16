@@ -1,9 +1,15 @@
+import { Semaforo } from '../../../generales';
+
 export interface IDispositivoNivelCisterna {
   // Config en la app
   asignado?: boolean;
   nivelDeInstalacion?: number;
   unidadParaMostrar?: 'mm' | 'cm' | 'm';
   // Config del dispositivo
+  configuraciones?: {
+    colorIcono: string | null;
+    coloresNivel: Semaforo[] | null;
+  };
   adr?: boolean;
   dr?: number;
   encendida?: boolean;

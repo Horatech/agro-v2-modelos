@@ -12,22 +12,25 @@ export interface ICliente {
 }
 
 export interface Configuraciones {
-  establecimientos?: { colorLinea: string; colorRelleno: string };
-  lotes?: { colorLinea: string; colorRelleno: string };
+  establecimientos?: { colorLinea: string | null; colorRelleno: string | null };
+  lotes?: { colorLinea: string | null; colorRelleno: string | null };
   animales?: {
-    colorDentro: string;
-    colorFueraLote: string;
-    colorFueraEst: string;
-    colorError: string;
+    colorDentro: string | null;
+    colorFueraLote: string | null;
+    colorFueraEst: string | null;
+    colorError: string | null;
   };
-  canal?: { colorIcono: string; coloresNivel: Color[] };
-  comederos?: { colorIcono: string; coloresNivel: Color[] };
-  cisterna?: { colorIcono: string; coloresNivel: Semaforo[] };
-  sla?: { colorIcono: string; coloresNivel: Semaforo[] };
-  bombeo?: { colorIcono: string; colorIconoAlerta: string };
-  estacionMetereologica?: { colorIcono: string; colorAlerta: string };
-  featrimetro?: { colorIcono: string; coloresNivel: Semaforo[] };
-  pluviometro?: { colorIcono: string; coloresNivel: Semaforo[] };
+  canal?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  comederos?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  cisterna?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  sla?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  bombeo?: { colorIcono: string | null; colorIconoAlerta: string | null };
+  estacionMetereologica?: {
+    colorIcono: string | null;
+    colorAlerta: string | null;
+  };
+  featrimetro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  pluviometro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
 }
 
 export interface Semaforo {
