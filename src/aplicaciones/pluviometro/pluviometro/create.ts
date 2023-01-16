@@ -8,7 +8,10 @@ export interface ICreatePluviometro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
+  configuraciones?: {
+    colorIcono: string | null;
+    coloresNivel: Semaforo[] | null;
+  };
   radioInfluencia?: number;
   ubicacion?: IUbicacionV2;
   //

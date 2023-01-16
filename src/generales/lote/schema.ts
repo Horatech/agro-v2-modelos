@@ -8,7 +8,7 @@ export interface ILote {
   ubicacion?: IUbicacion;
   idEstablecimiento: string;
   idCliente: string;
-  configuraciones?: { colorLinea: string; colorRelleno: string };
+  configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
   // Populate
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;

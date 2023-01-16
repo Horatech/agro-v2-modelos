@@ -7,7 +7,7 @@ export interface IEstablecimiento {
   ubicacion?: IUbicacion[];
   idCliente: string;
   fechaCreacion: string;
-  configuraciones?: { colorLinea: string; colorRelleno: string };
+  configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
   // Populate
   cliente?: ICliente;
 }

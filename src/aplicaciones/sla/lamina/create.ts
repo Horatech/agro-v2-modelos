@@ -8,7 +8,10 @@ export interface ICreateLamina {
   deveui?: string;
   nombre?: string;
   descripcion?: string;
-  configuraciones?: { colorIcono: string; coloresNivel: Semaforo[] };
+  configuraciones?: {
+    colorIcono: string | null;
+    coloresNivel: Semaforo[] | null;
+  };
   //
   ultimaComunicacion?: string;
   ultimoEstado?: 'Ok' | 'Alerta';

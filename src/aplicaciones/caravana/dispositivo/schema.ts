@@ -22,7 +22,13 @@ export interface IDispositivoCaravana {
   dr?: number;
   duracionAcelerometro?: number;
   sensibilidadAceletrometro?: number;
-  // Versión en aprtes
+  configuraciones?: {
+    colorDentro: string | null;
+    colorFueraLote: string | null;
+    colorFueraEst: string | null;
+    colorError: string | null;
+  };
+  // Versión en partes
   vMajor?: number;
   vMinor?: number;
   vPatch?: number;
