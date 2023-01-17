@@ -13,6 +13,7 @@ export interface IBombeoCanal {
   idCliente?: string;
   idEstablecimiento?: string;
   configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  asignado?: boolean;
   //
   deveuiCentral: string;
   numero: number;

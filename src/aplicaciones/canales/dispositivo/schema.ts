@@ -4,6 +4,7 @@ export interface IDispositivoCanal {
   // carga de usuario
   igm?: number;
   configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  asignado?: boolean;
   // Config reportada
   encendida?: boolean;
   // CUANTAS VECES REPORTA POR LORA
