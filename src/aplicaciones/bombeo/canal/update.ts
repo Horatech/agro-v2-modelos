@@ -6,6 +6,7 @@ export interface IUpdateBombeoCanal {
   idCliente?: string;
   idEstablecimiento?: string;
   configuraciones?: { colorIcono: string; coloresNivel: Color[] };
+  asignado?: boolean;
   //
   deveuiCentral?: string;
   numero?: number;
