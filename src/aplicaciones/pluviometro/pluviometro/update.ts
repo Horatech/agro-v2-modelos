@@ -14,7 +14,7 @@ export interface IUpdatePluviometro {
     coloresNivel: Semaforo[] | null;
   };
   radioInfluencia?: number;
-  ubicacion?: IUbicacionV2;
+  ubicacion?: IUbicacionV2 | null;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: 'Ok' | 'Alerta';
