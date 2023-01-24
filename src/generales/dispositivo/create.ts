@@ -28,7 +28,7 @@ export interface ICreateDispositivo {
   fechaUltimaComunicacion?: string;
   // Otra info
   firmware?: string;
-  ubicacion?: ICoordenadas;
+  ubicacion?: ICoordenadas | null;
   // Info especifica de cada tipo de dispositivo
   config?: Record<string, any>;
   ultimoReporte?: IReporte;
