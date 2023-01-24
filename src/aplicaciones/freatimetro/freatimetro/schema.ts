@@ -23,7 +23,7 @@ export interface IFreatimetro {
     colorIcono: string | null;
     coloresNivel: Semaforo[] | null;
   };
-  ubicacion?: IUbicacionV2;
+  ubicacion?: IUbicacionV2 | null;
   offset?: number;
   //
   ultimaComunicacion?: string;
