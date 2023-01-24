@@ -25,6 +25,7 @@ export interface IEstacionMeteorologica {
     colorIcono: string | null;
     colorAlerta: string | null;
   };
+  radioInfluencia?: number | null;
 
   //
   ultimaComunicacion?: string;
