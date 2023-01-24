@@ -20,7 +20,7 @@ export interface IEstacionMeteorologica {
   nombre?: string;
   descripcion?: string;
   modelo?: string;
-  ubicacion?: IUbicacionV2;
+  ubicacion?: IUbicacionV2 | null;
   configuraciones?: {
     colorIcono: string | null;
     colorAlerta: string | null;
