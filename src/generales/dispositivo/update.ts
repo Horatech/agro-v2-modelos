@@ -27,7 +27,7 @@ export interface IUpdateDispositivo {
   dr?: number;
   fechaUltimaComunicacion?: string;
   // Otra info
-  ubicacion?: ICoordenadas;
+  ubicacion?: ICoordenadas | null;
   firmware?: string;
   // Info especifica de cada tipo de dispositivo
   config?: Record<string, any>;
