@@ -1,7 +1,8 @@
 {
-  "name": "agro-v2-modelos",
-  "version": "0.0.1",
+  "name": "@GPE-Sistemas/agro-v2-modelos",
+  "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "UNLICENSED"
+  "author": "GPE Sistemas",
+  "license": "Private",
+  "repository": "https://github.com/GPE-Sistemas/agro-v2-modelos"
 }
