@@ -17,6 +17,7 @@ export interface IDispositivoComedero {
   vMajor?: number;
   vMinor?: number;
   vPatch?: number;
+  asignado?: boolean;
   // Ultima comunicación
   ultimaComunicacion?: string;
   bateria?: number;
