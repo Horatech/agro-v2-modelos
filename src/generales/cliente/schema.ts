@@ -1,5 +1,6 @@
-import { TipoDispositivo } from '../tipoDispositivo';
-import { IImagenesCliente } from './imagenes';
+import { TipoDispositivo } from "../tipoDispositivo";
+import { IImagenesCliente } from "./imagenes";
+import { IIntegracion } from "./integraciones";
 
 export interface ICliente {
   _id: string;
@@ -9,6 +10,7 @@ export interface ICliente {
   tiposDispositivo: TipoDispositivo[];
   imagenes?: IImagenesCliente;
   configuraciones?: Configuraciones;
+  integraciones?: IIntegracion[];
 }
 
 export interface Configuraciones {
