@@ -6,7 +6,7 @@ import {
   ILote,
   IReporte,
   Semaforo,
-} from '../../../generales';
+} from "../../../generales";
 
 export interface ILamina {
   _id?: string;
@@ -21,13 +21,14 @@ export interface ILamina {
   nombre?: string;
   descripcion?: string;
   configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
   };
   cota?: number;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

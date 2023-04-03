@@ -1,16 +1,20 @@
-import { Color, IReporte } from '../../../generales';
-import { IConfigCanal } from './config';
+import { Color, IReporte, Semaforo } from "../../../generales";
+import { IConfigCanal } from "./config";
 
 export interface IUpdateBombeoCanal {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
-  configuraciones?: { colorIcono: string; coloresNivel: Color[] };
+  configuraciones?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
   asignado?: boolean;
   //
   deveuiCentral?: string;
   numero?: number;
-  tipo?: 'Entrada' | 'Salida';
+  tipo?: "Entrada" | "Salida";
   cota?: number;
   cotaMinMm?: number;
   cotaMaxMm?: number;

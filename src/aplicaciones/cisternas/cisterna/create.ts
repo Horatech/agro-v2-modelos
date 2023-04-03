@@ -7,8 +7,9 @@ export interface ICreateCisterna {
   idEstablecimiento?: string;
   idLote?: string;
   configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
   };
   // Info
   nombre?: string;

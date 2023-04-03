@@ -1,5 +1,5 @@
-import { ICoordenadas } from '../../../auxiliares';
-import { Semaforo } from '../../../generales';
+import { ICoordenadas } from "../../../auxiliares";
+import { Semaforo } from "../../../generales";
 
 export interface IUpdateCisterna {
   // Tentant
@@ -7,8 +7,9 @@ export interface IUpdateCisterna {
   idEstablecimiento?: string;
   idLote?: string;
   configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
   };
   // Info
   nombre?: string;

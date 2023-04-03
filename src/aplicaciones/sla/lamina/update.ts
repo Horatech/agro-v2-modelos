@@ -1,4 +1,4 @@
-import { IAlerta, IReporte, Semaforo } from '../../../generales';
+import { IAlerta, IReporte, Semaforo } from "../../../generales";
 
 export interface IUpdateLamina {
   idCliente?: string;
@@ -9,12 +9,13 @@ export interface IUpdateLamina {
   nombre?: string;
   descripcion?: string;
   configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
   };
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

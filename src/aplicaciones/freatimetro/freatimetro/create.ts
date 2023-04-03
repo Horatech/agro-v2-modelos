@@ -1,4 +1,4 @@
-import { IAlerta, IReporte, IUbicacionV2, Semaforo } from '../../..';
+import { IAlerta, IReporte, IUbicacionV2, Semaforo } from "../../..";
 
 export interface ICreateFreatimetro {
   idCliente?: string;
@@ -9,14 +9,15 @@ export interface ICreateFreatimetro {
   modelo?: string;
   descripcion?: string;
   configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
   };
   ubicacion?: IUbicacionV2 | null;
   offset?: number;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }
