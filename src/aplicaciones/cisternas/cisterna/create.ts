@@ -1,5 +1,5 @@
-import { ICoordenadas } from '../../../auxiliares';
-import { Semaforo } from '../../../generales';
+import { ICoordenadas } from "../../../auxiliares";
+import { Semaforo } from "../../../generales";
 
 export interface ICreateCisterna {
   // Tentant
@@ -16,5 +16,5 @@ export interface ICreateCisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
-  ubicacion?: ICoordenadas;
+  ubicacion?: ICoordenadas | null;
 }

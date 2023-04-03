@@ -16,5 +16,5 @@ export interface IUpdateCisterna {
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
-  ubicacion?: ICoordenadas;
+  ubicacion?: ICoordenadas | null;
 }
