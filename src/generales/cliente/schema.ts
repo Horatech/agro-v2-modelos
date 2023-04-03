@@ -22,17 +22,41 @@ export interface Configuraciones {
     colorFueraEst: string | null;
     colorError: string | null;
   };
-  canal?: { colorIcono: string | null; coloresNivel: Color[] | null };
-  comederos?: { colorIcono: string | null; coloresNivel: Color[] | null };
-  cisterna?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  sla?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  canal?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
+  comederos?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
+  cisterna?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
+  sla?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
   bombeo?: { colorIcono: string | null; colorIconoAlerta: string | null };
   estacionMetereologica?: {
     colorIcono: string | null;
     colorAlerta: string | null;
   };
-  featrimetro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  pluviometro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
+  featrimetro?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
+  pluviometro?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
   tracker?: { colorIcono: string | null };
 }
 
