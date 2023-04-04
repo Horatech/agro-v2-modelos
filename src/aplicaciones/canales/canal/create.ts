@@ -1,4 +1,4 @@
-import { Color, IPolyline, Semaforo } from "../../..";
+import { ConfiguracionCanal, IPolyline, Semaforo } from "../../..";
 
 export interface ICreateCanal {
   // Tentant
@@ -15,11 +15,7 @@ export interface ICreateCanal {
   tipoDeCanal?: "Entrada" | "Salida";
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionCanal;
   // Polyline
   ubicacion?: IPolyline[];
 }

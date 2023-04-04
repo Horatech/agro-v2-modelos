@@ -1,5 +1,10 @@
 import { IUbicacionV2 } from "../../../auxiliares";
-import { IAlerta, IReporte, Semaforo } from "../../../generales";
+import {
+  ConfiguracionHumedadSuelo,
+  IAlerta,
+  IReporte,
+  Semaforo,
+} from "../../../generales";
 
 export interface IUpdateSensorHumedadSuelo {
   idCliente?: string;
@@ -9,11 +14,7 @@ export interface IUpdateSensorHumedadSuelo {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionHumedadSuelo;
   ubicacion?: IUbicacionV2 | null;
   //
   ultimaComunicacion?: string;

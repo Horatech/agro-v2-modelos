@@ -1,4 +1,4 @@
-import { IAlerta, IReporte } from '../../../generales';
+import { ConfiguracionTracker, IAlerta, IReporte } from "../../../generales";
 
 export interface IUpdateTracker {
   idCliente?: string;
@@ -7,10 +7,10 @@ export interface IUpdateTracker {
   deveui?: string;
   nombre?: string;
   modelo?: string;
-  configuraciones?: { colorIcono: string | null };
+  configuraciones?: ConfiguracionTracker;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

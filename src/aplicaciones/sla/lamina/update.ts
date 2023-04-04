@@ -1,4 +1,9 @@
-import { IAlerta, IReporte, Semaforo } from "../../../generales";
+import {
+  ConfiguracionLamina,
+  IAlerta,
+  IReporte,
+  Semaforo,
+} from "../../../generales";
 
 export interface IUpdateLamina {
   idCliente?: string;
@@ -8,11 +13,7 @@ export interface IUpdateLamina {
   deveui?: string;
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionLamina;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";

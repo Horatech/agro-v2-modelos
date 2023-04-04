@@ -1,14 +1,10 @@
-import { Color, Semaforo } from "../../../generales";
+import { ConfiguracionComederos } from "../../../generales";
 
 export interface IUpdateComedero {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionComederos;
   //
   nombre?: string;
   idDispositivos?: string[];

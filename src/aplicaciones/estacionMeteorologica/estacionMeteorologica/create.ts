@@ -1,4 +1,9 @@
-import { IAlerta, IReporte, IUbicacionV2 } from '../../..';
+import {
+  ConfiguracionEstacionMetereologica,
+  IAlerta,
+  IReporte,
+  IUbicacionV2,
+} from "../../..";
 
 export interface ICreateEstacionMeteorologica {
   idCliente?: string;
@@ -10,15 +15,12 @@ export interface ICreateEstacionMeteorologica {
   descripcion?: string;
   modelo?: string;
   ubicacion?: IUbicacionV2 | null;
-  configuraciones?: {
-    colorIcono: string | null;
-    colorAlerta: string | null;
-  };
+  configuraciones?: ConfiguracionEstacionMetereologica;
   radioInfluencia?: number | null;
 
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

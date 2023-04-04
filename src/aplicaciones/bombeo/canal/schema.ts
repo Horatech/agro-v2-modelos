@@ -1,5 +1,4 @@
 import {
-  Color,
   ICliente,
   IDispositivo,
   IEstablecimiento,

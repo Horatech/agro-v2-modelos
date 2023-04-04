@@ -1,9 +1,9 @@
-import { Color } from '../../../generales';
+import { ConfiguracionCanal } from "../../../generales";
 
 export interface IDispositivoCanal {
   // carga de usuario
   igm?: number;
-  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  configuraciones?: ConfiguracionCanal;
   asignado?: boolean;
   // Config reportada
   encendida?: boolean;

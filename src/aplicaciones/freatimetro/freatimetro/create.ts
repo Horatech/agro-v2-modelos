@@ -1,4 +1,10 @@
-import { IAlerta, IReporte, IUbicacionV2, Semaforo } from "../../..";
+import {
+  ConfiguracionFreatimetro,
+  IAlerta,
+  IReporte,
+  IUbicacionV2,
+  Semaforo,
+} from "../../..";
 
 export interface ICreateFreatimetro {
   idCliente?: string;
@@ -8,11 +14,7 @@ export interface ICreateFreatimetro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionFreatimetro;
   ubicacion?: IUbicacionV2 | null;
   offset?: number;
   //

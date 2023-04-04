@@ -1,16 +1,12 @@
 import { ICoordenadas } from "../../../auxiliares";
-import { Semaforo } from "../../../generales";
+import { ConfiguracionCisterna } from "../../../generales";
 
 export interface IUpdateCisterna {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionCisterna;
   // Info
   nombre?: string;
   idsBomba?: string[];

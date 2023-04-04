@@ -1,7 +1,7 @@
 import { TipoDispositivo } from "../tipoDispositivo";
+import { Configuraciones } from "./config";
 import { IImagenesCliente } from "./imagenes";
 import { IIntegracion } from "./integraciones";
-import { Configuraciones } from "./schema";
 
 export interface IUpdateCliente {
   activo?: boolean;

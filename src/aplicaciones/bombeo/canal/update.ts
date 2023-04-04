@@ -1,4 +1,4 @@
-import { Color, IReporte, Semaforo } from "../../../generales";
+import { IReporte, Semaforo } from "../../../generales";
 import { IConfigCanal } from "./config";
 
 export interface IUpdateBombeoCanal {

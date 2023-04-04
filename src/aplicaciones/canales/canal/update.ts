@@ -1,5 +1,10 @@
 import { IPolyline } from "../../../auxiliares";
-import { Color, IAlerta, IReporte, Semaforo } from "../../../generales";
+import {
+  ConfiguracionCanal,
+  IAlerta,
+  IReporte,
+  Semaforo,
+} from "../../../generales";
 
 export interface IUpdateCanal {
   // Tentant
@@ -16,11 +21,7 @@ export interface IUpdateCanal {
   tipoDeCanal?: "Entrada" | "Salida";
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionCanal;
   // Polyline
   ubicacion?: IPolyline[];
   //
