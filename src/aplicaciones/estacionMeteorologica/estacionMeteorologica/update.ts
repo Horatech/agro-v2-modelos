@@ -1,6 +1,6 @@
 import { IUbicacionV2 } from "../../../auxiliares";
 import {
-  ConfiguracionEstacionMetereologica,
+  ConfiguracionEstacionMeteorologica,
   IAlerta,
   IReporte,
 } from "../../../generales";
@@ -15,7 +15,7 @@ export interface IUpdateEstacionMeteorologica {
   descripcion?: string;
   modelo?: string;
   ubicacion?: IUbicacionV2 | null;
-  configuraciones?: ConfiguracionEstacionMetereologica;
+  configuraciones?: ConfiguracionEstacionMeteorologica;
   radioInfluencia?: number | null;
 
   //

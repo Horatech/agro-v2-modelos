@@ -1,5 +1,5 @@
 import {
-  ConfiguracionEstacionMetereologica,
+  ConfiguracionEstacionMeteorologica,
   IAlerta,
   IReporte,
   IUbicacionV2,
@@ -15,7 +15,7 @@ export interface ICreateEstacionMeteorologica {
   descripcion?: string;
   modelo?: string;
   ubicacion?: IUbicacionV2 | null;
-  configuraciones?: ConfiguracionEstacionMetereologica;
+  configuraciones?: ConfiguracionEstacionMeteorologica;
   radioInfluencia?: number | null;
 
   //

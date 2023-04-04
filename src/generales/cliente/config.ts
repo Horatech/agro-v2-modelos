@@ -45,7 +45,7 @@ export interface ConfiguracionBombeo {
   colorError?: string | null;
 }
 
-export interface ConfiguracionEstacionMetereologica {
+export interface ConfiguracionEstacionMeteorologica {
   colorIcono?: string | null;
   colorError?: string | null;
 }
@@ -82,7 +82,7 @@ export interface Configuraciones {
   cisterna?: ConfiguracionCisterna;
   lamina?: ConfiguracionLamina;
   bombeo?: ConfiguracionBombeo;
-  estacionMetereologica?: ConfiguracionEstacionMetereologica;
+  estacionMeteorologica?: ConfiguracionEstacionMeteorologica;
   featrimetro?: ConfiguracionFreatimetro;
   pluviometro?: ConfiguracionPluviometro;
   tracker?: ConfiguracionTracker;
