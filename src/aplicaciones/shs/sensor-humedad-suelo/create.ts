@@ -1,4 +1,10 @@
-import { IAlerta, IReporte, IUbicacionV2, Semaforo } from '../../..';
+import {
+  ConfiguracionHumedadSuelo,
+  IAlerta,
+  IReporte,
+  IUbicacionV2,
+  Semaforo,
+} from "../../..";
 
 export interface ICreateSensorHumedadSuelo {
   idCliente?: string;
@@ -8,14 +14,11 @@ export interface ICreateSensorHumedadSuelo {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionHumedadSuelo;
   ubicacion?: IUbicacionV2 | null;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

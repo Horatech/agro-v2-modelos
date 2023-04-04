@@ -1,23 +1,27 @@
 import {
-  Color,
   ICliente,
   IDispositivo,
   IEstablecimiento,
   IReporte,
-} from '../../../generales';
-import { IConfigCanal } from './config';
+  Semaforo,
+} from "../../../generales";
+import { IConfigCanal } from "./config";
 
 export interface IBombeoCanal {
   _id?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
-  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  configuraciones?: {
+    colorIcono?: string | null;
+    colorError?: string | null;
+    coloresNivel?: Semaforo[] | null;
+  };
   asignado?: boolean;
   //
   deveuiCentral: string;
   numero: number;
-  tipo?: 'Entrada' | 'Salida';
+  tipo?: "Entrada" | "Salida";
   cota?: number;
   cotaMinMm?: number;
   cotaMaxMm?: number;

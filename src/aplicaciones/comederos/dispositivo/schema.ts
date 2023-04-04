@@ -1,9 +1,9 @@
-import { Color } from '../../..';
+import { ConfiguracionComederos } from "../../../generales";
 
 export interface IDispositivoComedero {
   // carga de usuario
   igm?: number;
-  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  configuraciones?: ConfiguracionComederos;
   // Config reportada
   encendida?: boolean;
   // CUANTAS VECES REPORTA POR LORA

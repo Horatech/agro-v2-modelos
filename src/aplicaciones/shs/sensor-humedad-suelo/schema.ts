@@ -1,12 +1,13 @@
-import { IUbicacionV2 } from '../../../auxiliares';
+import { IUbicacionV2 } from "../../../auxiliares";
 import {
+  ConfiguracionHumedadSuelo,
   IAlerta,
   ICliente,
   IDispositivo,
   IEstablecimiento,
   IReporte,
   Semaforo,
-} from '../../../generales';
+} from "../../../generales";
 
 export interface ISensorHumedadSuelo {
   _id?: string;
@@ -19,14 +20,11 @@ export interface ISensorHumedadSuelo {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionHumedadSuelo;
   ubicacion?: IUbicacionV2 | null;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

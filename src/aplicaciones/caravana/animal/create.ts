@@ -1,14 +1,11 @@
+import { ConfiguracionAnimal } from "../../../generales";
+
 export interface ICreateAnimal {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
-  configuraciones?: {
-    colorDentro: string | null;
-    colorFueraLote: string | null;
-    colorFueraEst: string | null;
-    colorError: string | null;
-  };
+  configuraciones?: ConfiguracionAnimal;
   // Info del animal
   identificacionOficial?: string;
   fechaNacimiento?: string;

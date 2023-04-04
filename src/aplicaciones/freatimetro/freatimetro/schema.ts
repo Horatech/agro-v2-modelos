@@ -1,12 +1,13 @@
-import { IUbicacionV2 } from '../../../auxiliares';
+import { IUbicacionV2 } from "../../../auxiliares";
 import {
+  ConfiguracionFreatimetro,
   IAlerta,
   ICliente,
   IDispositivo,
   IEstablecimiento,
   IReporte,
   Semaforo,
-} from '../../../generales';
+} from "../../../generales";
 
 export interface IFreatimetro {
   _id?: string;
@@ -19,15 +20,12 @@ export interface IFreatimetro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionFreatimetro;
   ubicacion?: IUbicacionV2 | null;
   offset?: number;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

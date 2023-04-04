@@ -1,4 +1,5 @@
 import {
+  ConfiguracionLamina,
   IAlerta,
   ICliente,
   IDispositivo,
@@ -6,7 +7,7 @@ import {
   ILote,
   IReporte,
   Semaforo,
-} from '../../../generales';
+} from "../../../generales";
 
 export interface ILamina {
   _id?: string;
@@ -20,14 +21,11 @@ export interface ILamina {
   deveui?: string;
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionLamina;
   cota?: number;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

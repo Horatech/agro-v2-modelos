@@ -1,5 +1,7 @@
-import { TipoDispositivo } from '../tipoDispositivo';
-import { IImagenesCliente } from './imagenes';
+import { TipoDispositivo } from "../tipoDispositivo";
+import { Configuraciones } from "./config";
+import { IImagenesCliente } from "./imagenes";
+import { IIntegracion } from "./integraciones";
 
 export interface ICliente {
   _id: string;
@@ -9,39 +11,5 @@ export interface ICliente {
   tiposDispositivo: TipoDispositivo[];
   imagenes?: IImagenesCliente;
   configuraciones?: Configuraciones;
-}
-
-export interface Configuraciones {
-  establecimientos?: { colorLinea: string | null; colorRelleno: string | null };
-  lotes?: { colorLinea: string | null; colorRelleno: string | null };
-  animales?: {
-    colorDentro: string | null;
-    colorFueraLote: string | null;
-    colorFueraEst: string | null;
-    colorError: string | null;
-  };
-  canal?: { colorIcono: string | null; coloresNivel: Color[] | null };
-  comederos?: { colorIcono: string | null; coloresNivel: Color[] | null };
-  cisterna?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  sla?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  bombeo?: { colorIcono: string | null; colorIconoAlerta: string | null };
-  estacionMetereologica?: {
-    colorIcono: string | null;
-    colorAlerta: string | null;
-  };
-  featrimetro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  pluviometro?: { colorIcono: string | null; coloresNivel: Semaforo[] | null };
-  tracker?: { colorIcono: string | null };
-}
-
-export interface Semaforo {
-  valorDesde: number;
-  valorHasta: number;
-  color: string;
-  etiqueta?: string;
-}
-
-export interface Color {
-  nombre: string;
-  color: string;
+  integraciones?: IIntegracion[];
 }

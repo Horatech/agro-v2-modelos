@@ -1,13 +1,14 @@
-import { IPolyline } from '../../../auxiliares';
+import { IPolyline } from "../../../auxiliares";
 import {
-  Color,
+  ConfiguracionCanal,
   IAlerta,
   ICliente,
   IDispositivo,
   IEstablecimiento,
   ILote,
   IReporte,
-} from '../../../generales';
+  Semaforo,
+} from "../../../generales";
 
 export interface ICanal {
   _id?: string;
@@ -22,15 +23,15 @@ export interface ICanal {
   // Algo de lo de bombeo
   deveuiEstacionBombeo?: string;
   numeroDeCanal?: number;
-  tipoDeCanal?: 'Entrada' | 'Salida';
+  tipoDeCanal?: "Entrada" | "Salida";
   nombre?: string;
   descripcion?: string;
-  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  configuraciones?: ConfiguracionCanal;
   // Polyline
   ubicacion?: IPolyline;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

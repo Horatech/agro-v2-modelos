@@ -1,4 +1,4 @@
-import { IAlerta, IReporte, Semaforo } from '../../..';
+import { ConfiguracionLamina, IAlerta, IReporte, Semaforo } from "../../..";
 
 export interface ICreateLamina {
   idCliente?: string;
@@ -8,13 +8,10 @@ export interface ICreateLamina {
   deveui?: string;
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionLamina;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

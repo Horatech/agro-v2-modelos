@@ -1,13 +1,10 @@
+import { ConfiguracionAnimal } from "../../../generales";
+
 export interface IUpdateAnimal {
   // Tentant
   idEstablecimiento?: string;
   idLote?: string;
-  configuraciones?: {
-    colorDentro: string | null;
-    colorFueraLote: string | null;
-    colorFueraEst: string | null;
-    colorError: string | null;
-  };
+  configuraciones?: ConfiguracionAnimal;
   //
   activo?: boolean;
   fechaBaja?: string;

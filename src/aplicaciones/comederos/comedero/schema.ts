@@ -1,16 +1,17 @@
 import {
-  Color,
+  ConfiguracionComederos,
   ICliente,
   IDispositivo,
   IEstablecimiento,
-} from '../../../generales';
+  Semaforo,
+} from "../../../generales";
 
 export interface IComedero {
   _id?: string;
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
-  configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
+  configuraciones?: ConfiguracionComederos;
   //
   nombre: string;
   idDispositivos: string[];

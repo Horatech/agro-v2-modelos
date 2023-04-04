@@ -1,11 +1,12 @@
-import { ICoordenadas } from '../../../auxiliares';
+import { ICoordenadas } from "../../../auxiliares";
 import {
+  ConfiguracionCisterna,
   ICliente,
   IDispositivo,
   IEstablecimiento,
   ILote,
   Semaforo,
-} from '../../../generales';
+} from "../../../generales";
 
 export interface ICisterna {
   _id?: string;
@@ -13,17 +14,14 @@ export interface ICisterna {
   idCliente?: string;
   idEstablecimiento?: string;
   idLote?: string;
-  configuraciones?: {
-    colorIcono: string | null;
-    coloresNivel: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionCisterna;
   // Info
   nombre?: string;
   idsBomba?: string[];
   idsNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
-  ubicacion?: ICoordenadas;
+  ubicacion?: ICoordenadas | null;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
