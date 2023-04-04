@@ -1,6 +1,6 @@
 import { IPolyline } from "../../../auxiliares";
 import {
-  Color,
+  ConfiguracionCanal,
   IAlerta,
   ICliente,
   IDispositivo,
@@ -26,11 +26,7 @@ export interface ICanal {
   tipoDeCanal?: "Entrada" | "Salida";
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionCanal;
   // Polyline
   ubicacion?: IPolyline[];
   //

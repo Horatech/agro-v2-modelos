@@ -1,4 +1,5 @@
 import {
+  ConfiguracionLamina,
   IAlerta,
   ICliente,
   IDispositivo,
@@ -20,11 +21,7 @@ export interface ILamina {
   deveui?: string;
   nombre?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionLamina;
   cota?: number;
   //
   ultimaComunicacion?: string;

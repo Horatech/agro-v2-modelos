@@ -1,5 +1,6 @@
 import { IUbicacionV2 } from "../../../auxiliares";
 import {
+  ConfiguracionPluviometro,
   IAlerta,
   ICliente,
   IDispositivo,
@@ -19,11 +20,7 @@ export interface IPluviometro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: {
-    colorIcono?: string | null;
-    colorError?: string | null;
-    coloresNivel?: Semaforo[] | null;
-  };
+  configuraciones?: ConfiguracionPluviometro;
   radioInfluencia?: number;
   ubicacion?: IUbicacionV2 | null;
   //
