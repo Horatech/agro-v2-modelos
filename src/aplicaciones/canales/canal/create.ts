@@ -17,5 +17,5 @@ export interface ICreateCanal {
   descripcion?: string;
   configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
   // Polyline
-  ubicacion?: IPolyline[];
+  ubicacion?: IPolyline;
 }

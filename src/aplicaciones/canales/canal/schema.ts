@@ -27,7 +27,7 @@ export interface ICanal {
   descripcion?: string;
   configuraciones?: { colorIcono: string | null; coloresNivel: Color[] | null };
   // Polyline
-  ubicacion?: IPolyline[];
+  ubicacion?: IPolyline;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: 'Ok' | 'Alerta';
