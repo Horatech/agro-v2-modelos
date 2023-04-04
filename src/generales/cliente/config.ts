@@ -83,7 +83,7 @@ export interface Configuraciones {
   lamina?: ConfiguracionLamina;
   bombeo?: ConfiguracionBombeo;
   estacionMeteorologica?: ConfiguracionEstacionMeteorologica;
-  featrimetro?: ConfiguracionFreatimetro;
+  freatimetro?: ConfiguracionFreatimetro;
   pluviometro?: ConfiguracionPluviometro;
   tracker?: ConfiguracionTracker;
   humedadSuelo?: ConfiguracionHumedadSuelo;
