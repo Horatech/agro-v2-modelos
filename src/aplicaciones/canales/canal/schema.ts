@@ -1,4 +1,4 @@
-import { IPolyline } from "../../../auxiliares";
+import { IPolyline } from '../../../auxiliares';
 import {
   ConfiguracionCanal,
   IAlerta,
@@ -7,8 +7,7 @@ import {
   IEstablecimiento,
   ILote,
   IReporte,
-  Semaforo,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface ICanal {
   _id?: string;
@@ -23,7 +22,7 @@ export interface ICanal {
   // Algo de lo de bombeo
   deveuiEstacionBombeo?: string;
   numeroDeCanal?: number;
-  tipoDeCanal?: "Entrada" | "Salida";
+  tipoDeCanal?: 'Entrada' | 'Salida';
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionCanal;
@@ -31,7 +30,7 @@ export interface ICanal {
   ubicacion?: IPolyline;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   // Virtuals

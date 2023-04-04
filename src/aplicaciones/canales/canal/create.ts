@@ -1,4 +1,4 @@
-import { ConfiguracionCanal, IPolyline, Semaforo } from "../../..";
+import { ConfiguracionCanal, IPolyline } from '../../..';
 
 export interface ICreateCanal {
   // Tentant
@@ -12,7 +12,7 @@ export interface ICreateCanal {
   // Algo de lo de bombeo
   deveuiEstacionBombeo?: string;
   numeroDeCanal?: number;
-  tipoDeCanal?: "Entrada" | "Salida";
+  tipoDeCanal?: 'Entrada' | 'Salida';
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionCanal;
