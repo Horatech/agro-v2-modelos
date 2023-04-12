@@ -1,4 +1,4 @@
-import { IUbicacionV2 } from "../../../auxiliares";
+import { IUbicacionV2 } from '../../../auxiliares';
 import {
   ConfiguracionSilobolsa,
   IAlerta,
@@ -6,7 +6,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   IReporte,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface ISilobolsa {
   _id?: string;
@@ -15,11 +15,11 @@ export interface ISilobolsa {
   idEstablecimiento?: string;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: "Ok" | "Alerta";
+  ultimoEstado?: 'Ok' | 'Alerta';
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
   //
-  deveuisCo2?: string;
+  deveuisCo2?: string[];
   nombre?: string;
   ubicacion?: IUbicacionV2 | null;
   metros?: number;
