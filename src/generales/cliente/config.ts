@@ -67,6 +67,12 @@ export interface ConfiguracionPluviometro {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionSilobolsa {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  coloresNivel?: Semaforo[] | null;
+}
+
 export interface ConfiguracionTracker {
   colorIcono?: string | null;
   colorError?: string | null;
