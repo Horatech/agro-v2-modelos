@@ -99,6 +99,7 @@ export interface Configuraciones {
   pluviometro?: ConfiguracionPluviometro;
   tracker?: ConfiguracionTracker;
   humedadSuelo?: ConfiguracionHumedadSuelo;
+  silobolsas?: ConfiguracionSilobolsa;
 }
 
 export interface Semaforo {
