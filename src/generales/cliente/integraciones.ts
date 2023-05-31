@@ -2,7 +2,7 @@ import { TipoDispositivo } from "../tipoDispositivo";
 
 export interface IIntegracion {
   tipoDispositivo?: TipoDispositivo;
-  tipoIntegracion?: "INFLUXV1" | "INFLUXV2" | "HTTPS"; // SQL / MONGODB
+  tipoIntegracion?: "INFLUXV1" | "INFLUXV2" | "HTTPS" | "MariaDB"; // SQL / MONGODB
   endpoint?: string; // https://miapi.com
   method?: "GET" | "POST" | "PUT" | "PATCH";
   credenciales?: IIntegracionInfluxV1 | IIntegracionInfluxV2;
