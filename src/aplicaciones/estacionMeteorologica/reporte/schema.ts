@@ -18,4 +18,5 @@ export interface IReporteEstacionMeteorologica {
   // Datos Calculados
   lluviaIntervalo?: number;
   duracionLlueviaIntervalo?: number;
+  fechaDesde?: string;
 }
