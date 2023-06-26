@@ -1,5 +1,6 @@
 export interface IReporteEstacionMeteorologica {
-  numeroMensaje: number;
+  numeroMensaje?: number;
+  tilt?: boolean;
   // Datos Reportados
   temperatura?: number;
   humedad?: number;
@@ -13,7 +14,13 @@ export interface IReporteEstacionMeteorologica {
   velocidadVientoPromedio?: number;
   lluviaAcumulada?: number;
   duracionLluviaAcumulada?: number;
+  /**
+   * @deprecated
+   */
   intensidadLluvia?: number;
+  /**
+   * @deprecated
+   */
   intensidadMaximaLluvia?: number;
   // Datos Calculados
   lluviaIntervalo?: number;
