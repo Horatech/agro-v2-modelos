@@ -1,6 +1,7 @@
 export interface IReporteEstacionMeteorologica {
   numeroMensaje?: number;
   tilt?: boolean;
+  horaGps?: boolean;
   // Datos Reportados
   temperatura?: number;
   humedad?: number;
