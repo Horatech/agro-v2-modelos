@@ -22,6 +22,7 @@ export interface IPluviometro {
   descripcion?: string;
   configuraciones?: ConfiguracionPluviometro;
   radioInfluencia?: number;
+  sensibilidad?: number;
   ubicacion?: IUbicacionV2 | null;
   //
   ultimaComunicacion?: string;
