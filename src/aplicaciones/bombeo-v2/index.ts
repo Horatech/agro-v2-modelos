@@ -3,5 +3,5 @@
 // export * from "./canal";
 export * from "./dispositivo";
 // export * from "./alertaArrancador";
-// export * from "./reporteArrancador";
-// export * from "./reporteCanal";
+export * from "./reporteArrancador";
+export * from "./reporteCanal";
