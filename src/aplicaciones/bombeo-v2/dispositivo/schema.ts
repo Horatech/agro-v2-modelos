@@ -6,4 +6,11 @@ export interface IDispositivoBombeoV2 {
   arrancadoresHabilitados?: {
     [numero: number]: boolean;
   };
+  hayEnergia?: boolean;
+  bateriaInterna?: number;
+  bateriaExterna?: number;
+  // bateriaCanalEntrada?: number;
+  // bateriaCanalSalida?: number;
+  // nivelCanalEntrada?: number;
+  // nivelCanalSalida?: number;
 }
