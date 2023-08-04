@@ -1,4 +1,5 @@
 export * from "./bombeo";
+export * from "./bombeo-v2";
 export * from "./canales";
 export * from "./caravana";
 export * from "./cisternas";
