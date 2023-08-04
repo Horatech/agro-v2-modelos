@@ -1,5 +1,6 @@
 export interface IReporteBombeoCanalV2 {
-  tipo: "Entrada" | "Salida";
-  bateria: number;
-  nivel: number;
+  dispositivo?: "Canal";
+  tipo?: "Entrada" | "Salida";
+  bateria?: number;
+  nivel?: number;
 }
