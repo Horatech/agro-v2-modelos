@@ -9,8 +9,12 @@ export interface IDispositivoBombeoV2 {
   hayEnergia?: boolean;
   bateriaInterna?: number;
   bateriaExterna?: number;
-  // bateriaCanalEntrada?: number;
-  // bateriaCanalSalida?: number;
-  // nivelCanalEntrada?: number;
-  // nivelCanalSalida?: number;
+  // Mas cosas
+  bateriaCanalEntrada?: number;
+  bateriaCanalSalida?: number;
+  nivelCanalEntrada?: number;
+  nivelCanalSalida?: number;
+  estadoArrancadores?: {
+    [numero: number]: boolean;
+  };
 }
