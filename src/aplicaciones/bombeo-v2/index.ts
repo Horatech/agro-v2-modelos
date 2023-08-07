@@ -1,4 +1,4 @@
-// export * from "./alertaCanal";
+export * from "./alertaCanal";
 // export * from "./arrancador";
 // export * from "./canal";
 export * from "./dispositivo";
