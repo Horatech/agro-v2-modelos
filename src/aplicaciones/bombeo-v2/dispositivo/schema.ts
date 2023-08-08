@@ -14,10 +14,10 @@ export interface IDispositivoBombeoV2 {
   tiempoSinReportarEntrada?: number;
   tiempoSinReportarSalida?: number;
   valoresPorNivelEntrada?: {
-    [numero: number]: boolean;
+    [numero: number]: number;
   };
   valoresPorNivelSalida?: {
-    [numero: number]: boolean;
+    [numero: number]: number;
   };
 
   // Arrancadores
