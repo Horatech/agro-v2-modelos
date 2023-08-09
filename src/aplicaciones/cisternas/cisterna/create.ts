@@ -9,6 +9,8 @@ export interface ICreateCisterna {
   configuraciones?: ConfiguracionCisterna;
   // Info
   nombre?: string;
+  direccion?: string;
+  localidad?: string;
   idsBomba?: string[];
   idsNivel?: string[];
   alturaMm?: number;
