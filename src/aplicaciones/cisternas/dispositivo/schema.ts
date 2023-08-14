@@ -1,10 +1,10 @@
-import { Semaforo } from '../../../generales';
+import { Semaforo } from "../../../generales";
 
 export interface IDispositivoNivelCisterna {
   // Config en la app
   asignado?: boolean;
   nivelDeInstalacion?: number;
-  unidadParaMostrar?: 'mm' | 'cm' | 'm';
+  unidadParaMostrar?: "mm" | "cm" | "m";
   // Config del dispositivo
   configuraciones?: {
     colorIcono: string | null;
@@ -26,4 +26,6 @@ export interface IDispositivoNivelCisterna {
 export interface IDispositivoBombaCisterna {
   asignado?: boolean;
   frecuenciaReporte?: number;
+  localidad?: string;
+  direccion?: string;
 }
