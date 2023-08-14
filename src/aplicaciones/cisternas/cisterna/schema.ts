@@ -1,4 +1,4 @@
-import { ICoordenadas } from "../../../auxiliares";
+import { ICoordenadas } from '../../../auxiliares';
 import {
   ConfiguracionCisterna,
   ICliente,
@@ -6,9 +6,11 @@ import {
   IEstablecimiento,
   ILote,
   Semaforo,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface ICisterna {
+  // Pozo
+  // Cisterna sin nivel y una bomba
   _id?: string;
   // Tentant
   idCliente?: string;
@@ -16,6 +18,7 @@ export interface ICisterna {
   idLote?: string;
   configuraciones?: ConfiguracionCisterna;
   // Info
+  tipo?: 'Cisterna' | 'Pozo';
   nombre?: string;
   direccion?: string;
   localidad?: string;
