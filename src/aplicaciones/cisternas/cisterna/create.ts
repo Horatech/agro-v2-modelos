@@ -1,5 +1,5 @@
-import { ICoordenadas } from "../../../auxiliares";
-import { ConfiguracionCisterna, Semaforo } from "../../../generales";
+import { ICoordenadas } from '../../../auxiliares';
+import { ConfiguracionCisterna, Semaforo } from '../../../generales';
 
 export interface ICreateCisterna {
   // Tentant
@@ -8,6 +8,7 @@ export interface ICreateCisterna {
   idLote?: string;
   configuraciones?: ConfiguracionCisterna;
   // Info
+  tipo?: 'Cisterna' | 'Pozo';
   nombre?: string;
   direccion?: string;
   localidad?: string;
