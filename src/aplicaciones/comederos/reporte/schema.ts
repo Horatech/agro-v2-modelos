@@ -6,6 +6,8 @@ export interface IReporteComedero {
   cargando: boolean;
   calidad?: number;
   // Datos calculados
+  fechaFrecuencia?: string;
+  fechaHora?: string;
   distancia?: number;
   porcentaje?: number;
   tipo?: string;
