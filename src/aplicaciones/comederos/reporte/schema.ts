@@ -10,5 +10,7 @@ export interface IReporteComedero {
   fechaHora?: string;
   distancia?: number;
   porcentaje?: number;
+  altura?: number;
+  alturaLeida?: number;
   tipo?: string;
 }
