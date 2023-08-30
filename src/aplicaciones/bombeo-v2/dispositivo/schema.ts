@@ -34,4 +34,7 @@ export interface IDispositivoBombeoV2 {
   prioridadArrancadores?: {
     [numero: number]: number;
   };
+  nombreArrancadores?: {
+    [numero: number]: string;
+  };
 }
