@@ -1,8 +1,8 @@
-import { ICliente } from '../cliente';
-import { IDispositivo } from '../dispositivo';
-import { IEstablecimiento } from '../establecimiento';
-import { TipoDispositivo } from '../tipoDispositivo';
-import { IUsuario } from '../usuario';
+import { ICliente } from "../cliente";
+import { IDispositivo } from "../dispositivo";
+import { IEstablecimiento } from "../establecimiento";
+import { TipoDispositivo } from "../tipoDispositivo";
+import { IUsuario } from "../usuario";
 
 export interface IComando {
   // Downlink
@@ -23,6 +23,8 @@ export interface IComando {
   fCnt?: string;
   idUsuario?: string;
   tipoDispositivo?: TipoDispositivo;
+  nombre?: string;
+  descripcion?: string;
   // Virtuals
   usuario?: IUsuario;
   dispositivo?: IDispositivo;

@@ -1,4 +1,4 @@
-import { TipoDispositivo } from '../..';
+import { TipoDispositivo } from "../..";
 
 export interface ICreateComando {
   // Downlink
@@ -17,4 +17,6 @@ export interface ICreateComando {
   fCnt?: string;
   idUsuario?: string;
   tipoDispositivo?: TipoDispositivo;
+  nombre?: string;
+  descripcion?: string;
 }

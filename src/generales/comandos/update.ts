@@ -4,4 +4,6 @@ export interface IUpdateComando {
   error?: boolean;
   fallos?: number;
   fCnt?: string;
+  nombre?: string;
+  descripcion?: string;
 }
