@@ -33,6 +33,13 @@ export interface ConfiguracionComederos {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionBombaSumergible {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  colorEncendida?: string | null;
+  colorApagada?: string | null;
+}
+
 export interface ConfiguracionCisterna {
   colorIcono?: string | null;
   colorError?: string | null;

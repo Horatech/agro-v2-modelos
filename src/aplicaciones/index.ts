@@ -1,3 +1,4 @@
+export * from "./bombaSumergible";
 export * from "./bombeo";
 export * from "./bombeo-v2";
 export * from "./canales";
