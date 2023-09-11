@@ -1,4 +1,6 @@
 export interface IReportePluviometro {
+  pulsos?: number;
+  sensibilidad?: number;
   valorAcumulado?: number;
   bateria?: number;
   cargando?: boolean;
