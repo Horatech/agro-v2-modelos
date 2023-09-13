@@ -4,5 +4,10 @@ export interface IAlertaBombeoArrancadorV2 {
   numero?: number;
   // valores
   tipo?: "Arrancador" | "Variador";
-  mensaje?: "Error al encender" | "Error al apagar" | "Error al habilitar";
+  mensaje?:
+    | "Error al encender"
+    | "Error al apagar"
+    | "Error al habilitar"
+    | "Error de estado"
+    | "Error de comunicación";
 }
