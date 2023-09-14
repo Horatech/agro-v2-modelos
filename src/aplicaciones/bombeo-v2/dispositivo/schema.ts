@@ -4,6 +4,11 @@ export interface IDispositivoBombeoV2 {
   bateriaInterna?: number;
   bateriaExterna?: number;
 
+  //IGM
+  igmEntrada?: number;
+  igmSalida?: number;
+  //
+
   // Sensores de Nivel
   hayEntrada?: boolean;
   haySalida?: boolean;
