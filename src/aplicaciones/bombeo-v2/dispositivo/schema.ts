@@ -3,6 +3,7 @@ export interface IDispositivoBombeoV2 {
   hayEnergia?: boolean;
   bateriaInterna?: number;
   bateriaExterna?: number;
+  puertoUltimoMensaje?: number;
 
   //IGM
   igmEntrada?: number;
