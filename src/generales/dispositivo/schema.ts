@@ -1,12 +1,12 @@
-import { ICoordenadas } from '../../auxiliares';
-import { IAlerta } from '../alerta';
-import { ICliente } from '../cliente';
-import { IEstablecimiento } from '../establecimiento';
-import { ILoraServer } from '../loraServer';
-import { ILoteDispositivo } from '../loteDispositivo';
-import { IReporte } from '../reporte';
-import { ITipoDispositivo, TipoDispositivo } from '../tipoDispositivo';
-import { TipoConectividad } from './conectividad';
+import { ICoordenadas } from "../../auxiliares";
+import { IAlerta } from "../alerta";
+import { ICliente } from "../cliente";
+import { IEstablecimiento } from "../establecimiento";
+import { ILoraServer } from "../loraServer";
+import { ILoteDispositivo } from "../loteDispositivo";
+import { IReporte } from "../reporte";
+import { ITipoDispositivo, TipoDispositivo } from "../tipoDispositivo";
+import { TipoConectividad } from "./conectividad";
 
 export interface IDispositivo {
   // Nombre útil para cada aplicación
@@ -33,6 +33,7 @@ export interface IDispositivo {
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
+  puertoUltimoUplink?: number;
   // Otra info
   firmware?: string;
   ubicacion?: ICoordenadas | null;

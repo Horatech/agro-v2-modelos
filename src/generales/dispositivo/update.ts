@@ -1,8 +1,8 @@
-import { ICoordenadas } from '../../auxiliares';
-import { IAlerta } from '../alerta';
-import { IReporte } from '../reporte';
-import { TipoDispositivo } from '../tipoDispositivo';
-import { TipoConectividad } from './conectividad';
+import { ICoordenadas } from "../../auxiliares";
+import { IAlerta } from "../alerta";
+import { IReporte } from "../reporte";
+import { TipoDispositivo } from "../tipoDispositivo";
+import { TipoConectividad } from "./conectividad";
 
 export interface IUpdateDispositivo {
   // Nombre útil para cada aplicación
@@ -26,6 +26,7 @@ export interface IUpdateDispositivo {
   adr?: boolean;
   dr?: number;
   fechaUltimaComunicacion?: string;
+  puertoUltimoUplink?: number;
   // Otra info
   ubicacion?: ICoordenadas | null;
   firmware?: string;
