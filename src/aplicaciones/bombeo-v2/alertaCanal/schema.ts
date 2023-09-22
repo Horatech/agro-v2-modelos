@@ -6,5 +6,5 @@ export interface IAlertaBombeoCanalV2 {
   ultimoReporte: string;
   ultimaBateria: number;
   ultimaLectura: number;
-  mensaje: "Error de comunicación";
+  mensaje: "Error de comunicación" | "Error de lectura";
 }
