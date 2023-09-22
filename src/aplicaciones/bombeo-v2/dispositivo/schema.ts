@@ -5,6 +5,15 @@ export interface IDispositivoBombeoV2 {
   bateriaExterna?: number;
   puertoUltimoMensaje?: number;
 
+  // Estado inicializacion
+  estadoInicializacion?: {
+    entrada?: boolean;
+    salida?: boolean;
+    arrancadores?: {
+      [numero: number]: boolean;
+    };
+  };
+
   //IGM
   igmEntrada?: number;
   igmSalida?: number;
