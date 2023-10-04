@@ -3,6 +3,8 @@ import { ConfiguracionComederos } from "../../../generales";
 export interface IDispositivoComedero {
   // carga de usuario
   igm?: number;
+  inicialMm?: number;
+  alturaMaxima?: number;
   configuraciones?: ConfiguracionComederos;
   // Config reportada
   encendida?: boolean;
