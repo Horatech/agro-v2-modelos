@@ -9,4 +9,5 @@ export * from './join.model';
 export * from './organization.model';
 export * from './service-profile.model';
 export * from './uplink.model';
+export * from './gateway-get-all.dto';
 export * from './gateway.dto';
