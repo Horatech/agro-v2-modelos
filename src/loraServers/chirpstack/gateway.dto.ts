@@ -1,11 +1,11 @@
 export interface IGatewayChirpstackById {
   _id: string;
 
-  createdAt?: Date;
-  firstSeenAt?: Date;
+  createdAt?: string;
+  firstSeenAt?: string;
   gateway?: IGatewayDetalles;
-  lastSeenAt?: Date;
-  updatedAt?: Date;
+  lastSeenAt?: string;
+  updatedAt?: string;
 }
 
 export interface IGatewayDetalles {

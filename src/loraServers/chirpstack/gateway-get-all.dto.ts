@@ -2,17 +2,17 @@ export interface IGatewayChirpstackGetAll {
   //
   _id: string;
   // Lo que trae de Chirpstack
-  createdAt?: Date;
+  createdAt?: string;
   description?: string;
-  firstSeenAt?: Date;
+  firstSeenAt?: string;
   id?: string;
-  lastSeenAt?: Date;
+  lastSeenAt?: string;
   location?: Location;
   name?: string;
   networkServerID?: string;
   networkServerName?: string;
   organizationID?: string;
-  updatedAt?: Date;
+  updatedAt?: string;
 }
 
 type Omitir = '_id';
