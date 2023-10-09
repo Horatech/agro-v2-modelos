@@ -18,9 +18,9 @@ export interface IGateway {
 export interface IDatos {
   nombre?: string;
   descripcion?: string;
-  credenciales: {
-    usuario: string;
-    password: string;
+  credenciales?: {
+    usuario?: string;
+    password?: string;
   };
   // Por las dudas
   notas?: string;
