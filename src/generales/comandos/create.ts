@@ -1,4 +1,4 @@
-import { TipoDispositivo } from "../..";
+import { IEstadoComando, TipoDispositivo } from "../..";
 
 export interface ICreateComando {
   // Downlink
@@ -13,6 +13,7 @@ export interface ICreateComando {
   fechaActualizacion?: string;
   ejecutado?: boolean;
   error?: boolean;
+  estado?: IEstadoComando;
   fallos?: number;
   fCnt?: string;
   idUsuario?: string;
