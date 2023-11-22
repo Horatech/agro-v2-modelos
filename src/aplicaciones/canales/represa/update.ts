@@ -1,6 +1,7 @@
-import { ConfiguracionCanal, IPolyline } from "../../..";
+import { IPolyline } from "../../../auxiliares";
+import { ConfiguracionCanal, IAlerta, IReporte } from "../../../generales";
 
-export interface ICreateCanal {
+export interface IUpdateRepresa {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
@@ -20,4 +21,9 @@ export interface ICreateCanal {
   igm?: number;
   // Polyline
   ubicacion?: IPolyline;
+  //
+  ultimaComunicacion?: string;
+  ultimoEstado?: "Ok" | "Alerta";
+  ultimaAlerta?: IAlerta;
+  ultimoReporte?: IReporte;
 }

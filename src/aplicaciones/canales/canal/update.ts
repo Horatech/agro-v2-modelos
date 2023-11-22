@@ -1,5 +1,5 @@
-import { IPolyline } from '../../../auxiliares';
-import { ConfiguracionCanal, IAlerta, IReporte } from '../../../generales';
+import { IPolyline } from "../../../auxiliares";
+import { ConfiguracionCanal, IAlerta, IReporte } from "../../../generales";
 
 export interface IUpdateCanal {
   // Tentant
@@ -13,15 +13,17 @@ export interface IUpdateCanal {
   // Algo de lo de bombeo
   deveuiEstacionBombeo?: string;
   numeroDeCanal?: number;
-  tipoDeCanal?: 'Entrada' | 'Salida';
+  tipoDeCanal?: "Entrada" | "Salida";
+  //
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionCanal;
+  igm?: number;
   // Polyline
   ubicacion?: IPolyline;
   //
   ultimaComunicacion?: string;
-  ultimoEstado?: 'Ok' | 'Alerta';
+  ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
 }

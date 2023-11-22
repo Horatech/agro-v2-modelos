@@ -9,7 +9,7 @@ import {
   IReporte,
 } from "../../../generales";
 
-export interface ICanal {
+export interface IRepresa {
   _id?: string;
   // Tentant
   idCliente?: string;

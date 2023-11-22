@@ -4,6 +4,12 @@ import { IEstablecimiento } from "../establecimiento";
 import { TipoDispositivo } from "../tipoDispositivo";
 import { IUsuario } from "../usuario";
 
+export type IEstadoComando =
+  | "Enviado"
+  | "Recibido"
+  | "Ejecutado"
+  | "No Ejecutado";
+
 export interface IComando {
   // Downlink
   deveui: string;
@@ -19,6 +25,7 @@ export interface IComando {
   fechaActualizacion?: string;
   ejecutado?: boolean;
   error?: boolean;
+  estado?: IEstadoComando;
   fallos?: number;
   fCnt?: string;
   idUsuario?: string;

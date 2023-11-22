@@ -1,6 +1,6 @@
 import { ConfiguracionCanal, IPolyline } from "../../..";
 
-export interface ICreateCanal {
+export interface ICreateRepresa {
   // Tentant
   idCliente?: string;
   idEstablecimiento?: string;
