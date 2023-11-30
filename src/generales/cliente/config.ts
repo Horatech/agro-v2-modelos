@@ -50,6 +50,8 @@ export interface ConfiguracionLamina {
   colorIcono?: string | null;
   colorError?: string | null;
   coloresNivel?: Semaforo[] | null;
+
+  frecReporte?: number;
 }
 
 export interface ConfiguracionBombeo {
@@ -92,6 +94,7 @@ export interface ConfiguracionHumedadSuelo {
 }
 
 export interface Configuraciones {
+  // Colores
   establecimientos?: ConfiguracionEstablecimiento;
   lotes?: ConfiguracionLote;
   zonas?: ConfiguracionZona;
