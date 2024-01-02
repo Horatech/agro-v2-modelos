@@ -24,6 +24,8 @@ export interface ICisterna {
   localidad?: string;
   idsBomba?: string[];
   idsNivel?: string[];
+  deveuisBomba?: string[];
+  deveuisNivel?: string[];
   alturaMm?: number;
   volumenM3?: number;
   ubicacion?: ICoordenadas | null;
