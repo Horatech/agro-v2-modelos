@@ -1,5 +1,5 @@
-import { TipoDispositivo } from '../tipoDispositivo';
-import { EstadoEvento, IEstadoEvento } from './estado';
+import { TipoDispositivo } from "../tipoDispositivo";
+import { EstadoEvento, IEstadoEvento } from "./estado";
 
 export interface ICreateEvento {
   fecha?: string;
@@ -13,7 +13,9 @@ export interface ICreateEvento {
   // Estados de la alerta
   estados: IEstadoEvento[];
   estadoActual: EstadoEvento;
+  // Entidad a la que está asignado el dispositivo
   idAsignado?: string;
+  entidad?: string;
   // Datos especificos de la alerta de acuerdo al tipo de dispositivo
   descripcion: string;
   reportes: Record<string, any>[];

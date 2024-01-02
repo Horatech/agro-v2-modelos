@@ -1,7 +1,7 @@
-import { ICliente } from '../cliente';
-import { IEstablecimiento } from '../establecimiento';
-import { TipoDispositivo } from '../tipoDispositivo';
-import { EstadoEvento, IEstadoEvento } from './estado';
+import { ICliente } from "../cliente";
+import { IEstablecimiento } from "../establecimiento";
+import { TipoDispositivo } from "../tipoDispositivo";
+import { EstadoEvento, IEstadoEvento } from "./estado";
 
 export interface IEvento {
   // Tentant
@@ -15,7 +15,9 @@ export interface IEvento {
   deviceName: string;
   deveui: string;
   tipoDispositivo: TipoDispositivo;
+  // Entidad a la que está asignado el dispositivo
   idAsignado?: string;
+  entidad?: string;
   // Estados de la alerta
   estados: IEstadoEvento[];
   estadoActual: EstadoEvento;
