@@ -1,5 +1,5 @@
-import { TipoDispositivo } from '../tipoDispositivo';
-import { EstadoEvento, IEstadoEvento } from './estado';
+import { TipoDispositivo } from "../tipoDispositivo";
+import { EstadoEvento, IEstadoEvento } from "./estado";
 
 export interface IUpdateEvento {
   activa?: boolean;
@@ -8,6 +8,7 @@ export interface IUpdateEvento {
   deveui?: string;
   tipoDispositivo?: TipoDispositivo;
   idAsignado?: string;
+  tipoEntidad?: string;
   // Estados de la alerta
   estados?: IEstadoEvento[];
   estadoActual?: EstadoEvento;

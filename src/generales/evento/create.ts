@@ -16,6 +16,7 @@ export interface ICreateEvento {
   // Entidad a la que está asignado el dispositivo
   idAsignado?: string;
   entidad?: string;
+  tipoEntidad?: string;
   // Datos especificos de la alerta de acuerdo al tipo de dispositivo
   descripcion: string;
   reportes: Record<string, any>[];

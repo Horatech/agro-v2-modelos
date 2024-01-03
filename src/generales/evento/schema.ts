@@ -18,6 +18,7 @@ export interface IEvento {
   // Entidad a la que está asignado el dispositivo
   idAsignado?: string;
   entidad?: string;
+  tipoEntidad?: string;
   // Estados de la alerta
   estados: IEstadoEvento[];
   estadoActual: EstadoEvento;
