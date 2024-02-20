@@ -4,7 +4,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   ILote,
-} from "../../../generales";
+} from '../../../generales';
 
 export interface IAnimal {
   _id?: string;
@@ -28,6 +28,7 @@ export interface IAnimal {
   peso?: number;
   idMadre?: string;
   idPadre?: string;
+  foto?: string;
   //
   idDispositivo?: string;
   // Virtuals

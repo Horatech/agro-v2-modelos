@@ -1,4 +1,4 @@
-import { ConfiguracionAnimal } from "../../../generales";
+import { ConfiguracionAnimal } from '../../../generales';
 
 export interface ICreateAnimal {
   // Tentant
@@ -17,6 +17,7 @@ export interface ICreateAnimal {
   peso?: number;
   idMadre?: string;
   idPadre?: string;
+  foto?: string;
   //
   idDispositivo?: string;
 }
