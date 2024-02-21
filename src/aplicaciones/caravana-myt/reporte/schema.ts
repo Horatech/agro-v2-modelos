@@ -1,5 +1,8 @@
 export interface IReporteCaravanaMyT {
   idAnimal?: string;
-  movimiento?: number;
+  actividad?: number;
+  actividadSensorStatus?: boolean;
   temperatura?: number;
+  temperaturaSensorStatus?: boolean;
+  bateria?: number;
 }
