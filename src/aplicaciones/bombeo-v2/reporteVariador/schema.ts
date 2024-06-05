@@ -4,6 +4,7 @@ export interface IReporteBombeoVariadorV2 {
   numero?: number;
   estado?: "Encendido" | "Apagado" | "Encendido Manual";
   habilitado?: boolean;
+  estadoBoton?: "Manual" | "Remoto" | "Indefinido";
   // De reporte especifico
   nroMsg?: number;
   on?: boolean;
