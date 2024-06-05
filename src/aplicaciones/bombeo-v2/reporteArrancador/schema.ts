@@ -7,6 +7,7 @@ export interface IReporteBombeoArrancadorV2 {
   // De reporte especifico
   nroMsg?: number;
   on?: boolean;
+  tipo?: 'SSW06' | 'SSW07' | 'SSW900';
   corrienteAlimentacion?: number;
   corrienteMotor?: number;
   tensionAlimentacion?: number;
