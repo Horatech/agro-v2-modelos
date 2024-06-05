@@ -7,6 +7,7 @@ export interface IReporteBombeoVariadorV2 {
   // De reporte especifico
   nroMsg?: number;
   on?: boolean;
+  tipo?: "CFW11";
   velocidad?: number;
   corrienteMotor?: number;
   estadoSSW?: number;
