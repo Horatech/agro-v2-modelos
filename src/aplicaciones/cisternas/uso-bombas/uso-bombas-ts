@@ -1,0 +1,21 @@
+export interface IUsoBombas {
+  _id?: string;
+  idCliente?: string;
+  idCisterna?: string;
+  grupo?: string;
+
+  fechaOnline?: string;
+  fechaOffline?: string;
+  tiempoAcumuladoOnline?: number;
+  tiempoAcumuladoOffline?: number;
+}
+
+type OmitirCreate = "_id";
+
+export interface ICreateUsoBombas
+  extends Omit<Partial<IUsoBombas>, OmitirCreate> {}
+
+type OmitirUpdate = "_id";
+
+export interface IUpdateUsoBombas
+  extends Omit<Partial<IUsoBombas>, OmitirUpdate> {}

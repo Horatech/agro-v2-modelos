@@ -5,7 +5,6 @@ import {
   IDispositivo,
   IEstablecimiento,
   ILote,
-  Semaforo,
 } from "../../../generales";
 
 export interface ICisterna {
@@ -22,13 +21,28 @@ export interface ICisterna {
   nombre?: string;
   direccion?: string;
   localidad?: string;
-  idsBomba?: string[];
-  idsNivel?: string[];
-  deveuisBomba?: string[];
-  deveuisNivel?: string[];
+  // Datos fisicos
   alturaMm?: number;
   volumenM3?: number;
   ubicacion?: ICoordenadas | null;
+  // Automatizacion y Dispositivos
+  automatizada?: boolean;
+  nivelEncendido?: number;
+  nivelApagado?: number;
+
+  idsNivel?: string[];
+  deveuisNivel?: string[];
+
+  idsBomba?: string[];
+  deveuisBomba?: string[];
+  grupo1Activo?: boolean;
+  horasEncendidoGrupo1?: number;
+
+  idsBomba2?: string[];
+  deveuisBomba2?: string[];
+  grupo2Activo?: boolean;
+  horasEncendidoGrupo2?: number;
+
   // Estado
   estado?: "Encendida" | "Apagada" | "Sin Información";
   condicion?: "Con Fallos" | "Sin Alertas" | "Sin Información";
