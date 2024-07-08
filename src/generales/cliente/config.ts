@@ -27,6 +27,12 @@ export interface ConfiguracionCanal {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionBin {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  coloresNivel?: Semaforo[] | null;
+}
+
 export interface ConfiguracionComederos {
   colorIcono?: string | null;
   colorError?: string | null;
