@@ -14,3 +14,4 @@ export * from './represas';
 export * from './sla';
 export * from './tracker';
 export * from './shs';
+export * from './bines';
