@@ -3,7 +3,7 @@ import { ConfiguracionBin, IPolyline } from "../../..";
 export interface ICreateBin {
   // Tentant
   idCliente?: string;
-  // idEstablecimiento?: string;
+  idEstablecimiento?: string;
   idLote?: string;
   //
   fechaCreacion?: string;

@@ -4,7 +4,7 @@ import { ConfiguracionCanal, IAlerta, IReporte } from "../../../generales";
 export interface IUpdateBin {
   // Tentant
   idCliente?: string;
-  // idEstablecimiento?: string;
+  idEstablecimiento?: string;
   idLote?: string;
   //
   fechaCreacion?: string;

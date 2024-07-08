@@ -6,13 +6,14 @@ import {
   IDispositivo,
   ILote,
   IReporte,
+  IEstablecimiento,
 } from "../../../generales";
 
 export interface IBin {
   _id?: string;
   // Tentant
   idCliente?: string;
-  // idEstablecimiento?: string;
+  idEstablecimiento?: string;
   idLote?: string;
   //
   fechaCreacion?: string;
@@ -30,7 +31,7 @@ export interface IBin {
   ultimoReporte?: IReporte;
   // Virtuals
   cliente?: ICliente;
-  // establecimiento?: IEstablecimiento;
+  establecimiento?: IEstablecimiento;
   lote?: ILote;
   dispositivoBin?: IDispositivo;
 }
