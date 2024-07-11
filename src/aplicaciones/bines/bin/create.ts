@@ -1,4 +1,4 @@
-import { ConfiguracionBin, IPolyline } from "../../..";
+import { ConfiguracionBin, ICoordenadas } from "../../..";
 
 export interface ICreateBin {
   // Tentant
@@ -8,10 +8,10 @@ export interface ICreateBin {
   //
   fechaCreacion?: string;
   //deveui del canal
-  deveuiSensorBin?: string;
+  deveui?: string;
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionBin;
   // Polyline
-  ubicacion?: IPolyline;
+  ubicacion?: ICoordenadas;
 }

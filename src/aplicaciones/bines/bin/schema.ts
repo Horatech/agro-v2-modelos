@@ -1,4 +1,4 @@
-import { IPolyline } from "../../../auxiliares";
+import { ICoordenadas } from "../../../auxiliares";
 import {
   ConfiguracionBin,
   IAlerta,
@@ -18,12 +18,12 @@ export interface IBin {
   //
   fechaCreacion?: string;
   //deveui del Bin
-  deveuiSensorBin?: string;
+  deveui?: string;
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionBin;
   // Polyline
-  ubicacion?: IPolyline;
+  ubicacion?: ICoordenadas;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";
@@ -33,5 +33,5 @@ export interface IBin {
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
   lote?: ILote;
-  dispositivoBin?: IDispositivo;
+  dispositivo?: IDispositivo;
 }

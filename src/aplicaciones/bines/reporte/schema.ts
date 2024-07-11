@@ -3,5 +3,4 @@ export interface IReporteBin {
   bateria?: number;
   cargando?: boolean;
   calidadDeLectura?: number;
-  tipoCanal?: "Entrada" | "Salida";
 }
