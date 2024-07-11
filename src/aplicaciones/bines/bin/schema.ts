@@ -33,5 +33,5 @@ export interface IBin {
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
   lote?: ILote;
-  dispositivoBin?: IDispositivo;
+  dispositivo?: IDispositivo;
 }
