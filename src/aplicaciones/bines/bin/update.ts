@@ -1,4 +1,4 @@
-import { IPolyline } from "../../../auxiliares";
+import { ICoordenadas } from "../../../auxiliares";
 import { ConfiguracionCanal, IAlerta, IReporte } from "../../../generales";
 
 export interface IUpdateBin {
@@ -8,13 +8,12 @@ export interface IUpdateBin {
   idLote?: string;
   //
   fechaCreacion?: string;
-  //deveui del canal
-  deveuiSensorBin?: string;
+  //deveui del Bin
+  deveui?: string;
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionCanal;
-  // Polyline
-  ubicacion?: IPolyline;
+  ubicacion?: ICoordenadas;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";
