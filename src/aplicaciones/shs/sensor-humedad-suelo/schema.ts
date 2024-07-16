@@ -22,6 +22,8 @@ export interface ISensorHumedadSuelo {
   descripcion?: string;
   configuraciones?: ConfiguracionHumedadSuelo;
   ubicacion?: IUbicacionV2 | null;
+  // profundidad en CM.
+  profundidad?: number;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: "Ok" | "Alerta";
