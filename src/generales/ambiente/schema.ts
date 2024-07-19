@@ -1,5 +1,6 @@
 import { IUbicacion } from '../../auxiliares';
 import { ICliente } from '../cliente';
+import { IEstablecimiento } from '../establecimiento';
 
 export interface IAmbiente {
   _id: string;
@@ -8,5 +9,10 @@ export interface IAmbiente {
   idCliente: string;
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
+  region?: string;
+  tipoSuelo?: string;
+  cultivo?: string;
+  faseCultivo?: string;
+  establecimiento?: IEstablecimiento;
   cliente?: ICliente;
 }

@@ -2,6 +2,7 @@ import { IUbicacionV2 } from "../../../auxiliares";
 import {
   ConfiguracionHumedadSuelo,
   IAlerta,
+  IAmbiente,
   IReporte,
   Semaforo,
 } from "../../../generales";
@@ -23,4 +24,5 @@ export interface IUpdateSensorHumedadSuelo {
   ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
+  ambiente?: IAmbiente;
 }

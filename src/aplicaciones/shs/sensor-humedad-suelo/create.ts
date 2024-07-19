@@ -6,6 +6,10 @@ import {
   Semaforo,
 } from "../../..";
 
+import {
+  IAmbiente
+} from '../../../generales';
+
 export interface ICreateSensorHumedadSuelo {
   idCliente?: string;
   idEstablecimiento?: string;
@@ -23,4 +27,5 @@ export interface ICreateSensorHumedadSuelo {
   ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
+  ambiente?: IAmbiente;
 }
