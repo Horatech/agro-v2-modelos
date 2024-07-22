@@ -2,7 +2,6 @@ import { IUbicacionV2 } from "../../../auxiliares";
 import {
   ConfiguracionHumedadSuelo,
   IAlerta,
-  IAmbiente,
   ICliente,
   IDispositivo,
   IEstablecimiento,
@@ -34,5 +33,5 @@ export interface ISensorHumedadSuelo {
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
   dispositivo?: IDispositivo;
-  ambiente?: IAmbiente;
+  sensores?: string[];
 }

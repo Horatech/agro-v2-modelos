@@ -8,4 +8,5 @@ export interface IUpdateAmbiente {
   tipoSuelo?: string;
   cultivo?: string;
   faseCultivo?: string;
+  sensores?: string[];
 }

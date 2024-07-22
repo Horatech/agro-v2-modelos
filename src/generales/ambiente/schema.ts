@@ -13,6 +13,9 @@ export interface IAmbiente {
   tipoSuelo?: string;
   cultivo?: string;
   faseCultivo?: string;
+
+  //Populate
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
+  sensores?: string[];
 }

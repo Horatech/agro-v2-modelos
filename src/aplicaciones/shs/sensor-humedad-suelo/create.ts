@@ -27,5 +27,4 @@ export interface ICreateSensorHumedadSuelo {
   ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
-  ambiente?: IAmbiente;
 }

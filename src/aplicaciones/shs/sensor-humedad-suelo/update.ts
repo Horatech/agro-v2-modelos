@@ -24,5 +24,4 @@ export interface IUpdateSensorHumedadSuelo {
   ultimoEstado?: "Ok" | "Alerta";
   ultimaAlerta?: IAlerta;
   ultimoReporte?: IReporte;
-  ambiente?: IAmbiente;
 }

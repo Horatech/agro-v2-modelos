@@ -10,4 +10,5 @@ export interface ICreateAmbiente {
   cultivo?: string;
   faseCultivo?: string;
   idEstablecimiento: string;
+  sensores?: string[];
 }
