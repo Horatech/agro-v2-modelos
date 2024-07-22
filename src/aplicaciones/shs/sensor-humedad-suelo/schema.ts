@@ -33,5 +33,4 @@ export interface ISensorHumedadSuelo {
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
   dispositivo?: IDispositivo;
-  sensores?: string[];
 }
