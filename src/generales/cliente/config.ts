@@ -8,6 +8,11 @@ export interface ConfiguracionLote {
   colorRelleno?: string | null;
 }
 
+export interface ConfiguracionAmbiente {
+  colorLinea?: string | null;
+  colorRelleno?: string | null;
+}
+
 export interface ConfiguracionZona {
   colorLinea?: string | null;
   colorRelleno?: string | null;
@@ -103,6 +108,7 @@ export interface Configuraciones {
   // Colores
   establecimientos?: ConfiguracionEstablecimiento;
   lotes?: ConfiguracionLote;
+  ambientes?: ConfiguracionAmbiente;
   zonas?: ConfiguracionZona;
   animales?: ConfiguracionAnimal;
   canal?: ConfiguracionCanal;
