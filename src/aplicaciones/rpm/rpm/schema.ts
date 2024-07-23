@@ -1,6 +1,5 @@
-import { IUbicacionV2 } from '../../../auxiliares';
 import {
-  ConfiguracionPluviometro,
+  ConfiguracionSensorRPM,
   IAlerta,
   ICliente,
   IDispositivo,
@@ -8,7 +7,7 @@ import {
   IReporte,
 } from '../../../generales';
 
-export interface IPluviometro {
+export interface ISensorRPM {
   _id?: string;
   // Tentant
   idCliente?: string;
@@ -19,10 +18,9 @@ export interface IPluviometro {
   nombre?: string;
   modelo?: string;
   descripcion?: string;
-  configuraciones?: ConfiguracionPluviometro;
-  radioInfluencia?: number;
-  sensibilidad?: number;
-  ubicacion?: IUbicacionV2 | null;
+  configuraciones?: ConfiguracionSensorRPM;
+  idBomba?: string;
+  idBombeo?: string;
   //
   ultimaComunicacion?: string;
   ultimoEstado?: 'Ok' | 'Alerta';
@@ -33,3 +31,13 @@ export interface IPluviometro {
   establecimiento?: IEstablecimiento;
   dispositivo?: IDispositivo;
 }
+
+type OmitirCreate = '_id' | 'cliente' | 'establecimiento' | 'dispositivo';
+
+export interface ICreateSensorRPM
+  extends Omit<Partial<ISensorRPM>, OmitirCreate> {}
+
+type OmitirUpdate = '_id' | 'cliente' | 'establecimiento' | 'dispositivo';
+
+export interface IUpdateSensorRPM
+  extends Omit<Partial<ISensorRPM>, OmitirUpdate> {}

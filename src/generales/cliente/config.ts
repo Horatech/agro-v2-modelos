@@ -99,6 +99,12 @@ export interface ConfiguracionHumedadSuelo {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionSensorRPM {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  coloresNivel?: Semaforo[] | null;
+}
+
 export interface Configuraciones {
   // Colores
   establecimientos?: ConfiguracionEstablecimiento;
