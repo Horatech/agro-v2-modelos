@@ -1,7 +1,7 @@
 import { IUbicacion } from '../../auxiliares';
 import { ICliente } from '../cliente';
 import { IEstablecimiento } from '../establecimiento';
-
+import { ISensorRef } from './sensorRef/schema';
 export interface IAmbiente {
   _id: string;
   nombre: string;
@@ -17,5 +17,5 @@ export interface IAmbiente {
   //Populate
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
-  sensores?: string[];
+  sensores: ISensorRef[];
 }

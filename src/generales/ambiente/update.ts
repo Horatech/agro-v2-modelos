@@ -1,4 +1,5 @@
 import { IUbicacion } from '../../auxiliares';
+import { ISensorRef } from './sensorRef/schema';
 
 export interface IUpdateAmbiente {
   nombre?: string;
@@ -8,5 +9,5 @@ export interface IUpdateAmbiente {
   tipoSuelo?: string;
   cultivo?: string;
   faseCultivo?: string;
-  sensores?: string[];
+  sensores: ISensorRef[];
 }
