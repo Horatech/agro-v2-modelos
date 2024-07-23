@@ -9,5 +9,11 @@ export interface IUpdateAmbiente {
   tipoSuelo?: string;
   cultivo?: string;
   faseCultivo?: string;
+
+  sensoresSHS?: string[];
+  sensoresPluviometro?: string[];
+  sensoresFreatimetro?: string[];
+  sensoresMeteorologica?: string[];
+
   sensores: ISensorRef[];
 }

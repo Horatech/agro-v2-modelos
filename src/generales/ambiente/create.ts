@@ -10,6 +10,11 @@ export interface ICreateAmbiente {
   tipoSuelo?: string;
   cultivo?: string;
   faseCultivo?: string;
+
+  sensoresSHS?: string[];
+  sensoresPluviometro?: string[];
+  sensoresFreatimetro?: string[];
+  sensoresMeteorologica?: string[];
+
   idEstablecimiento: string;
-  sensores: ISensorRef[];
 }

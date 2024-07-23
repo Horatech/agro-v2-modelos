@@ -1,3 +1,4 @@
+import { IEstacionMeteorologica, IFreatimetro, IPluviometro, ISensorHumedadSuelo } from '../../aplicaciones';
 import { IUbicacion } from '../../auxiliares';
 import { ICliente } from '../cliente';
 import { IEstablecimiento } from '../establecimiento';
@@ -14,8 +15,17 @@ export interface IAmbiente {
   cultivo?: string;
   faseCultivo?: string;
 
+  sensoresSHS?: string[];
+  sensoresPluviometro?: string[];
+  sensoresFreatimetro?: string[];
+  sensoresMeteorologica?: string[];
+
   //Populate
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
-  sensores: ISensorRef[];
+  // Virtuals
+  dispositivoSHS?: ISensorHumedadSuelo[];
+  dispositivoPluviometro?: IPluviometro[];
+  dispositivoFreatimetro?: IFreatimetro[];
+  dispositivoMeteorologica?: IEstacionMeteorologica[];
 }
