@@ -32,12 +32,22 @@ export interface ISensorRPM {
   dispositivo?: IDispositivo;
 }
 
-type OmitirCreate = '_id' | 'cliente' | 'establecimiento' | 'dispositivo';
+type OmitirCreate =
+  | '_id'
+  | 'fechaCreacion'
+  | 'cliente'
+  | 'establecimiento'
+  | 'dispositivo';
 
 export interface ICreateSensorRPM
   extends Omit<Partial<ISensorRPM>, OmitirCreate> {}
 
-type OmitirUpdate = '_id' | 'cliente' | 'establecimiento' | 'dispositivo';
+type OmitirUpdate =
+  | '_id'
+  | 'fechaCreacion'
+  | 'cliente'
+  | 'establecimiento'
+  | 'dispositivo';
 
 export interface IUpdateSensorRPM
   extends Omit<Partial<ISensorRPM>, OmitirUpdate> {}
