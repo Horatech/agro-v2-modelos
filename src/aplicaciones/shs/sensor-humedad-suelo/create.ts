@@ -6,6 +6,10 @@ import {
   Semaforo,
 } from "../../..";
 
+import {
+  IAmbiente
+} from '../../../generales';
+
 export interface ICreateSensorHumedadSuelo {
   idCliente?: string;
   idEstablecimiento?: string;

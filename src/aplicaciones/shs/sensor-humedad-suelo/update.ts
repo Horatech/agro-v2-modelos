@@ -2,6 +2,7 @@ import { IUbicacionV2 } from "../../../auxiliares";
 import {
   ConfiguracionHumedadSuelo,
   IAlerta,
+  IAmbiente,
   IReporte,
   Semaforo,
 } from "../../../generales";
