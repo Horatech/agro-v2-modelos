@@ -2,7 +2,6 @@ import { IEstacionMeteorologica, IFreatimetro, IPluviometro, ISensorHumedadSuelo
 import { IUbicacion } from '../../auxiliares';
 import { ICliente } from '../cliente';
 import { IEstablecimiento } from '../establecimiento';
-import { ISensorRef } from './sensorRef/schema';
 export interface IAmbiente {
   _id: string;
   nombre: string;
