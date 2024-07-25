@@ -10,7 +10,7 @@ import { IEstablecimiento } from "../establecimiento";
 export interface IAmbiente {
   _id: string;
   nombre: string;
-  ubicacion?: IUbicacion[];
+  ubicacion?: IUbicacion;
   idCliente: string;
   idEstablecimiento: string;
   fechaCreacion: string;
@@ -43,7 +43,7 @@ type OmitirCreate =
   | "estacionMeteorologicas";
 
 export interface ICreateAmbiente
-  extends Omit<Partial<IAmbiente>, OmitirCreate> {}
+  extends Omit<Partial<IAmbiente>, OmitirCreate> { }
 
 type OmitirUpdate =
   | "_id"
@@ -56,4 +56,4 @@ type OmitirUpdate =
   | "estacionMeteorologicas";
 
 export interface IUpdateAmbiente
-  extends Omit<Partial<IAmbiente>, OmitirUpdate> {}
+  extends Omit<Partial<IAmbiente>, OmitirUpdate> { }
