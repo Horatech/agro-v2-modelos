@@ -52,4 +52,8 @@ export interface IDispositivoBombeoV2 {
   nombreArrancadores?: {
     [numero: number]: string;
   };
+  sensorRpm?: {
+    // el string es el objectId del sensor de rpm vinculado a la bomba del numero
+    [numero: number]: string;
+  };
 }
