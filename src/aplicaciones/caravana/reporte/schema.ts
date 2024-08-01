@@ -7,4 +7,6 @@ export interface IReporteCaravana {
   idAnimal?: string;
   dentroDelLote?: boolean;
   dentroDelEstablecimiento?: boolean;
+  satelites?: number;
+  hdop?: number;
 }
