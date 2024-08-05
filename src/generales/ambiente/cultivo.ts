@@ -1,7 +1,7 @@
 export interface ICultivo {
     nombre?: string;
     etapaCultivo?: 'etapaInicial' | 'etapaDesarrollo' | 'etapaMedia' | 'etapaFinal';
-    recomendacioneskcPorEtap?: {
+    recomendacionesKcPorEtap?: {
         etapaInicial?: { min: number; max: number };
         etapaDesarrollo?: { min: number; max: number };
         etapaMedia?: { min: number; max: number };
