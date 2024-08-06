@@ -1,3 +1,5 @@
+import { ITipoSuelo } from "./tipoSuelo";
+
 export interface ICultivo {
     _id: string;
     nombre?: string;
@@ -28,4 +30,7 @@ export interface ICultivo {
         min?: number;
         max?: number;
     };
+    IdSuelo?: string[];
+    // Virtuals
+    tipoSuelo?: ITipoSuelo[];
 }
