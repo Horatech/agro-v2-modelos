@@ -1,7 +1,8 @@
 export interface ICultivo {
+    _id: string;
     nombre?: string;
     etapaCultivo?: 'etapaInicial' | 'etapaDesarrollo' | 'etapaMedia' | 'etapaFinal';
-    KcPorEtap?: {
+    kcPorEtap?: {
         etapaInicial?: { min: number; max: number };
         etapaDesarrollo?: { min: number; max: number };
         etapaMedia?: { min: number; max: number };
@@ -13,9 +14,18 @@ export interface ICultivo {
         etapaMedia?: { min: number; max: number };
         etapaFinal?: { min: number; max: number };
     };
-    Agroquimicos?: {
+    ETcCultivo?: number;
+    agroquimicos?: {
         tipoAgroquimico?: string;
         cantidadRecomendada?: string;
         fechaAplicacion?: string;
     }[];
+    umbralHumedad?: {
+        min?: number;
+        max?: number;
+    };
+    umbralTemperatura?: {
+        min?: number;
+        max?: number;
+    };
 }

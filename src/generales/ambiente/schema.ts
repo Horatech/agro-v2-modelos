@@ -8,6 +8,7 @@ import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
 import { ICultivo } from "./cultivo";
+import { ITipoSuelo } from "./tipoSuelo";
 export interface IAmbiente {
   _id: string;
   nombre: string;
@@ -17,8 +18,8 @@ export interface IAmbiente {
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
   region?: string;
-  tipoSuelo?: string;
-  cultivo?: ICultivo;
+  tipoSuelo?: ITipoSuelo[];
+  cultivo?: ICultivo[];
   idSensorHumedadSuelos?: string[];
   idPluviometros?: string[];
   idFreatimetros?: string[];
