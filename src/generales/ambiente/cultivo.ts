@@ -30,7 +30,5 @@ export interface ICultivo {
         min?: number;
         max?: number;
     };
-    IdSuelo?: string[];
-    // Virtuals
     tipoSuelo?: ITipoSuelo[];
 }
