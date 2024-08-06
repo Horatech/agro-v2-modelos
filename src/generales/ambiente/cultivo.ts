@@ -8,7 +8,7 @@ export interface ICultivo {
         tipoAgroquimico?: string;
         fechaAplicacion?: string;
     }[];
-    idCultivo?: string;
+    idDatosCultivo?: string;
     // virtuals
     datosCultivo?: IDatosCultivo;
 }

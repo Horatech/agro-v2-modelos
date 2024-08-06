@@ -18,13 +18,13 @@ export interface IAmbiente {
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
   region?: string;
-  cultivo?: ICultivo[];
+  cultivos?: ICultivo[];
 
-  idTipoSuelo?: string[];
   idSensorHumedadSuelos?: string[];
   idPluviometros?: string[];
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
+  idTipoSuelo?: string[];
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
