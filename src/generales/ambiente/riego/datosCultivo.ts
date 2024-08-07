@@ -1,5 +1,6 @@
 export interface IDatosCultivo {
     _id?: string;
+    fechaCreacion: string;
     etcRecomendadosPorEtapa: {
         etapaInicial?: { min: number; max: number };
         etapaDesarrollo?: { min: number; max: number };
@@ -21,3 +22,17 @@ export interface IDatosCultivo {
         max?: number;
     };
 }
+
+type OmitirCreate =
+    | "_id"
+    | "fechaCreacion";
+
+export interface ICreateDatosCultivo
+    extends Omit<Partial<IDatosCultivo>, OmitirCreate> { }
+
+type OmitirUpdate =
+    | "_id"
+    | "fechaCreacion";
+
+export interface IUpdateDatosCultivo
+    extends Omit<Partial<IDatosCultivo>, OmitirUpdate> { }

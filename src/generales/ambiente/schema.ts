@@ -8,7 +8,7 @@ import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
 import { ICultivo } from "./cultivo";
-import { IDatosTipoSuelo } from "./riego/datosTipoSuelo";
+import { ITipoSuelo } from "./riego/tipoSuelo";
 export interface IAmbiente {
   _id: string;
   nombre: string;
@@ -32,7 +32,7 @@ export interface IAmbiente {
   pluviometros?: IPluviometro[];
   freatimetros?: IFreatimetro[];
   estacionMeteorologicas?: IEstacionMeteorologica[];
-  tipoSuelos?: IDatosTipoSuelo[];
+  tipoSuelos?: ITipoSuelo[];
 }
 
 type OmitirCreate =

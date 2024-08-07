@@ -1,4 +1,4 @@
 export * from "./schema";
 export * from "./cultivo";
-export * from "./riego/datosTipoSuelo";
+export * from "./riego/tipoSuelo";
 export * from "./riego/datosCultivo";
