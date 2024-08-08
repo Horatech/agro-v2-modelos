@@ -45,7 +45,9 @@ type OmitirCreate =
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
-  | "estacionMeteorologicas";
+  | "estacionMeteorologicas"
+  | "tipoSuelos"
+  | "cultivos";
 
 export interface ICreateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirCreate> { }
@@ -58,7 +60,9 @@ type OmitirUpdate =
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
-  | "estacionMeteorologicas";
+  | "estacionMeteorologicas"
+  | "tipoSuelos"
+  | "cultivos";
 
 export interface IUpdateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirUpdate> { }

@@ -1,7 +1,13 @@
+import { ICliente } from "../cliente";
+import { IEstablecimiento } from "../establecimiento";
+
 export interface ICultivo {
     _id?: string;
     nombre?: string;
     fechaCreacion: string;
+    idCliente: string;
+    idEstablecimiento: string;
+    idAmbiente: string;
     etapaCultivo?: 'etapaInicial' | 'etapaDesarrollo' | 'etapaMedia' | 'etapaFinal';
     ETcCultivo?: number;
     agroquimicos?: {
@@ -30,18 +36,25 @@ export interface ICultivo {
             max?: number;
         };
     };
+    // Virtuals
+    establecimiento?: IEstablecimiento;
+    cliente?: ICliente;
 }
 
 type OmitirCreate =
     | "_id"
-    | "fechaCreacion";
+    | "fechaCreacion"
+    | "establecimiento"
+    | "cliente";
 
 export interface ICreateCultivo
     extends Omit<Partial<ICultivo>, OmitirCreate> { }
 
 type OmitirUpdate =
     | "_id"
-    | "fechaCreacion";
+    | "fechaCreacion"
+    | "establecimiento"
+    | "cliente";
 
 export interface IUpdateCultivo
     extends Omit<Partial<ICultivo>, OmitirUpdate> { }
