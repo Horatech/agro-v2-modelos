@@ -17,6 +17,6 @@ export * from './gateway';
 export * from './zona';
 export * from './evento';
 export * from './sucesos';
-export * from './cultivo';
-export * from './cultivo';
 export * from './tipoSuelo';
+export * from './cultivo';
+export * from './ambiente';
