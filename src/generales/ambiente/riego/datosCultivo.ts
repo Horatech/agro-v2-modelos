@@ -1,5 +1,6 @@
 export interface IDatosCultivo {
     _id?: string;
+    nombre?: string;
     fechaCreacion: string;
     etcRecomendadosPorEtapa: {
         etapaInicial?: { min: number; max: number };
