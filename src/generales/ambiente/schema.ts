@@ -7,8 +7,9 @@ import {
 import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
-import { ICultivo } from "./cultivo";
-import { ITipoSuelo } from "./riego/tipoSuelo";
+import { ITipoSuelo } from "../tipoSuelo";
+import { ICultivo } from "../cultivo/schema";
+
 export interface IAmbiente {
   _id: string;
   nombre: string;
@@ -18,13 +19,13 @@ export interface IAmbiente {
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
   region?: string;
-  cultivos?: ICultivo[];
 
   idSensorHumedadSuelos?: string[];
   idPluviometros?: string[];
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
   idTipoSuelo?: string[];
+  idCultivos?: string[];
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
@@ -33,6 +34,7 @@ export interface IAmbiente {
   freatimetros?: IFreatimetro[];
   estacionMeteorologicas?: IEstacionMeteorologica[];
   tipoSuelos?: ITipoSuelo[];
+  cultivos?: ICultivo[];
 }
 
 type OmitirCreate =
