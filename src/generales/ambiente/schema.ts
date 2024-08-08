@@ -7,6 +7,8 @@ import {
 import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
+import { ICultivo } from "../cultivo/schema";
+
 export interface IAmbiente {
   _id: string;
   nombre: string;
@@ -15,14 +17,12 @@ export interface IAmbiente {
   idEstablecimiento: string;
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
-  region?: string;
-  tipoSuelo?: string;
-  cultivo?: string;
-  faseCultivo?: string;
+
   idSensorHumedadSuelos?: string[];
   idPluviometros?: string[];
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
+  cultivos?: ICultivo[];
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
