@@ -1,5 +1,10 @@
-import { TipoDispositivo } from "../tipoDispositivo";
+import { ITipoDispositivo, TipoDispositivo } from "../tipoDispositivo";
 import { TipoConectividad } from "../dispositivo/conectividad";
+import { ICliente } from "../cliente";
+import { IEstablecimiento } from "../establecimiento";
+import { ILoteDispositivo } from "../loteDispositivo";
+import { ILoraServer } from "../loraServer";
+import { IUsuario } from "../usuario";
 
 export type TipoAction = "ADD" | "UPDATE" | "DELETE";
 
@@ -23,12 +28,19 @@ export interface IAuditoria {
   firmware?: string;
   // ubicacion?: ICoordenadas | null;
 
-  idUser: string;
+  idUsuario: string;
   idCliente: string;
   idEstablecimiento?: string;
   idTipoDispositivo: string;
   idLoteDispositivo?: string;
   idLoraServer?: string;
+  // Virtuals
+  usuario: IUsuario;
+  cliente?: ICliente;
+  establecimiento?: IEstablecimiento;
+  tipoDispositivo?: ITipoDispositivo;
+  loteDispositivo?: ILoteDispositivo;
+  loraServer?: ILoraServer;
 }
 
 type OmitirCreate = "_id" | "fechaCreacion";
