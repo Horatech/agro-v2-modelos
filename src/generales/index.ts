@@ -18,3 +18,4 @@ export * from './zona';
 export * from './evento';
 export * from './sucesos';
 export * from './ambiente';
+export * from './auditorias';
