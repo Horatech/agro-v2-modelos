@@ -19,3 +19,4 @@ export * from './evento';
 export * from './sucesos';
 export * from './cultivo';
 export * from './ambiente';
+export * from './auditorias';
