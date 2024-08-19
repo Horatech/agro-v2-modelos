@@ -18,6 +18,7 @@ export interface IDispositivoCaravana {
   acelerometro?: boolean;
   adr?: boolean;
   mensajesConfirmados?: boolean;
+  bleEncendido?: boolean;
   frecuenciaReporte?: number;
   dr?: number;
   duracionAcelerometro?: number;
