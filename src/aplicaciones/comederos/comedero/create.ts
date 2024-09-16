@@ -6,8 +6,8 @@ export interface ICreateComedero {
   idEstablecimiento?: string;
   configuraciones?: ConfiguracionComederos;
   cicloAlimentacion?: {
-    comienzo: Date;
-    final: Date;
+    comienzo: String;
+    final: String;
   };
   //
   nombre: string;
