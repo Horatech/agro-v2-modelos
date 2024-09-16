@@ -5,6 +5,10 @@ export interface IUpdateComedero {
   idCliente?: string;
   idEstablecimiento?: string;
   configuraciones?: ConfiguracionComederos;
+  cicloAlimentacion?: {
+    comienzo: string;
+    final: string;
+  };
   //
   nombre?: string;
   idDispositivos?: string[];
