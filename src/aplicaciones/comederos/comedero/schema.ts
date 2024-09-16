@@ -13,8 +13,8 @@ export interface IComedero {
   idEstablecimiento?: string;
   configuraciones?: ConfiguracionComederos;
   cicloAlimentacion?: {
-    comienzo: String;
-    final: String;
+    comienzo: string;
+    final: string;
   };
   //
   nombre: string;

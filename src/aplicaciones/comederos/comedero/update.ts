@@ -6,8 +6,8 @@ export interface IUpdateComedero {
   idEstablecimiento?: string;
   configuraciones?: ConfiguracionComederos;
   cicloAlimentacion?: {
-    comienzo: String;
-    final: String;
+    comienzo: string;
+    final: string;
   };
   //
   nombre?: string;
