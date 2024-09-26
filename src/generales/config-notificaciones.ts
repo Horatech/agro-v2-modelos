@@ -26,16 +26,16 @@ export interface IConfigNotificacion {
   agrupacion?: Agrupacion;
   // Sobre que entidades se reciben las notificaciones
   idCliente?: string;
-  idEstablecimiento?: string;
-  idEntidad?: string;
+  idsEstablecimientos?: string[];
+  idsEntidades?: string[];
   // Los usuarios que van a recibir las notificaciones
   idsUsuarios?: string[];
 
   // Virtual
   cliente?: ICliente;
-  establecimiento?: IEstablecimiento;
+  establecimientos?: IEstablecimiento[];
   // Entidades
-  cisterna?: ICisterna[];
+  cisternas?: ICisterna[];
 }
 
 ////// CREATE
