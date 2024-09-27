@@ -28,7 +28,7 @@ export interface IConfigNotificacion {
   // Sobre que entidades se reciben las notificaciones
   idCliente?: string;
   idEstablecimiento?: string;
-  idEntidad?: string[];
+  idEntidad?: string;
   // Los usuarios que van a recibir las notificaciones
   idsUsuarios?: string[];
 
