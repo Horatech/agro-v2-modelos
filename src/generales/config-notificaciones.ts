@@ -2,6 +2,7 @@ import { ICisterna } from "../aplicaciones";
 import { ICliente } from "./cliente";
 import { IEstablecimiento } from "./establecimiento";
 import { TipoDispositivo } from "./tipoDispositivo";
+import { IUsuario } from "./usuario";
 
 export interface CondicionNotificacion {
   "Nivel de Cisterna"?: {
@@ -32,6 +33,7 @@ export interface IConfigNotificacion {
   idsUsuarios?: string[];
 
   // Virtual
+  usuarios?: IUsuario[];
   cliente?: ICliente;
   establecimientos?: IEstablecimiento[];
   // Entidades
