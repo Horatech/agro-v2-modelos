@@ -1,4 +1,4 @@
-import { ICoordenadas } from "../../../auxiliares";
+import { ICoordenadas } from "../../auxiliares";
 import {
   ConfiguracionCisterna,
   ICliente,
@@ -6,7 +6,7 @@ import {
   IEstablecimiento,
   ILote,
   Semaforo,
-} from "../../../generales";
+} from "../../generales";
 
 export interface ICisterna {
   // Pozo
@@ -31,7 +31,7 @@ export interface ICisterna {
   ubicacion?: ICoordenadas | null;
   // Estado
   estado?: "Encendida" | "Apagada" | "Sin Información";
-  condicion?: "Con Fallos" | "Sin Alertas" | "Sin Información";
+  condicion?: "Con Fallos" | "Sin Alertas" | "Alerta Nivel" | "Sin Información";
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
@@ -39,3 +39,25 @@ export interface ICisterna {
   bombas?: IDispositivo[];
   niveles?: IDispositivo[];
 }
+
+////// CREATE
+type OmitirCreate =
+  | "_id"
+  | "cliente"
+  | "establecimiento"
+  | "lote"
+  | "bombas"
+  | "niveles";
+export interface ICreateCisterna
+  extends Omit<Partial<ICisterna>, OmitirCreate> {}
+
+////// UPDATE
+type OmitirUpdate =
+  | "_id"
+  | "cliente"
+  | "establecimiento"
+  | "lote"
+  | "bombas"
+  | "niveles";
+export interface IUpdateCisterna
+  extends Omit<Partial<ICisterna>, OmitirUpdate> {}
