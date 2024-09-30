@@ -31,7 +31,8 @@ export interface ICisterna {
   ubicacion?: ICoordenadas | null;
   // Estado
   estado?: "Encendida" | "Apagada" | "Sin Información";
-  condicion?: "Con Fallos" | "Sin Alertas" | "Alerta Nivel" | "Sin Información";
+  condicion?: "Con Fallos" | "Sin Alertas" | "Sin Información";
+  condicionNivel?: "Alerta" | "Sin Alertas" | "Sin Información";
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
