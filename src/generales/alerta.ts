@@ -34,6 +34,7 @@ export interface IAlerta {
   // Datos especificos de la alerta de acuerdo al tipo de dispositivo
   descripcion: string;
   reportes: Record<string, any>[];
+  idConfigNotificacion?: string;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
