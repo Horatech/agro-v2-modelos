@@ -1,4 +1,5 @@
 import { ICliente } from "./cliente";
+import { IConfigNotificacion } from "./config-notificaciones";
 import { IEstablecimiento } from "./establecimiento";
 import { TipoDispositivo } from "./tipoDispositivo";
 import { IUsuario } from "./usuario";
@@ -38,12 +39,21 @@ export interface IAlerta {
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
+  configNotificacion?: IConfigNotificacion;
 }
 
 ////// CREATE
-type OmitirCreate = "_id" | "cliente" | "establecimiento";
+type OmitirCreate =
+  | "_id"
+  | "cliente"
+  | "establecimiento"
+  | "configNotificacion";
 export interface ICreateAlerta extends Omit<Partial<IAlerta>, OmitirCreate> {}
 
 ////// UPDATE
-type OmitirUpdate = "_id" | "cliente" | "establecimiento";
+type OmitirUpdate =
+  | "_id"
+  | "cliente"
+  | "establecimiento"
+  | "configNotificacion";
 export interface IUpdateAlerta extends Omit<Partial<IAlerta>, OmitirUpdate> {}
