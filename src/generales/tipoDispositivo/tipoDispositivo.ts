@@ -8,6 +8,7 @@ export type TipoDispositivo =
   | "Estacion Meteorologica"
   | "Freatimetro"
   | "Lanza de Humedad"
+  | "Luminaria"
   | "Nivel de Canal"
   | "Nivel de Cisterna"
   | "Nivel de Comederos"
@@ -30,6 +31,7 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Estacion Meteorologica",
   "Freatimetro",
   "Lanza de Humedad",
+  "Luminaria",
   "Nivel de Canal",
   "Nivel de Cisterna",
   "Nivel de Comederos",
