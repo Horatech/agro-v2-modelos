@@ -10,6 +10,7 @@ export * from "./comederos";
 export * from "./estacionMeteorologica";
 export * from "./freatimetro";
 export * from "./lanza-humedad";
+export * from "./luminarias";
 export * from "./pluviometro";
 export * from "./represas";
 export * from "./sla";
