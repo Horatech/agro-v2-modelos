@@ -3,18 +3,21 @@ import { ICliente, IDispositivo, IEstablecimiento } from "../../generales";
 export interface ILuminaria {
   _id?: string;
   idCliente?: string;
-  idEstablecimiento?: string;
-  idLote?: string;
+  idEstablecimiento?: string; // En este caso se usaria como agrupacion principal de luminarias
+  idLote?: string; // En este caso se usarian como agrupacion secundaria de luminarias
+  deveui?: string; // Identificador del nodo asignado
+  // Info de identificacion
   identificacion?: string;
   marca?: string;
   modelo?: string;
+  // Consumos teoricos para comparar con lo reportado y generar alertas
   consumo20?: number;
   consumo40?: number;
   consumo60?: number;
   consumo80?: number;
   consumo100?: number;
+  //
   horasVida?: number;
-  deveui?: string;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
