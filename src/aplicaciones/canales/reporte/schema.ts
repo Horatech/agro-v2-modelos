@@ -3,5 +3,6 @@ export interface IReporteCanal {
   bateria?: number;
   cargando?: boolean;
   calidadDeLectura?: number;
-  tipoCanal?: "Entrada" | "Salida";
+  tipoCanal?: 'Entrada' | 'Salida';
+  reenviar?: boolean;
 }
