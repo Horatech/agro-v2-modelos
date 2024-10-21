@@ -4,5 +4,5 @@ export interface IReporteCanal {
   cargando?: boolean;
   calidadDeLectura?: number;
   tipoCanal?: 'Entrada' | 'Salida';
-  reenviar?: boolean;
+  noReenviar?: boolean;
 }
