@@ -10,13 +10,7 @@ export interface ILuminaria {
   identificacion?: string;
   marca?: string;
   modelo?: string;
-  // Consumos teoricos para comparar con lo reportado y generar alertas
-  consumo20?: number;
-  consumo40?: number;
-  consumo60?: number;
-  consumo80?: number;
-  consumo100?: number;
-  //
+  potencia?: number;
   horasVida?: number;
   // Virtuals
   cliente?: ICliente;

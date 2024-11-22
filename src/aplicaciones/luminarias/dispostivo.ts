@@ -1,14 +1,9 @@
 import { ICoordenadas } from "../../auxiliares";
+import { IModoLuminaria } from "./reporte";
 
 export interface IDispositivoLuminaria {
-  dimmer?: number;
-  intervaloComunicacion?: number;
-  ldr?: number;
-  ldrInferior?: number;
-  ldrSuperior?: number;
-  minutosAmanecer?: number;
-  minutosAtardecer?: number;
-  offsetAmanecer?: number;
-  offsetAtardecer?: number;
-  ubicacionManual?: ICoordenadas;
+  deviceWorkingTime?: number;
+  restartTimes?: number;
+  location?: ICoordenadas;
+  mode?: IModoLuminaria;
 }

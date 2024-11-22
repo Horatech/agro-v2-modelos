@@ -5,9 +5,12 @@ export type IModoLuminaria =
   | "Manual";
 
 export interface IReporteLuminaria {
-  encendida?: boolean;
-  dimmer?: number;
-  consumo?: number;
-  modo?: IModoLuminaria;
-  ldr?: number;
+  dimmingValue?: number;
+  turnOnOffStatus?: boolean;
+  voltage?: number;
+  current?: number;
+  activePower?: number;
+  reactivePower?: number;
+  frequency?: number;
+  temperature?: number;
 }
