@@ -1,6 +1,13 @@
 import { ICoordenadas } from "../../auxiliares";
 import { IModoLuminaria } from "./reporte";
 
+export interface ISetMargenesAlarmaLuminaria {
+  voltageHighLimit?: number; // V
+  voltageLowLimit?: number; // V
+  currentHighLimit?: number; // A
+  currentLowLimit?: number; // A
+}
+
 export interface IDispositivoLuminaria {
   deviceWorkingTime?: number; // Minutos
   restartTimes?: number; // Veces
