@@ -7,5 +7,5 @@ export interface IUpdateReporte {
   tipoDispositivo?: TipoDispositivo;
   idAsignado?: string;
   // Datos especificos de la alerta de acuerdo al tipo de dispositivo
-  reporte: Record<string, any>;
+  reporte?: Record<string, any>;
 }
