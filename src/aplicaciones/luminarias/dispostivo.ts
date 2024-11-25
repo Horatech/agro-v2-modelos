@@ -6,4 +6,6 @@ export interface IDispositivoLuminaria {
   restartTimes?: number; // Veces
   location?: ICoordenadas;
   mode?: IModoLuminaria;
+  intervalGeneral?: number; // Minutos
+  intervalEnergy?: number; // Minutos
 }
