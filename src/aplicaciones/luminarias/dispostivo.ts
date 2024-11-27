@@ -20,6 +20,7 @@ export interface ISetEstrategiaCalendarioLuminaria {
 export interface IDispositivoLuminaria {
   deviceWorkingTime?: number; // Minutos
   restartTimes?: number; // Veces
+  gpsActivo?: boolean;
   location?: ICoordenadas;
   mode?: IModoLuminaria;
   // FRECUENCIA DE REPORTE
@@ -36,6 +37,7 @@ export interface IDispositivoLuminaria {
   estrategia2: ISetEstrategiaCalendarioLuminaria;
   estrategia3: ISetEstrategiaCalendarioLuminaria;
   // MODO GPS
+
   modoGPSActivo?: boolean;
   offsetAmanecer?: number; // Minutos
   offsetAtardecer?: number; // Minutos
