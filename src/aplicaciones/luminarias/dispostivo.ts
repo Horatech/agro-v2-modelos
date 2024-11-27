@@ -22,10 +22,28 @@ export interface IDispositivoLuminaria {
   restartTimes?: number; // Veces
   location?: ICoordenadas;
   mode?: IModoLuminaria;
+  // FRECUENCIA DE REPORTE
   intervalGeneral?: number; // Minutos
   intervalEnergy?: number; // Minutos
+  // MARGENES DE ALARMA
   voltageHighLimit?: number; // V
   voltageLowLimit?: number; // V
   currentHighLimit?: number; // A
   currentLowLimit?: number; // A
+  // MODO CALENDARIO (estrategias)
+  modoCalendarioActivo?: boolean;
+  estrategia1: ISetEstrategiaCalendarioLuminaria;
+  estrategia2: ISetEstrategiaCalendarioLuminaria;
+  estrategia3: ISetEstrategiaCalendarioLuminaria;
+  // MODO GPS
+  modoGPSActivo?: boolean;
+  offsetAmanecer?: number; // Minutos
+  offsetAtardecer?: number; // Minutos
+  // MODO LDR
+  modoLDRActivo?: boolean;
+  delayLDR?: number; // Segundos
+  valorEncendido?: number; // Lux
+  valorApagado?: number; // Lux
+  fechaUltimoValorLDR?: string;
+  ultimoValorLDR?: number; // Lux
 }
