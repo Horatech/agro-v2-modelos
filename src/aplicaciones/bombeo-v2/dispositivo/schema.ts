@@ -36,6 +36,7 @@ export interface IDispositivoBombeoV2 {
   };
 
   // Arrancadores
+
   cantidadNiveles?: number;
   arrancadoresHabilitados?: {
     [numero: number]: boolean;
@@ -55,5 +56,8 @@ export interface IDispositivoBombeoV2 {
   sensorRpm?: {
     // el string es el objectId del sensor de rpm vinculado a la bomba del numero
     [numero: number]: string;
+  };
+  velocidadSincronica?: {
+    [numero: number]: number;
   };
 }
