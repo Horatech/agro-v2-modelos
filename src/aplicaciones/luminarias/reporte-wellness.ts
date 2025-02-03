@@ -1,3 +1,10 @@
+import { IModoLuminaria } from "./reporte";
+
+export type ModoForzado =
+  | "No Forzado"
+  | "Forzado Encendido"
+  | "Forzado Apagado";
+
 export interface IReporteLuminariaWellness {
   dimmingValue?: number; // %
   turnOnOffStatus?: boolean; // True: Encendido, False: Apagado
@@ -9,4 +16,6 @@ export interface IReporteLuminariaWellness {
   reactivePowerTotal?: number; // Wh - acumulada
   temperature?: number; // Grados Celsius
   lumenes?: number; // Lux
+  modo?: IModoLuminaria;
+  modoForzado?: ModoForzado;
 }
