@@ -6,6 +6,8 @@ export interface IDispositivoLuminariaWellness {
   mode?: IModoLuminaria;
   activePowerTotal?: number; // kWh - acumulada
   reactivePowerTotal?: number; // kWh - acumulada
+  turnOnOffStatus?: boolean; // True: Encendido, False: Apagado
+  alarma?: string;
   // MARGENES DE ALARMA
   voltageHighLimit?: number; // V
   voltageLowLimit?: number; // V

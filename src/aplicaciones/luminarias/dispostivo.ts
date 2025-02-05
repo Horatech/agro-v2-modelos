@@ -25,6 +25,8 @@ export interface IDispositivoLuminaria {
   mode?: IModoLuminaria;
   activePowerTotal?: number; // kWh - acumulada
   reactivePowerTotal?: number; // kWh - acumulada
+  turnOnOffStatus?: boolean; // True: Encendido, False: Apagado
+  alarma?: string;
   // FRECUENCIA DE REPORTE
   intervalGeneral?: number; // Minutos
   intervalEnergy?: number; // Minutos
