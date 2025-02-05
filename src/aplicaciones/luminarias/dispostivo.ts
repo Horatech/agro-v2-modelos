@@ -23,6 +23,8 @@ export interface IDispositivoLuminaria {
   gpsActivo?: boolean;
   location?: ICoordenadas;
   mode?: IModoLuminaria;
+  activePowerTotal?: number; // kWh - acumulada
+  reactivePowerTotal?: number; // kWh - acumulada
   // FRECUENCIA DE REPORTE
   intervalGeneral?: number; // Minutos
   intervalEnergy?: number; // Minutos

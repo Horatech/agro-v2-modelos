@@ -4,6 +4,8 @@ import { IModoLuminaria } from "./reporte";
 export interface IDispositivoLuminariaWellness {
   location?: ICoordenadas;
   mode?: IModoLuminaria;
+  activePowerTotal?: number; // kWh - acumulada
+  reactivePowerTotal?: number; // kWh - acumulada
   // MARGENES DE ALARMA
   voltageHighLimit?: number; // V
   voltageLowLimit?: number; // V
