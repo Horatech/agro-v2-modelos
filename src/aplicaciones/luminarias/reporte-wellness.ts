@@ -10,8 +10,8 @@ export interface IReporteLuminariaWellness {
   turnOnOffStatus?: boolean; // True: Encendido, False: Apagado
   voltage?: number; // V
   current?: number; // A
-  activePower?: number; // W - instantanea
-  reactivePower?: number; // W - instantanea
+  activePower?: number; // kwH - acumulada, se resetea cuando el nodo se reinicia
+  reactivePower?: number; // kwH - acumulada, se resetea cuando el nodo se reinicia
   activePowerTotal?: number; // kWh - acumulada
   reactivePowerTotal?: number; // kWh - acumulada
   temperature?: number; // Grados Celsius
