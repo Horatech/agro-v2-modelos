@@ -12,8 +12,8 @@ export interface IReporteLuminariaWellness {
   current?: number; // A
   activePower?: number; // W - instantanea
   reactivePower?: number; // W - instantanea
-  activePowerTotal?: number; // Wh - acumulada
-  reactivePowerTotal?: number; // Wh - acumulada
+  activePowerTotal?: number; // kWh - acumulada
+  reactivePowerTotal?: number; // kWh - acumulada
   temperature?: number; // Grados Celsius
   lumenes?: number; // Lux
   modo?: IModoLuminaria;

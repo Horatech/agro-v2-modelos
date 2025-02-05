@@ -14,4 +14,5 @@ export interface IReporteLuminaria {
   reactivePower?: number; // W
   frequency?: number; // Hz
   temperature?: number; // Grados Celsius
+  activePowerTotal?: number; // kWh - acumulada
 }
