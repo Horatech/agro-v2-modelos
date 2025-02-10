@@ -9,4 +9,6 @@ export interface IReporteCaravana {
   dentroDelEstablecimiento?: boolean;
   satelites?: number;
   hdop?: number;
+  tipo?: "Ubicacion" | "Alarma";
+  mensaje?: string;
 }
