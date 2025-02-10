@@ -1,7 +1,7 @@
 import { ICoordenadas } from "../../../auxiliares";
 
 export interface IReporteCaravana {
-  ubicacion: ICoordenadas;
+  ubicacion?: ICoordenadas;
   ubicacionCorregida?: ICoordenadas;
   fixTime?: number;
   idAnimal?: string;
@@ -9,6 +9,6 @@ export interface IReporteCaravana {
   dentroDelEstablecimiento?: boolean;
   satelites?: number;
   hdop?: number;
-  tipo?: "Ubicacion" | "Alarma";
+  tipo?: "Ubicacion" | "Alerta";
   mensaje?: string;
 }
