@@ -60,4 +60,7 @@ export interface IDispositivoBombeoV2 {
   velocidadSincronica?: {
     [numero: number]: number;
   };
+  velocidadActual?: {
+    [numero: number]: number;
+  };
 }
