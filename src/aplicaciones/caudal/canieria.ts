@@ -8,7 +8,7 @@ import {
 
 export interface ICanieria {
   _id?: string;
-  fechaCreacion?: String;
+  fechaCreacion?: string;
   idCliente?: string;
   idEstablecimiento?: string;
   /**
