@@ -24,6 +24,18 @@ export interface ICanieria {
    */
   diametro?: number;
   /**
+   * Material de la cañeria
+   */
+  material?: string;
+  /**
+   * Espesor de la cañeria en mm
+   */
+  espesor?: number;
+  /**
+   * Tipo de liquido que transporta
+   */
+  tipoDeLiquido?: string;
+  /**
    * DevEUI del dispositivo asociado
    */
   deveui?: string;
