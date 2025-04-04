@@ -20,6 +20,7 @@ export type TipoDispositivo =
   | "Sensor Humedad de Suelo"
   | "Silobolsa"
   | "Tracker"
+  | "Sensor de Caudal"
   | "Sensor RPM";
 
 export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
@@ -44,5 +45,6 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Sensor Humedad de Suelo",
   "Silobolsa",
   "Tracker",
+  "Sensor de Caudal",
   "Sensor RPM",
 ];
