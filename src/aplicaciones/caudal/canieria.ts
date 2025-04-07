@@ -1,10 +1,10 @@
-import { IGeoJSONPoint } from "../../auxiliares";
+import { IGeoJSONPoint } from '../../auxiliares';
 import {
   ICliente,
   IDispositivo,
   IEstablecimiento,
   IReporte,
-} from "../../generales";
+} from '../../generales';
 
 export interface ICanieria {
   _id?: string;
@@ -40,6 +40,15 @@ export interface ICanieria {
    */
   deveui?: string;
   /**
+   * Si el dispositivo esta asignado a una bomba
+   * @default false
+   */
+  asignado?: boolean;
+  /**
+   * ID del bombeo asociado
+   */
+  idBombeo?: string;
+  /**
    * Ultimo reporte asociado a la cañeria
    */
   ultimoReporte?: IReporte;
@@ -52,22 +61,22 @@ export interface ICanieria {
 
 ////// CREATE
 type OmitirCreate =
-  | "_id"
-  | "fechaCreacion"
-  | "dispositivo"
-  | "cliente"
-  | "establecimiento"
-  | "dispositivo";
+  | '_id'
+  | 'fechaCreacion'
+  | 'dispositivo'
+  | 'cliente'
+  | 'establecimiento'
+  | 'dispositivo';
 export interface ICreateCanieria
   extends Omit<Partial<ICanieria>, OmitirCreate> {}
 
 ////// UPDATE
 type OmitirUpdate =
-  | "_id"
-  | "fechaCreacion"
-  | "dispositivo"
-  | "cliente"
-  | "establecimiento"
-  | "dispositivo";
+  | '_id'
+  | 'fechaCreacion'
+  | 'dispositivo'
+  | 'cliente'
+  | 'establecimiento'
+  | 'dispositivo';
 export interface IUpdateCanieria
   extends Omit<Partial<ICanieria>, OmitirUpdate> {}

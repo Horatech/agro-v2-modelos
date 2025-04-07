@@ -63,4 +63,9 @@ export interface IDispositivoBombeoV2 {
   velocidadActual?: {
     [numero: number]: number;
   };
+  /// Caudal
+  canieria?: {
+    // el string es el objectId de la cañería asignada a la bomba del numero
+    [numero: number]: string;
+  };
 }
