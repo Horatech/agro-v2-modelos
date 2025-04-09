@@ -24,6 +24,10 @@ export interface ICanieria {
    */
   diametro?: number;
   /**
+   * Caudal Maximo de la cañeria en m3/h
+   */
+  caudalMax?: number;
+  /**
    * Material de la cañeria
    */
   material?: string;
@@ -68,7 +72,7 @@ type OmitirCreate =
   | 'establecimiento'
   | 'dispositivo';
 export interface ICreateCanieria
-  extends Omit<Partial<ICanieria>, OmitirCreate> {}
+  extends Omit<Partial<ICanieria>, OmitirCreate> { }
 
 ////// UPDATE
 type OmitirUpdate =
@@ -79,4 +83,4 @@ type OmitirUpdate =
   | 'establecimiento'
   | 'dispositivo';
 export interface IUpdateCanieria
-  extends Omit<Partial<ICanieria>, OmitirUpdate> {}
+  extends Omit<Partial<ICanieria>, OmitirUpdate> { }
