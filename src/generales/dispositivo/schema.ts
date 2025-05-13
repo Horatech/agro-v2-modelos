@@ -48,3 +48,7 @@ export interface IDispositivo {
   loteDispositivo?: ILoteDispositivo;
   loraServer?: ILoraServer;
 }
+
+export interface IDispositivoWithRegistros extends IDispositivo {
+  ultimosRegistros?: { bombas: Array<{ i: IReporte }> };
+}
