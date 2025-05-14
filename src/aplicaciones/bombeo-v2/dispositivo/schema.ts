@@ -1,3 +1,5 @@
+import { IReporte } from "../../../generales";
+
 export interface IDispositivoBombeoV2 {
   arranqueAutomatico?: boolean;
   hayEnergia?: boolean;
@@ -67,5 +69,10 @@ export interface IDispositivoBombeoV2 {
   canieria?: {
     // el string es el objectId de la cañería asignada a la bomba del numero
     [numero: number]: string;
+  };
+
+  // El ultimo reporte de cada bomba
+  reporteBombas?: {
+    [numero: number]: IReporte;
   };
 }
