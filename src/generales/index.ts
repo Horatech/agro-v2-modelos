@@ -19,6 +19,7 @@ export * from "./zona";
 export * from "./evento";
 export * from "./sucesos";
 export * from "./cultivo";
+export * from "./suelo";
 export * from "./ambiente";
 export * from "./auditorias";
 //

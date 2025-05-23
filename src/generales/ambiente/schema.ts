@@ -8,6 +8,7 @@ import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
 import { ICultivo } from "../cultivo/schema";
+import { ISuelo } from "../suelo";
 
 export interface IAmbiente {
   _id: string;
@@ -23,6 +24,7 @@ export interface IAmbiente {
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
   cultivos?: ICultivo[];
+  suelos?: ISuelo[];
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
@@ -43,7 +45,7 @@ type OmitirCreate =
   | "estacionMeteorologicas";
 
 export interface ICreateAmbiente
-  extends Omit<Partial<IAmbiente>, OmitirCreate> { }
+  extends Omit<Partial<IAmbiente>, OmitirCreate> {}
 
 type OmitirUpdate =
   | "_id"
@@ -56,4 +58,4 @@ type OmitirUpdate =
   | "estacionMeteorologicas";
 
 export interface IUpdateAmbiente
-  extends Omit<Partial<IAmbiente>, OmitirUpdate> { }
+  extends Omit<Partial<IAmbiente>, OmitirUpdate> {}
