@@ -16,6 +16,7 @@ export type TipoDispositivo =
   | "Nivel de Láminas de Agua"
   | "Nivel de Represas"
   | "Pluviometro"
+  | "Presion de Agua"
   | "Sensor de CO2"
   | "Sensor Humedad de Suelo"
   | "Silobolsa"
@@ -41,6 +42,7 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Nivel de Láminas de Agua",
   "Nivel de Represas",
   "Pluviometro",
+  "Presion de Agua",
   "Sensor de CO2",
   "Sensor Humedad de Suelo",
   "Silobolsa",
