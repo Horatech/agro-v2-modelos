@@ -19,3 +19,4 @@ export * from "./shs";
 export * from "./bines";
 export * from "./rpm";
 export * from "./caudal";
+export * from "./presion-agua";
