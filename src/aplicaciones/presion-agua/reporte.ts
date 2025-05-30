@@ -4,7 +4,7 @@ export interface IReportePresionAgua {
   bateria?: number;
   bateriaBaja?: boolean;
   nivel?: {
-    etiqueta?: string;
+    etiqueta?: string; // Semáforo o etiqueta del nivel de presión
     color?: string;
   };
 }
