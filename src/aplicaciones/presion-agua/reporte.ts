@@ -1,6 +1,6 @@
 export interface IReportePresionAgua {
   alerta?: boolean;
-  presion?: number;
+  presion?: number; // En kpa
   bateria?: number;
   bateriaBaja?: boolean;
   nivel?: {
