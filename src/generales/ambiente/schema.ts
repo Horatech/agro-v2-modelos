@@ -9,6 +9,7 @@ import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
 import { ICultivo } from "../cultivo/schema";
 import { ISuelo } from "../suelo";
+import { IDepartamento } from "../departamento";
 
 export interface IAmbiente {
   _id: string;
@@ -26,8 +27,9 @@ export interface IAmbiente {
   cultivos?: ICultivo[];
   suelos?: ISuelo[];
   capacidadRiego?: number;
+  idDepartamento?: string;
   // integraciones
-  idSiembra?: string;
+  idSiembraChaman?: string;
 
   // Virtuals
   establecimiento?: IEstablecimiento;
@@ -36,6 +38,7 @@ export interface IAmbiente {
   pluviometros?: IPluviometro[];
   freatimetros?: IFreatimetro[];
   estacionMeteorologicas?: IEstacionMeteorologica[];
+  departamento?: IDepartamento;
 }
 
 type OmitirCreate =
@@ -46,7 +49,8 @@ type OmitirCreate =
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
-  | "estacionMeteorologicas";
+  | "estacionMeteorologicas"
+  | "departamento";
 
 export interface ICreateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirCreate> {}
@@ -59,7 +63,8 @@ type OmitirUpdate =
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
-  | "estacionMeteorologicas";
+  | "estacionMeteorologicas"
+  | "departamento";
 
 export interface IUpdateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirUpdate> {}

@@ -1,5 +1,6 @@
 export interface ISemilla {
   _id: string;
+  idSemillaChaman: string;
   campania: string;
   ciclo: string;
   cultivo: string;
