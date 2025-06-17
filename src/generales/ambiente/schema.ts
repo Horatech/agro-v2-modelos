@@ -25,6 +25,7 @@ export interface IAmbiente {
   idEstacionMeteorologicas?: string[];
   cultivos?: ICultivo[];
   suelos?: ISuelo[];
+  capacidadRiego?: number;
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;

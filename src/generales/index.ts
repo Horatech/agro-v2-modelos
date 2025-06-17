@@ -2,7 +2,6 @@ export * from "./alerta";
 export * from "./cliente";
 export * from "./comandos";
 export * from "./configuracionDispositivo";
-export * from "./cultivo";
 export * from "./dispositivo";
 export * from "./establecimiento";
 export * from "./loraServer";
@@ -22,5 +21,6 @@ export * from "./cultivo";
 export * from "./suelo";
 export * from "./ambiente";
 export * from "./auditorias";
+export * from "./semilla";
 //
 export * from "./config-notificaciones";
