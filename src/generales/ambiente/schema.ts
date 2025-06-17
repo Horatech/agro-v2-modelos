@@ -24,7 +24,7 @@ export interface IAmbiente {
   idPluviometros?: string[];
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
-  cultivos?: ICultivo;
+  cultivo?: ICultivo;
   suelos?: ISuelo[];
   capacidadRiego?: number;
   idDepartamento?: string;
