@@ -1,3 +1,5 @@
+import { ISemilla } from "../semilla";
+
 export interface ICultivo {
   nombre?: string;
   fechaCreacion: string;
@@ -7,4 +9,7 @@ export interface ICultivo {
     | "etapaMedia"
     | "etapaFinal";
   variedad?: string;
+  idSemilla?: string;
+  // Virtuals
+  semilla?: ISemilla;
 }
