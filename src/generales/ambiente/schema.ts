@@ -26,6 +26,9 @@ export interface IAmbiente {
   cultivos?: ICultivo[];
   suelos?: ISuelo[];
   capacidadRiego?: number;
+  // integraciones
+  idSiembra?: string;
+
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
