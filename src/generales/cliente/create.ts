@@ -9,4 +9,5 @@ export interface ICreateCliente {
   imagenes?: IImagenesCliente;
   configuraciones?: Configuraciones;
   integraciones?: IIntegracion[];
+  apikeyChaman?: string;
 }

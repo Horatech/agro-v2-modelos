@@ -12,4 +12,5 @@ export interface ICliente {
   imagenes?: IImagenesCliente;
   configuraciones?: Configuraciones;
   integraciones?: IIntegracion[];
+  apikeyChaman?: string;
 }

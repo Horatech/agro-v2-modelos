@@ -10,4 +10,5 @@ export interface IUpdateCliente {
   imagenes?: IImagenesCliente;
   configuraciones?: Configuraciones;
   integraciones?: IIntegracion[];
+  apikeyChaman?: string;
 }
