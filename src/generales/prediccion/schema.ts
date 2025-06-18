@@ -16,10 +16,10 @@ export interface IPrediccionRiego {
   // DATOS prediccion
   fecha?: string;
   idSiembraChaman?: string;
-  lote: string;
-  capacidadCampo: number;
-  puntoMarchitez: number;
-  recomendacion: IRecomendacionRiego[];
+  lote?: string;
+  capacidadCampo?: number;
+  puntoMarchitez?: number;
+  recomendacion?: IRecomendacionRiego[];
   // relaciones
   idAmbiente?: string;
   // virtuals
@@ -32,9 +32,9 @@ export interface IPrediccionEnfermedades {
   // DATOS prediccion
   fecha?: string;
   idSiembraChaman?: string;
-  lote: string;
-  cultivo: string;
-  recomendacion: IRecomendacionEnfermedades[];
+  lote?: string;
+  cultivo?: string;
+  recomendacion?: IRecomendacionEnfermedades[];
   // relaciones
   idAmbiente?: string;
   // virtuals
