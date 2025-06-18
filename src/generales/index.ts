@@ -23,5 +23,6 @@ export * from "./ambiente";
 export * from "./auditorias";
 export * from "./semilla";
 export * from "./departamento";
+export * from "./prediccion";
 //
 export * from "./config-notificaciones";
