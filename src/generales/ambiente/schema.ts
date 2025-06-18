@@ -10,6 +10,7 @@ import { IEstablecimiento } from "../establecimiento";
 import { ICultivo } from "../cultivo/schema";
 import { ISuelo } from "../suelo";
 import { IDepartamento } from "../departamento";
+import { IPrediccionEnfermedades, IPrediccionRiego } from "../prediccion";
 
 export interface IAmbiente {
   _id: string;
@@ -28,6 +29,8 @@ export interface IAmbiente {
   suelos?: ISuelo[];
   capacidadRiego?: number;
   idDepartamento?: string;
+  ultimaPrediccionRiego?: IPrediccionRiego;
+  ultimaPrediccionEnfermedades?: IPrediccionEnfermedades;
   // integraciones
   idSiembraChaman?: string;
 
