@@ -7,7 +7,6 @@ import {
 import { IUbicacion } from "../../auxiliares";
 import { ICliente } from "../cliente";
 import { IEstablecimiento } from "../establecimiento";
-import { ICultivo } from "../cultivo/schema";
 import { ISuelo } from "../suelo";
 import { IDepartamento } from "../departamento";
 import { IPrediccionEnfermedades, IPrediccionRiego } from "../prediccion";
@@ -26,7 +25,7 @@ export interface IAmbiente {
   idPluviometros?: string[];
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
-  idSiembras?: string[];
+  idSiembra?: string;
 
   suelos?: ISuelo[];
   capacidadRiego?: number;
@@ -44,7 +43,7 @@ export interface IAmbiente {
   freatimetros?: IFreatimetro[];
   estacionMeteorologicas?: IEstacionMeteorologica[];
   departamento?: IDepartamento;
-  siembras?: ISiembra[];
+  siembra?: ISiembra;
 }
 
 type OmitirCreate =
@@ -57,7 +56,7 @@ type OmitirCreate =
   | "freatimetros"
   | "estacionMeteorologicas"
   | "departamento"
-  | "siembras";
+  | "siembra";
 
 export interface ICreateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirCreate> {}
@@ -72,7 +71,7 @@ type OmitirUpdate =
   | "freatimetros"
   | "estacionMeteorologicas"
   | "departamento"
-  | "siembras";
+  | "siembra";
 
 export interface IUpdateAmbiente
   extends Omit<Partial<IAmbiente>, OmitirUpdate> {}
