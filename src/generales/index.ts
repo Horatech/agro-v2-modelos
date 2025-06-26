@@ -24,5 +24,6 @@ export * from "./auditorias";
 export * from "./semilla";
 export * from "./departamento";
 export * from "./prediccion";
+export * from "./siembra";
 //
 export * from "./config-notificaciones";
