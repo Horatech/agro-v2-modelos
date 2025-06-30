@@ -3,6 +3,7 @@ import { ICultivo } from "../cultivo";
 export interface ISiembra {
   _id: string;
   fechaCreacion: string;
+  idCliente: string;
   cultivo?: ICultivo;
   fechaSiembra?: string;
   fechaCosecha?: string;
