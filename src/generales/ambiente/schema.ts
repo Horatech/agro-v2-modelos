@@ -16,7 +16,7 @@ export interface IAmbiente {
   _id: string;
   nombre: string;
   ubicacion?: IUbicacion;
-  idCliente: string;
+  idCliente?: string;
   idEstablecimiento: string;
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
