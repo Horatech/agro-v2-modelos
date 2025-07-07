@@ -5,3 +5,4 @@ export * from "./reporteArrancador";
 export * from "./reporteVariador";
 export * from "./reporteCanal";
 export * from "./alertaCentral";
+export * from "./reporteModoTest";

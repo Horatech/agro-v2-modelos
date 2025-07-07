@@ -1,4 +1,5 @@
 import { IReporte } from "../../../generales";
+import { IReporteModoTest } from "../reporteModoTest";
 
 export interface IDispositivoBombeoV2 {
   arranqueAutomatico?: boolean;
@@ -75,4 +76,7 @@ export interface IDispositivoBombeoV2 {
   reporteBombas?: {
     [numero: number]: IReporte;
   };
+
+  // El ultimo reporte de Modo test
+  ultimoTest?: IReporteModoTest;
 }
