@@ -8,6 +8,20 @@ import {
   IReporte,
   IEstablecimiento,
 } from "../../../generales";
+import { IEstadoBin } from "../historial";
+
+export interface IContenidoBin {
+  tipo:
+    | "fertilizante"
+    | "residuo"
+    | "semilla"
+    | "agroquimico"
+    | "combustible"
+    | "productoCosechado"
+    | "otro";
+  descripcion?: string;
+  fechaIngreso: Date;
+}
 
 export interface IBin {
   _id?: string;
@@ -22,6 +36,10 @@ export interface IBin {
   nombre?: string;
   descripcion?: string;
   configuraciones?: ConfiguracionBin;
+  contenido?: IContenidoBin;
+  estadoActual?: IEstadoBin;
+  capacidadTotal?: number; // en kg o litros
+  unidadMedida?: "kg" | "l" | "unidad";
   // Polyline
   ubicacion?: ICoordenadas;
   //
