@@ -22,3 +22,13 @@ export interface IEstadoBinHistorial {
   motivo?: string;
   idUser?: string;
 }
+
+type OmitirCreate = "_id" | "fechaCreacion";
+
+export interface ICreateEstadoBinHistorial
+  extends Omit<Partial<IEstadoBinHistorial>, OmitirCreate> {}
+
+type OmitirUpdate = "_id" | "fechaCreacion";
+
+export interface IUpdateEstadoBinHistorial
+  extends Omit<Partial<IEstadoBinHistorial>, OmitirUpdate> {}
