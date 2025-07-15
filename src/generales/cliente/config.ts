@@ -38,6 +38,12 @@ export interface ConfiguracionBin {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionLanzaHumedad {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  coloresNivel?: SemaforoConNivel[] | null;
+}
+
 export interface ConfiguracionComederos {
   colorIcono?: string | null;
   colorError?: string | null;
@@ -135,4 +141,9 @@ export interface Semaforo {
   valorHasta: number;
   color: string;
   etiqueta?: string;
+}
+
+export interface SemaforoConNivel {
+  nivel: number;
+  semaforo: Semaforo;
 }
