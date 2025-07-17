@@ -22,7 +22,8 @@ export type TipoDispositivo =
   | "Silobolsa"
   | "Tracker"
   | "Sensor de Caudal"
-  | "Sensor RPM";
+  | "Sensor RPM"
+  | "Sensor de Radar";
 
 export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Bomba de Cisterna",
@@ -49,4 +50,5 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Tracker",
   "Sensor de Caudal",
   "Sensor RPM",
+  "Sensor de Radar",
 ];
