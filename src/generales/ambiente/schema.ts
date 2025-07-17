@@ -1,6 +1,7 @@
 import {
   IEstacionMeteorologica,
   IFreatimetro,
+  ILanzaHumedad,
   IPluviometro,
   ISensorHumedadSuelo,
 } from "../../aplicaciones";
@@ -21,6 +22,7 @@ export interface IAmbiente {
   fechaCreacion: string;
   configuraciones?: { colorLinea: string | null; colorRelleno: string | null };
 
+  idLanzaHumedad?: string[];
   idSensorHumedadSuelos?: string[];
   idPluviometros?: string[];
   idFreatimetros?: string[];
@@ -38,6 +40,7 @@ export interface IAmbiente {
   // Virtuals
   establecimiento?: IEstablecimiento;
   cliente?: ICliente;
+  lanzaHumedad?: ILanzaHumedad[];
   sensorHumedadSuelos?: ISensorHumedadSuelo[];
   pluviometros?: IPluviometro[];
   freatimetros?: IFreatimetro[];
@@ -51,6 +54,7 @@ type OmitirCreate =
   | "fechaCreacion"
   | "establecimiento"
   | "cliente"
+  | "lanzaHumedad"
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
@@ -66,6 +70,7 @@ type OmitirUpdate =
   | "fechaCreacion"
   | "establecimiento"
   | "cliente"
+  | "lanzaHumedad"
   | "sensorHumedadSuelos"
   | "pluviometros"
   | "freatimetros"
