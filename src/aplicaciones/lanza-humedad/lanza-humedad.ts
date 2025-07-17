@@ -9,7 +9,7 @@ import {
   IReporte,
 } from "../../generales";
 
-export interface ILanzaHumendad {
+export interface ILanzaHumedad {
   _id?: string;
   // Tentant
   idCliente?: string;
@@ -44,7 +44,7 @@ type OmitirCreate =
   | "lote"
   | "dispositivo";
 export interface ICreateLanzaHumedad
-  extends Omit<Partial<ILanzaHumendad>, OmitirCreate> {}
+  extends Omit<Partial<ILanzaHumedad>, OmitirCreate> {}
 
 ////// UPDATE
 type OmitirUpdate =
@@ -54,4 +54,4 @@ type OmitirUpdate =
   | "lote"
   | "dispositivo";
 export interface IUpdateLanzaHumedad
-  extends Omit<Partial<ILanzaHumendad>, OmitirUpdate> {}
+  extends Omit<Partial<ILanzaHumedad>, OmitirUpdate> {}
