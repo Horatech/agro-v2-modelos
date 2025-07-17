@@ -18,27 +18,27 @@ export interface IDispositivoLanzaHumedad {
   device_status?: any; // usa el tipo real si sabes cuál es el resultado de readOnOffStatus
   battery?: number;
 
-  // GPIO dinámicos: gpio_1, gpio_2, etc.
-  [key: `gpio_${number}`]: any;
+  // // GPIO dinámicos: gpio_1, gpio_2, etc.
+  // [key: `gpio_${number}`]: any;
 
-  // GPIO counters: counter_1, counter_2, etc.
-  [key: `counter_${number}`]: number;
+  // // GPIO counters: counter_1, counter_2, etc.
+  // [key: `counter_${number}`]: number;
 
-  // ADC dinámicos: adc_1, adc_1_min, adc_1_max, adc_1_avg, etc.
-  [key: `adc_${number}`]: number;
-  [key: `adc_${number}_min`]: number;
-  [key: `adc_${number}_max`]: number;
-  [key: `adc_${number}_avg`]: number;
-  [key: `adc_${number}_alarm`]: any;
+  // // ADC dinámicos: adc_1, adc_1_min, adc_1_max, adc_1_avg, etc.
+  // [key: `adc_${number}`]: number;
+  // [key: `adc_${number}_min`]: number;
+  // [key: `adc_${number}_max`]: number;
+  // [key: `adc_${number}_avg`]: number;
+  // [key: `adc_${number}_alarm`]: any;
 
-  // Modbus dinámicos: chn_1, modbus_chn_1, etc.
-  [key: `chn_${number}`]: any;
-  [key: `chn_${number}_alarm`]: any;
-  [key: `modbus_chn_${number}`]: any;
-  [key: `modbus_chn_${number}_alarm`]: string;
+  // // Modbus dinámicos: chn_1, modbus_chn_1, etc.
+  // [key: `chn_${number}`]: any;
+  // [key: `chn_${number}_alarm`]: any;
+  // [key: `modbus_chn_${number}`]: any;
+  // [key: `modbus_chn_${number}_alarm`]: string;
 
-  // SDI-12 dinámicos: sdi12_1, sdi12_2, etc.
-  [key: `sdi12_${number}`]: string;
+  // // SDI-12 dinámicos: sdi12_1, sdi12_2, etc.
+  // [key: `sdi12_${number}`]: string;
 
   // History array: cada item puede tener estructura específica.
   history?: Array<Record<string, any>>;
