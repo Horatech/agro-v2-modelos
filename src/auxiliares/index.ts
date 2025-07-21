@@ -7,3 +7,4 @@ export * from "./socketMessage";
 export * from "./ubicacion";
 export * from "./ubicacionV2";
 export * from "./geojson";
+export * from "./circulo";
