@@ -42,7 +42,9 @@ type OmitirCreate =
   | "cliente"
   | "establecimiento"
   | "lote"
-  | "dispositivo";
+  | "dispositivo"
+  | "fechaCreacion";
+
 export interface ICreateLanzaHumedad
   extends Omit<Partial<ILanzaHumedad>, OmitirCreate> {}
 
@@ -52,6 +54,7 @@ type OmitirUpdate =
   | "cliente"
   | "establecimiento"
   | "lote"
-  | "dispositivo";
+  | "dispositivo"
+  | "fechaCreacion";
 export interface IUpdateLanzaHumedad
   extends Omit<Partial<ILanzaHumedad>, OmitirUpdate> {}

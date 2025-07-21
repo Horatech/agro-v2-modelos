@@ -44,18 +44,20 @@ export interface IPivot {
 
 export type OmitirCreatePivot =
   | "_id"
-  | "fechaCreacion"
+  | "dispositivoGps"
   | "establecimiento"
-  | "cliente";
+  | "cliente"
+  | "fechaCreacion";
 
 export interface ICreatePivot
   extends Omit<Partial<IPivot>, OmitirCreatePivot> {}
 
 export type OmitirUpdatePivot =
   | "_id"
-  | "fechaCreacion"
+  | "dispositivoGps"
   | "establecimiento"
-  | "cliente";
+  | "cliente"
+  | "fechaCreacion";
 
 export interface IUpdatePivot
   extends Omit<Partial<IPivot>, OmitirUpdatePivot> {}
