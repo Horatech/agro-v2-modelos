@@ -116,6 +116,12 @@ export interface ConfiguracionSensorRPM {
   coloresNivel?: Semaforo[] | null;
 }
 
+export interface ConfiguracionPivot {
+  colorIcono?: string | null;
+  colorError?: string | null;
+  coloresNivel?: Semaforo[] | null;
+}
+
 export interface Configuraciones {
   // Colores
   establecimientos?: ConfiguracionEstablecimiento;

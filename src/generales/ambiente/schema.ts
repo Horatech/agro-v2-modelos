@@ -2,6 +2,7 @@ import {
   IEstacionMeteorologica,
   IFreatimetro,
   ILanzaHumedad,
+  IPivot,
   IPluviometro,
   ISensorHumedadSuelo,
 } from "../../aplicaciones";
@@ -28,6 +29,7 @@ export interface IAmbiente {
   idFreatimetros?: string[];
   idEstacionMeteorologicas?: string[];
   idSiembra?: string;
+  idPivots?: string[];
 
   suelos?: ISuelo[];
   capacidadRiego?: number;
@@ -45,6 +47,7 @@ export interface IAmbiente {
   pluviometros?: IPluviometro[];
   freatimetros?: IFreatimetro[];
   estacionMeteorologicas?: IEstacionMeteorologica[];
+  pivots?: IPivot[];
   departamento?: IDepartamento;
   siembra?: ISiembra;
 }
@@ -59,6 +62,7 @@ type OmitirCreate =
   | "pluviometros"
   | "freatimetros"
   | "estacionMeteorologicas"
+  | "pivots"
   | "departamento"
   | "siembra";
 
@@ -75,6 +79,7 @@ type OmitirUpdate =
   | "pluviometros"
   | "freatimetros"
   | "estacionMeteorologicas"
+  | "pivots"
   | "departamento"
   | "siembra";
 
