@@ -35,6 +35,13 @@ export interface IPivot {
   ultimaOperacion?: { tipo: string; fecha: string };
 
   configuraciones?: ConfiguracionPivot;
+  puntosLlegadaGps?: {
+    lat: number;
+    lng: number;
+    fecha?: string;
+    numero?: string;
+    desc?: string;
+  }[];
 
   // Virtuals
   dispositivoGps?: IGPSPivot[];
