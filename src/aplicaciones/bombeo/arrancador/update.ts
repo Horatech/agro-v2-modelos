@@ -1,4 +1,4 @@
-import { IReporte } from '../../../generales';
+import { IReporte } from "../../../generales";
 
 export interface IUpdateBombeoArrancador {
   nombre?: string;
@@ -11,10 +11,11 @@ export interface IUpdateBombeoArrancador {
   numero?: number;
   canalEntrada?: number;
   canalSalida?: number;
-  estadoActual?: 'Encendido' | 'Apagado' | 'Manual';
+  estadoActual?: "Encendido" | "Apagado" | "Manual";
   fechaUltimaComunicacion?: string;
   ultimoReporte?: IReporte;
-  tipo?: 'Arrancador' | 'Variador';
+  tipo?: "Arrancador" | "Variador";
   modelo?: string;
   velocidad?: number;
+  modeloArrancador?: string;
 }
