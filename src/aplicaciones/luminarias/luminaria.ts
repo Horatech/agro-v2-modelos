@@ -1,5 +1,10 @@
 import { ICoordenadas } from "../../auxiliares";
-import { ICliente, IDispositivo, IEstablecimiento } from "../../generales";
+import {
+  ICliente,
+  IDispositivo,
+  IEstablecimiento,
+  ILote,
+} from "../../generales";
 
 export interface ILuminaria {
   _id?: string;
@@ -17,7 +22,7 @@ export interface ILuminaria {
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
-  lote?: string;
+  lote?: ILote;
   dispositivo?: IDispositivo;
 }
 
@@ -29,7 +34,7 @@ type OmitirCreate =
   | "lote"
   | "dispositivo";
 export interface ICreateLuminaria
-  extends Omit<Partial<ILuminaria>, OmitirCreate> { }
+  extends Omit<Partial<ILuminaria>, OmitirCreate> {}
 
 ////// UPDATE
 type OmitirUpdate =
@@ -39,4 +44,4 @@ type OmitirUpdate =
   | "lote"
   | "dispositivo";
 export interface IUpdateLuminaria
-  extends Omit<Partial<ILuminaria>, OmitirUpdate> { }
+  extends Omit<Partial<ILuminaria>, OmitirUpdate> {}
