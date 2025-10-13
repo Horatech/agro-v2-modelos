@@ -39,9 +39,9 @@ export interface IDispositivoLuminaria {
   currentLowLimit?: number; // A
   // MODO CALENDARIO (estrategias)
   modoCalendarioActivo?: boolean;
-  estrategia1: ISetEstrategiaCalendarioLuminaria;
-  estrategia2: ISetEstrategiaCalendarioLuminaria;
-  estrategia3: ISetEstrategiaCalendarioLuminaria;
+  estrategia1?: ISetEstrategiaCalendarioLuminaria;
+  estrategia2?: ISetEstrategiaCalendarioLuminaria;
+  estrategia3?: ISetEstrategiaCalendarioLuminaria;
   // MODO GPS
 
   modoGPSActivo?: boolean;
