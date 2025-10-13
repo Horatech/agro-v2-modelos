@@ -4,6 +4,7 @@ import {
   IDispositivo,
   IEstablecimiento,
   ILote,
+  IReporte,
 } from "../../generales";
 
 export interface ILuminaria {
@@ -19,6 +20,9 @@ export interface ILuminaria {
   potencia?: number;
   horasVida?: number;
   ubicacion?: ICoordenadas;
+  // Estado
+  horasUso?: number;
+  ultimoReporte?: IReporte;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
