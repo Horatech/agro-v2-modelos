@@ -4,6 +4,8 @@ import { IModoLuminaria } from "./reporte";
 export interface IDispositivoLuminariaWellness {
   location?: ICoordenadas;
   mode?: IModoLuminaria;
+  activePower?: number; // kWh - lo que reporta
+  reactivePower?: number; // kWh - lo que reporta
   activePowerTotal?: number; // kWh - acumulada
   reactivePowerTotal?: number; // kWh - acumulada
   turnOnOffStatus?: boolean; // True: Encendido, False: Apagado
