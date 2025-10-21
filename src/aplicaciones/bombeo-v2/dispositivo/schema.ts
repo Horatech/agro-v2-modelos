@@ -9,14 +9,14 @@ import { IReporteModoTest } from "../reporteModoTest";
  * Estados posibles del proceso de reactivación automática
  */
 export type EstadoReactivacion =
-  | 'corte_detectado'           // Corte en curso, energía = false
-  | 'restauracion_detectada'    // Energía restaurada, proceso iniciado
-  | 'esperando_inicializacion'  // Esperando puerto 135 con init completa
-  | 'esperando_tiempo_minimo'   // Esperando delay configurado
-  | 'condiciones_cumplidas'     // Listo para ejecutar
-  | 'ejecutando'                // Enviando comando puerto 150
-  | 'completada'                // Éxito, comando enviado
-  | 'cancelada'                 // No se ejecutó (ver motivoNoReactivacion)
+  | "corte_detectado" // Corte en curso, energía = false
+  | "restauracion_detectada" // Energía restaurada, proceso iniciado
+  | "esperando_inicializacion" // Esperando puerto 135 con init completa
+  | "esperando_tiempo_minimo" // Esperando delay configurado
+  | "condiciones_cumplidas" // Listo para ejecutar
+  | "ejecutando" // Enviando comando puerto 150
+  | "completada" // Éxito, comando enviado
+  | "cancelada" // No se ejecutó (ver motivoNoReactivacion)
   | null;
 
 /**
@@ -223,10 +223,4 @@ export interface IDispositivoBombeoV2 {
    * Estado actual de cortes de energía y proceso de reactivación
    */
   estadoPreCorte?: IEstadoPreCorte;
-
-  /**
-   * Historial de todos los eventos de corte y reactivación
-   * Útil para analytics, debugging y auditoría
-   */
-  historialReactivaciones?: IHistorialReactivacion[];
 }
