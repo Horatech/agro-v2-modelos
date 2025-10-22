@@ -48,6 +48,20 @@ export interface IConfigReactivacionAuto {
   // intervaloEntreGrupos?: number;
 }
 
+export interface IConfigReseteoFallas {
+  habilitado?: boolean;
+
+  /**
+   * Números de fallas a resetear automáticamente (cada numero representa una falla)
+   */
+  nroFallas?: number[];
+
+  /**
+   * Tipo de arrancador al que aplica el reseteo de fallas
+   */
+  tipoArrancador?: "SSW06" | "SSW07" | "SSW900" | "CFW11";
+}
+
 /**
  * Estado de corte de energía y proceso de reactivación
  */
@@ -223,4 +237,6 @@ export interface IDispositivoBombeoV2 {
    * Estado actual de cortes de energía y proceso de reactivación
    */
   estadoPreCorte?: IEstadoPreCorte;
+
+  configReseteoFallas?: IConfigReseteoFallas;
 }
