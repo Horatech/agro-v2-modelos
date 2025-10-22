@@ -1,3 +1,5 @@
+import { IConfigReseteoFallas } from "../../aplicaciones";
+
 export interface ConfiguracionEstablecimiento {
   colorLinea?: string | null;
   colorRelleno?: string | null;
@@ -74,6 +76,10 @@ export interface ConfiguracionLamina {
 export interface ConfiguracionBombeo {
   colorIcono?: string | null;
   colorError?: string | null;
+
+  //
+
+  configReseteoFallas?: IConfigReseteoFallas;
 }
 
 export interface ConfiguracionEstacionMeteorologica {

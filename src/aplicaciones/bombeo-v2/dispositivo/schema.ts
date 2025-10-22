@@ -237,6 +237,4 @@ export interface IDispositivoBombeoV2 {
    * Estado actual de cortes de energía y proceso de reactivación
    */
   estadoPreCorte?: IEstadoPreCorte;
-
-  configReseteoFallas?: IConfigReseteoFallas;
 }
