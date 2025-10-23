@@ -79,7 +79,7 @@ export interface ConfiguracionBombeo {
 
   //
 
-  configReseteoFallas?: IConfigReseteoFallas;
+  configReseteoFallas?: IConfigReseteoFallas[];
 }
 
 export interface ConfiguracionEstacionMeteorologica {
