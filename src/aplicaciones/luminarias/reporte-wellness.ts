@@ -1,4 +1,4 @@
-import { IModoLuminaria } from "./reporte";
+import { IModoLuminaria } from "./dispositivo-horatech";
 
 export type ModoForzado =
   | "No Forzado"
