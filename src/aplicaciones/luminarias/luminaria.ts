@@ -20,6 +20,7 @@ export interface ILuminaria {
   potencia?: number;
   horasVida?: number;
   ubicacion?: ICoordenadas;
+  direccion?: string;
   // Estado
   horasUso?: number;
   ultimoReporte?: IReporte;
