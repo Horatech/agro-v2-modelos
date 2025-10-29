@@ -1,10 +1,3 @@
-export type IModoLuminaria =
-  | "Indeterminado"
-  | "Fotocélula"
-  | "Calendario"
-  | "Manual"
-  | "GPS";
-
 export interface IReporteLuminaria {
   dimmingValue?: number; // %
   turnOnOffStatus?: boolean; // True: Encendido, False: Apagado

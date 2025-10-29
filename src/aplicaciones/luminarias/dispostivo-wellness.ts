@@ -1,5 +1,5 @@
 import { ICoordenadas } from "../../auxiliares";
-import { IModoLuminaria } from "./reporte";
+import { IModoLuminaria } from "./dispositivo-horatech";
 
 export interface IDispositivoLuminariaWellness {
   location?: ICoordenadas;
