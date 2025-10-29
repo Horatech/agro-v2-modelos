@@ -21,9 +21,11 @@ export interface ILuminaria {
   horasVida?: number;
   ubicacion?: ICoordenadas;
   direccion?: string;
+  fechaUltimaComunicacion?: string;
   // Estado
   horasUso?: number;
   ultimoReporte?: IReporte;
+  ultimoReporteEnergia?: IReporte;
   // Virtuals
   cliente?: ICliente;
   establecimiento?: IEstablecimiento;
