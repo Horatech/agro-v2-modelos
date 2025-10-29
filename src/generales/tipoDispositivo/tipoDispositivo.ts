@@ -10,6 +10,7 @@ export type TipoDispositivo =
   | "Lanza de Humedad"
   | "Luminaria"
   | "Luminaria Wellness"
+  | "Luminaria Horatech"
   | "Nivel de Canal"
   | "Nivel de Cisterna"
   | "Nivel de Comederos"
@@ -37,6 +38,7 @@ export const TIPOS_DISPOSITIVOS: TipoDispositivo[] = [
   "Lanza de Humedad",
   "Luminaria",
   "Luminaria Wellness",
+  "Luminaria Horatech",
   "Nivel de Canal",
   "Nivel de Cisterna",
   "Nivel de Comederos",
