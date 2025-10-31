@@ -46,3 +46,21 @@ export interface IPuntoDimmer {
   porcentaje: number;
   activo: boolean;
 }
+
+export interface IConfigDispositivoGPEPayload {
+  //Config byte
+  mode?: IModoLuminaria;
+  estadoRele?: boolean;
+  dimmerHabilitado?: boolean;
+  energiaExterna?: boolean;
+  adrHabilitado?: boolean;
+
+  //Otros
+  limLuzInferior?: number;
+  limLuzSuperior?: number;
+  offsetGPSAmanecer?: number;
+  offsetGPSAtardecer?: number;
+  timeZone?: number;
+  frecReporte?: number;
+  dataRate?: number;
+}
