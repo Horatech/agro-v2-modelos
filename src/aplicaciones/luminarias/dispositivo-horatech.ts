@@ -47,7 +47,7 @@ export interface IPuntoDimmer {
   activo: boolean;
 }
 
-export interface IConfigDispositivoGPEPayload {
+export interface IConfigDispositivoLuminariaHoratech {
   //Config byte
   mode?: IModoLuminaria;
   estadoRele?: boolean;
