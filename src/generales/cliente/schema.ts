@@ -1,5 +1,6 @@
 import { TipoDispositivo } from "../tipoDispositivo";
 import { Configuraciones } from "./config";
+import { IConfigTwilio } from "./config-twilio";
 import { IImagenesCliente } from "./imagenes";
 import { IIntegracion } from "./integraciones";
 
@@ -13,4 +14,5 @@ export interface ICliente {
   configuraciones?: Configuraciones;
   integraciones?: IIntegracion[];
   apikeyChaman?: string;
+  twilio?: IConfigTwilio;
 }

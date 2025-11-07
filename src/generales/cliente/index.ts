@@ -1,3 +1,4 @@
+export * from "./config-twilio";
 export * from "./schema";
 export * from "./create";
 export * from "./update";
