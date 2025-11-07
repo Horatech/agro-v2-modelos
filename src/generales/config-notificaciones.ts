@@ -9,6 +9,10 @@ export interface CondicionNotificacion {
     "Valor inferior a"?: number;
     "Valor superior a"?: number;
   };
+  "Estacion de Bombeo"?: {
+    Encendida?: boolean;
+    Apagada?: boolean;
+  };
 }
 
 export type TipoEnvio = "SMS" | "WhatsApp" | "Llamada" | "Notificacion Push";
