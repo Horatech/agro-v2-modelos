@@ -8,3 +8,4 @@ export * from "./ubicacion";
 export * from "./ubicacionV2";
 export * from "./geojson";
 export * from "./circulo";
+export * from "./twilio-templates";
