@@ -1,5 +1,6 @@
 import { ICisterna } from "../aplicaciones";
 import { ICliente } from "./cliente";
+import { IDispositivo } from "./dispositivo";
 import { IEstablecimiento } from "./establecimiento";
 import { TipoDispositivo } from "./tipoDispositivo";
 import { IUsuario } from "./usuario";
@@ -42,6 +43,7 @@ export interface IConfigNotificacion {
   establecimiento?: IEstablecimiento;
   // Entidades
   cisterna?: ICisterna;
+  dispositivo?: IDispositivo;
 }
 
 ////// CREATE
