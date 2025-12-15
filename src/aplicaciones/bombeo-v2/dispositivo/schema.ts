@@ -190,6 +190,9 @@ export interface IDispositivoBombeoV2 {
   estadoArrancadores?: {
     [numero: number]: boolean;
   };
+  fechaEncendidoArrancadores?: {
+    [numero: number]: string;
+  };
   prioridadArrancadores?: {
     [numero: number]: number;
   };
