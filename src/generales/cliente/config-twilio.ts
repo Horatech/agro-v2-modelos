@@ -1,4 +1,7 @@
-export type TemplatesWhatsapp = "Estado Bombeo" | "Estado Bombeo Motivo";
+export type TemplatesWhatsapp =
+  | "Estado Bombeo"
+  | "Estado Bombeo Motivo"
+  | "Corte de Energía";
 
 export type TemplatesMail =
   | TemplatesWhatsapp
