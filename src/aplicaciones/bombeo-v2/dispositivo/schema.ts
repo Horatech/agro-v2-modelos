@@ -220,6 +220,11 @@ export interface IDispositivoBombeoV2 {
     [numero: number]: IReporte;
   };
 
+  /**
+   * Si el bombeo no tiene sensores de nivel, y es true, cuando una bomba apaga por falla, resetea la falla y vuelve a enviar encender la bomba
+   */
+  mantenerEncendido?: boolean;
+
   // El ultimo reporte de Modo test
   ultimoTest?: IReporteModoTest;
 
